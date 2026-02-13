@@ -12,7 +12,7 @@
 
         &:after{
             content: "";
-            border: 2px solid #64ffda;
+            border: 2px solid $Green;
             z-index: 0;
             display: block;
             position: relative;
@@ -162,7 +162,7 @@
 
 @media (max-width: 500px){
     .about{
-       
+
         .about-img-container:after {
             width: 200px;
             height: 200px;
@@ -191,7 +191,7 @@
         .about-img-container {
             width: 100%;
 
-         
+
 
             &:after {
                 display: none;

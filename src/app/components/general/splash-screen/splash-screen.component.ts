@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild, OnInit, OnDestroy, Output, EventEmitter } from '@angular/core';
+import {Component, ElementRef, ViewChild, OnInit, OnDestroy, Output, EventEmitter, Renderer2} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import lottie from 'lottie-web';
 
@@ -14,13 +14,13 @@ export class SplashScreenComponent implements OnInit, OnDestroy {
 
   isHidden = false;
   loadingText = 'Loading...';
-  
+
   private lottieAnimation: any;
   private minimumLoadingTime = 1800;
   private startTime = Date.now();
   private splashTimeout?: number;
 
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslateService, private renderer: Renderer2) {}
 
   ngOnInit(): void {
     this.setupTranslations();
@@ -77,7 +77,7 @@ export class SplashScreenComponent implements OnInit, OnDestroy {
       window.addEventListener('load', () => {
         this.hideSplashScreen();
       }, { once: true });
-      
+
       // Fallback después de 2 segundos adicionales
       setTimeout(() => {
         this.hideSplashScreen();
@@ -87,9 +87,9 @@ export class SplashScreenComponent implements OnInit, OnDestroy {
 
   private hideSplashScreen(): void {
     if (this.isHidden) return; // Evitar múltiples llamadas
-    
+
     this.isHidden = true;
-    
+
     // Emitir evento después de que la animación de salida termine
     setTimeout(() => {
       this.animationCompleted.emit();

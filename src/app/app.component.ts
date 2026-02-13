@@ -15,7 +15,7 @@ import { LoadingService } from './services/loading/loading.service';
     standalone: false
 })
 export class AppComponent implements OnInit, OnDestroy{
-  title = 'andresjosehr-portfolio';
+  title = 'mathildefauveau-portfolio';
   appContentVisible = false;
   private lenis: Lenis;
 
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit, OnDestroy{
 
     this.languageService.initLanguage()
 
-    this.titleService.setTitle( "José Andrés | Frontend Developer" );
+    this.titleService.setTitle( "Mathilde Fauveau | Développeuse D'Applications" );
 
     this.metaService.addTags([
       {name: 'keywords', content: 'Frontend, software, developer'},
@@ -74,12 +74,12 @@ export class AppComponent implements OnInit, OnDestroy{
 
   onSplashAnimationCompleted(): void {
     this.appContentVisible = true;
-    
+
     // Inicializar Lenis después de que el contenido sea visible
     setTimeout(() => {
       this.initLenis();
     }, 100);
-    
+
     // Iniciar animaciones de los componentes
     this.loadingService.startAnimations();
   }

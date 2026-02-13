@@ -1,15 +1,16 @@
 {
   "Header.Item1": "About Me",
-  "Header.Item2": "Experience",
+  "Header.Item2": "Retrospective",
   "Header.Item3": "Projects",
   "Header.Item4": "Contact",
   "Header.cvBtn": "Resume",
-  "Header.cvName": "CV_Jose_Hernandez_English.pdf",
+  "Header.cvName": "CV_Mathilde_Fauveau.pdf",
   "Loading": "Loading...",
 
   "Banner.Pretitle": "Hello! My name is",
+  "Banner.Subtitle": "Future Software Developer & Designer",
   "Banner.Description": "I have <span class='underline'>+10 years of experience</span> developing systems, interfaces, bots, and technological solutions to make the web a better place. I am dedicated to writing and refactoring clean, reusable, and scalable code in <span class='underline'>Angular</span> and <span class='underline'>Laravel</span>, applying good practices and development standards.",
-  "Banner.ActionBtn": "Say Hi",
+  "Banner.ActionBtn": "Help ?",
 
   "AboutMe.Title": "About Me",
   "AboutMe.Paragraphs": [
@@ -18,13 +19,14 @@
     "I also program things for my personal use, whether for hobby or utility.",
     "Some of the technologies I have trained and worked with include (but are not limited to):"
   ],
+  "AboutMe.ImgTitle": "Click to view image in full screen",
 
-  "Experience.Title": "Experience",
+  "Experience.Title": "Retrospective",
   "Experience.Jobs": [
     {
-      "Tab": "Global",
-      "Title": "Fullstack Developer",
-      "Date": "May 2023",
+      "Tab": "2026",
+      "Title": "Software Designer and Developer Training",
+      "Date": "ENI Ecole Informatique",
       "Description": [
         "Leader in technical decision making",
         "Hiring technical talent for the company",
@@ -36,9 +38,9 @@
       ]
     },
     {
-      "Tab": "Proyex",
-      "Title": "Fullstack Developer",
-      "Date": "December 2019 - May 2023",
+      "Tab": "2023 - 2025",
+      "Title": "Bartender",
+      "Date": "Le Bistrot Gourmand",
       "Description": [
         "Creation and maintenance of a monitoring platform with charts in WordPress.",
         "Functional programming in templates and plugins to add necessary monitoring features.",
@@ -48,9 +50,9 @@
       ]
     },
     {
-      "Tab": "Freelancer",
-      "Title": "Freelancer",
-      "Date": "May 2016 - Present",
+      "Tab": "2020 - 2023",
+      "Title": "...",
+      "Date": "...",
       "Description": [
         "Continuous improvements implementation, working on frontend and backend.",
         "Creation of platforms with Angular, Laravel, WordPress programmed with functional, reactive, and object-oriented programming paradigms.",
@@ -59,9 +61,9 @@
       ]
     },
     {
-      "Tab": "Moebius",
-      "Title": "Fullstack Developer",
-      "Date": "July 2017 - October 2018",
+      "Tab": "2018 - 2020",
+      "Title": "Frontend Developer",
+      "Date": "Iconosquare",
       "Description": [
         "Leading a team of 4 people in the development of a tourism data management platform made in Angular, Laravel, and MySQL.",
         "Implementation of CI/CD in Azure. Refactoring and optimizing application load times.",
@@ -71,9 +73,9 @@
       ]
     },
     {
-      "Tab": "TechLatam",
-      "Title": "Frontend Developer",
-      "Date": "February 2016 - May 2017",
+      "Tab": "2018",
+      "Title": "Web Developer Training",
+      "Date": "Aliptic",
       "Description": [
         "Creating WordPress templates with ACF, functional programming in JavaScript/jQuery, styles in SASS.",
         "Integrating design and load time improvements for templates.",
@@ -81,17 +83,26 @@
       ]
     },
     {
-      "Tab": "CANTV",
-      "Title": "Systems Analyst",
-      "Date": "November 2015 - December 2016",
+      "Tab": "2017",
+      "Title": "Web designer",
+      "Date": "Le Syndicat Energies, Haute-Vienne",
       "Description": [
         "Programming new functionalities for an existing employee management platform made with Angular and ExpressJS.",
         "Refactoring old code. Ensuring compatibility of each dependency with each update, including regular Angular updates."
       ]
     },
     {
-      "Tab": "IEP",
-      "Title": "English Teacher",
+      "Tab": "2016 - 2017",
+      "Title": "Professional Bachelor's Degree in Sensory Web Design and Online Creation Strategies",
+      "Date": "University de Limoges",
+      "Description": [
+        "Programming new functionalities for an existing employee management platform made with Angular and ExpressJS.",
+        "Refactoring old code. Ensuring compatibility of each dependency with each update, including regular Angular updates."
+      ]
+    },
+    {
+      "Tab": "2013 - 2016",
+      "Title": "Bachelor's Degree in Language, Information and Communication Sciences",
       "Date": "January 2015 - July 2015",
       "Description": [
         "Teaching basic English to a student body of over 200 students."

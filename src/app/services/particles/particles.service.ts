@@ -26,12 +26,12 @@ export class Particle {
 
   draw(ctx: CanvasRenderingContext2D): void {
     // Configurar shadow más sutil
-    ctx.shadowColor = 'rgba(100, 255, 218, 0.1)';
+    ctx.shadowColor = 'rgba(247, 165, 165, 0.1)';
     ctx.shadowBlur = 5;
 
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(100, 255, 218, 0.3)'; // Más opaco -> más sutil
+    ctx.fillStyle = 'rgba(247, 165, 165, 0.50)'; // Más opaco -> más sutil
     ctx.fill();
 
     // Resetear shadow
