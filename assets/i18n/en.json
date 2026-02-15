@@ -1,0 +1,218 @@
+{
+  "Header.Item1": "About Me",
+  "Header.Item2": "Retrospective",
+  "Header.Item3": "Projects",
+  "Header.Item4": "Contact",
+  "Header.cvBtn": "Resume",
+  "Header.cvName": "CV_Mathilde_Fauveau.pdf",
+  "Loading": "Loading...",
+
+  "Banner.Pretitle": "Hello! My name is",
+  "Banner.Subtitle": "Future Software Developer & Designer",
+  "Banner.Description": "Holding a degree in Web Design and Communication, I am currently enrolled in a <span class='underline'>Software Development program</span>, I am learning to design modern, structured interfaces that adhere to current professional standards. I am actively seeking an <span class='underline'>internship</span> to validate my training and contribute to concrete projects.",
+  "Banner.Countdown1" : "I have",
+  "Banner.Countdown2" : "left to find my next internship. \uD83D\uDC40",
+  "Banner.ActionBtn": "Me contacter ?",
+
+  "AboutMe.Title": "About Me",
+  "AboutMe.Paragraphs": [
+    "As a <span class='underline'>front-end developer</span> for two years on a development team, I contributed to the design and evolution of features for a marketing product.",
+    "After a difficult personal period between 2020 and 2023, which allowed me to step back and rebuild, I chose to return to development with <span class='underline'>renewed ambition</span>.",
+    "Currently training to be a <span class='underline'>Software Designer and Developer</span>, I am consolidating and expanding my skills as a Web Designer, UI/UX Designer, and Front-end Developer to <span class='underline'>Back-end projects</span>, with the ambition of eventually becoming a <span class='underline'>Full-Stack Developer</span>.",
+    "Determined and meticulous, I am looking to transform this new step into a <span class='underline'>concrete impact for my future</span>.",
+    "Here are some of the languages and technologies I have had the opportunity to experiment with and discover in recent years:"
+  ],
+  "AboutMe.ImgTitle": "Click to view image in full screen",
+  "AboutMe.Skills": "Languages et Technologies",
+
+  "Experience.Title": "Retrospective",
+  "Experience.Jobs": [
+    {
+      "Tab": "2026",
+      "Title": "Software Designer and Developer Training",
+      "Date": "ENI Ecole Informatique",
+      "Description": [
+        "Learn to design and code secure applications using a multi-layered software architecture, starting from the expression of a need.",
+        "Learn to design or modify a data model (UML), and to create or modify a database.",
+        "Advanced Programming: Object-Oriented Programming with Java and JavaScript.",
+        "Web Development: Advanced JavaScript/TypeScript and in-depth learning of Angular for the front end.",
+        "Introduction and learning of Python, Artificial Intelligence, and Django for the back end.",
+        "Implementation of continuous integration and daily backups.",
+        "Project Management and DevOps."
+      ]
+    },
+    {
+      "Tab": "2023 - 2025",
+      "Title": "Bartender",
+      "Date": "Le Bistrot Gourmand",
+      "Description": [
+        "Preparation and service of cocktails / drinks.",
+        "Welcoming customers.",
+        "Inventory management.",
+        "Bar and restaurant maintenance."
+      ]
+    },
+    {
+      "Tab": "2020 - 2023",
+      "Title": "[...]",
+      "Date": "",
+      "Description": [
+        "Because life sometimes throws us all sorts of curveballs, this period represents a time of total reassessment for me, allowing me to refocus on what's essential."
+      ]
+    },
+    {
+      "Tab": "2018 - 2020",
+      "Title": "Frontend Developer",
+      "Date": "Iconosquare",
+      "Description": [
+        "Team-based frontend development of evolving features for the Iconosquare product. (Iconosquare is an international platform for professionals who want to track their social media activity statistically and analytically.)",
+        "Maintenance of project features and Customer Support.",
+        "Working in collaboration with the Marketing and Design teams.",
+        "Creating complex features with JavaScript and ReactJs.",
+        "Implementing in-house solutions and software."
+      ]
+    },
+    {
+      "Tab": "2018",
+      "Title": "Web Developer Training",
+      "Date": "Aliptic - Opquast Certification",
+      "Description": [
+        "Learning the fundamentals of web development.",
+        "Understanding development environments.",
+        "Introduction to PHP and the Symfony framework during a group project",
+        "Introduction to UX/UI.",
+        "Study of best practices."
+      ]
+    },
+    {
+      "Tab": "2017",
+      "Title": "Web designer",
+      "Date": "Le Syndicat Energies, Haute-Vienne",
+      "Description": [
+        "Setting up a newsletter and integrating it using HTML/CSS.",
+        "Graphic redesign and integration of the existing website.",
+        "Creation of print and digital communication materials."
+      ]
+    },
+    {
+      "Tab": "2016 - 2017",
+      "Title": "Professional Bachelor's Degree in Sensory Web Design and Online Creation Strategies",
+      "Date": "University de Limoges",
+      "Description": [
+        "Design and development of digital interfaces on various types of screen media. Proficiency in Sketch, Illustrator and Photoshop software.",
+        "Technical development of websites: Designing the HTML5, CSS3 and Javascript (Vanilla & jQuery) integration of a project.",
+        "Using CSS3 preprocessors: LESS & Sass.",
+        "Multimedia creation (animation, video editing).",
+        "Project management, law & economics of the web"
+      ]
+    },
+    {
+      "Tab": "2013 - 2016",
+      "Title": "Bachelor's Degree in Language, Information and Communication Sciences",
+      "Date": "January 2015 - July 2015",
+      "Description": [
+        "Linguistics and semiotics, phonetics, phonology, morphosyntax, lexicology, sociolinguistics and field linguistics, theories of writing, information and communication."
+      ]
+    }
+  ],
+
+  "FeatureProjects.Title": "My projects",
+  "FeatureProjects.Projects": [
+    {
+      "Label": "ENI Ecole Informatique - 2026",
+      "Title": "FullStack Angular Project - Django",
+      "Description": "Analysis, design, and development of an Angular frontend connected to a Python backend with Django, based on a relational database, using a RESTful architecture compliant with professional standards.",
+      "imgs": [
+        "assets/images/csoon.gif"
+      ],
+      "Technologies": ["Angular", "SASS", "RxJS", "Python", "Django", "MongoDB"]
+    },
+    {
+      "Label": "Sensory web design - 2018",
+      "Title": "Project Management & Web design",
+      "Description": "Analysis and design, management of a three-person team, and creation of a website for a local artist",
+      "imgs": [
+        "assets/images/Webdesign/le_temps_d-une_oeuvre.png",
+        "assets/images/Webdesign/mini_site_art.jpg",
+        "assets/images/Webdesign/accueil.png",
+        "assets/images/Webdesign/galerie.jpg",
+        "assets/images/Webdesign/img3.png"
+      ],
+      "Technologies": ["Suite Adobe", "HTML5", "CSS3", "JavaScript", "PHP"]
+    },
+    {
+      "Label": "SEHV - 2017",
+      "Title": "Web design",
+      "Description": "Analysis and design, creation of a newsletter and graphic redesign of the existing website as well as its integration",
+      "imgs": [
+        "assets/images/SEHV/sehv-site.jpg"
+      ],
+      "Technologies": ["Suite Adobe", "HTML5", "CSS3", "JavaScript"]
+    },
+    {
+      "Label": "\uD83D\uDE48 - 2016",
+      "Title": "First Portfolio",
+      "Description": "My first web design portfolio was used to practice front-end development.",
+      "imgs": [
+        "assets/images/1rst-Portfolio/1.png",
+        "assets/images/1rst-Portfolio/2.png",
+        "assets/images/1rst-Portfolio/3.png",
+        "assets/images/1rst-Portfolio/4.png"
+      ],
+      "Technologies": ["HTML5", "CSS3", "JavaScript", "JQuery"]
+    }
+  ],
+
+  "OtherProjects.Title": "More Projects",
+  "OtherProjects.Projects": [
+    {
+      "Title": "Phaser.js - In progress",
+      "Description": "I'm currently practicing creating a small browser game using Phaser.",
+      "imgs": ["https://www.codecademy.com/learn/learn-phaser"],
+      "ghLink": "https://www.codecademy.com/learn/learn-phaser",
+      "demoLink": "https://www.codecademy.com/learn/learn-phaser",
+      "Technologies": ["Phaser", "Git", "In progress"]
+    },
+    {
+      "Title": "Carbon Footprint Calculator - In progress",
+      "Description": "A small program that calculates our carbon footprint based on our travels, used for practicing form and guard management, as well as operators in RxJS; still under development to be integrated with Tailwind, which I'm experimenting with.",
+      "imgs": [""],
+      "ghLink": "",
+      "demoLink": "",
+      "Technologies": ["Angular", "TypeScript", "RxJS", "Tailwind CSS", "In progress"]
+    },
+    {
+      "Title": "Eco bâtisseurs - 2018",
+      "Description": "Landing page to present a fictional bioclimatic house construction company, created as part of my professional degree in Web Design",
+      "ghLink": "",
+      "demoLink": "",
+      "Technologies": ["Web design", "Adobe suite"]
+    },
+    {
+      "Title": "Bo Concept - 2018",
+      "Description": "Landing page to present a fictional furniture sales company, created as part of my professional degree in Web Design",
+      "ghLink": "",
+      "demoLink": "",
+      "Technologies": ["Web design", "Adobe suite"]
+    },
+    {
+      "Title": "Web Project Management Folder - 2018",
+      "Description": "Project management report, produced during a supervised project as part of my professional degree in Web Design.",
+      "ghLink": "",
+      "demoLink": "assets/images/Webdesign/dossier_tut.pdf",
+      "Technologies": ["In Design"]
+    },
+    {
+      "Title": "Web Project Report Folder - 2018",
+      "Description": "Complete report describing the analysis and creation process of a newsletter and the redesign of the SEHV website. Completed as part of a 4-month internship.",
+      "ghLink": "",
+      "demoLink": "assets/images/SEHV/mémoire_sehv.pdf",
+      "Technologies": [""]
+    }
+  ],
+
+  "Contact.Pretitle": "And... Now?",
+  "Contact.Title": "I have lots of little projects in mind, and my desire to learn new things grows every day!",
+  "Contact.Content": "I will be glad to hear from you if you want to discuss new opportunities. Write to me, and I will respond as soon as I see your message.",
+  "Contact.Btn": "Say Hi!"
+}

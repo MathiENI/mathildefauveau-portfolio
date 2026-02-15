@@ -1,0 +1,216 @@
+{
+  "Header.Item1": "Qui suis-je ?",
+  "Header.Item2": "Rétrospective",
+  "Header.Item3": "Projets",
+  "Header.Item4": "Contact",
+  "Header.cvBtn": "CV",
+  "Header.cvName": "CV_Mathilde_Fauveau.pdf",
+  "Loading": "Chargement...",
+
+  "Banner.Pretitle": "Hello World! Je m'appelle",
+  "Banner.Subtitle": "Future Conceptrice Développeuse d'Applications",
+  "Banner.Description": "Titulaire d'un babage en Web design et en Communication, je suis actuellement en formation de <span class='underline'>Conception & Développement d’Applications</span>. J'apprends à concevoir des interfaces modernes, structurées et respectant les normes professionnelles actuelles.<br>Je recherche activement un <span class='underline'>stage</span> pour valider ma formation et contribuer à des projets concrets.",
+  "Banner.Countdown1" : "Il reste",
+  "Banner.Countdown2" : "pour trouver mon prochain stage. \uD83D\uDC40",
+  "Banner.ActionBtn": "Me contacter ?",
+
+  "AboutMe.Title": "Qui suis-je ?",
+  "AboutMe.Paragraphs": [
+    "<span class='underline'>Développeuse front-end</span> pendant deux ans au sein d’une équipe de développement, j’ai contribué à la conception et à l’évolution de fonctionnalités d'un produit marketing.",
+    "Après une période personnelle difficile entre 2020 et 2023, qui m’a permis de prendre du recul et de me reconstruire, j’ai choisi de revenir au développement avec <span class='underline'>une ambition renouvelée</span>.",
+    "Aujourd’hui en formation pour devenir <span class='underline'>Concepteur Développeur d’Applications</span>, je consolide et étends mes compétences de Web designer, UI/UX Designer et Développeur Front end à des <span class='underline'>projets Back end</span>, avec comme ambition de devenir, à terme, <span class='underline'>Développeuse Full Stack</span>.",
+    "Déterminée et rigoureuse, je cherche à transformer cette nouvelle étape en <span class='underline'>impact concret pour mon futur</span>.",
+    "Voici quelques langages et technologies que j'ai pu expérimenter et découvrir ces dernières années :"
+  ],
+  "AboutMe.ImgTitle": "Cliquez pour voir l'image en plein écran",
+  "AboutMe.Skills": "Langages et Technologies",
+
+  "Experience.Title": "Rétrsopective",
+  "Experience.Jobs": [
+    {
+      "Tab": "2026",
+      "Title": "Formation Concepteur(rice) Développeur(euse) d'Applications",
+      "Date": "ENI Ecole Informatique",
+      "Description": [
+        "Apprendre à concevoir des  applications sécurisées en utilisant une architecture logicielle multicouche à partir de l'expression d'un besoin",
+        "Apprendre à concevoir ou modifier un modèle des données (UML), et à créer ou modifier une base de données.",
+        "Programmation avancée : Programmation Orientée Objet avec Java et JavaScript.",
+        "Développement Web : Javascript avancé/Typescript et apprentissage en profondeur d'Angular pour la partie front.",
+        "Découverte et apprentissage de Python, de l'Intelligence Artificielle et de Django pour la partie back.",
+        "Gestion de projet et DevOps."
+      ]
+    },
+    {
+      "Tab": "2023 - 2025",
+      "Title": "Barmaid",
+      "Date": "Le Bistrot Gourmand",
+      "Description": [
+        "Réalisation et service de cocktails / boissons.",
+        "Accueil des clients.",
+        "Gestion des stocks",
+        "Entretien du bar et du restaurant."
+      ]
+    },
+    {
+      "Tab": "2020 - 2023",
+      "Title": "[...]",
+      "Date": "",
+      "Description": [
+        "Parce que la vie nous en fait parfois voir de toutes les couleurs, cette période correspond à un moment de remise en question totale pour moi, pour me permettre de me reconcenter sur l'essentiel."
+      ]
+    },
+    {
+      "Tab": "2018 - 2020",
+      "Title": "Développeuse Frontend",
+      "Date": "Iconosquare",
+      "Description": [
+        "Développement frontend en équipe des fonctionnalités évolutives du produit Iconosquare. (Iconosquare est une plateforme internationale à destination des professionnels qui souhaitent avoir un suivi statistique et analytique de leurs réseaux sociaux.)",
+        "Maintenance des fonctionnalités du projet et écoute du support client.",
+        "Travail en collaboration avec l'équipe Marketing et Design.",
+        "Mise en place de solutions et logiciels en interne."
+      ]
+    },
+    {
+      "Tab": "2018",
+      "Title": "Formation Concepteur Développeur Web",
+      "Date": "Aliptic - Certification Opquast",
+      "Description": [
+        "Apprentissage des bases du développement web.",
+        "Connaissance des environnements de développement",
+        "Initiation au PHP et au framework Symfony au cours d'un travail de groupe",
+        "Sensibilisation à l'UX/UI",
+        "Etude des bonnes pratiques"
+      ]
+    },
+    {
+      "Tab": "2017",
+      "Title": "Webdesigner - Intégratrice",
+      "Date": "Le Syndicat Energies, Haute-Vienne",
+      "Description": [
+        "Mise en place d'une Newsletter et intégration en HTML/CSS.",
+        "Refonte graphique et intégration du site web existant.",
+        "Réalisation de supports de communication prints et numériques."
+      ]
+    },
+    {
+      "Tab": "2016 - 2017",
+      "Title": "Licence Professionnelle Webdesign Sensoriel et Stratégies de Création en Ligne",
+      "Date": "Université de Limoges",
+      "Description": [
+        "Conception et design d’interfaces numériques sur différents types de supports écrans. Manipulation des logiciels Sketch, Illustrator et Photoshop.",
+        "Réalisation technique de sites Internet : Concevoir l’intégration HTML5, CSS3 et Javascript (Vanille & JQuery) d’un projet.",
+        "Utilisation de préprocesseur CSS3 : LESS & Sass.",
+        "Composition d’univers multimédia (animation, montage vidéo).",
+        "Gestion de projet, droit & économie du web"
+      ]
+    },
+    {
+      "Tab": "2013 - 2016",
+      "Title": "Licence Générale Sciences du Langage, de l'Information et de la Communication",
+      "Date": "Université de Limoges",
+      "Description": [
+        "Linguistique et sémiologie, phonétique, phonologie, morphosyntaxe, lexicologie, sociolinguistique et linguistique de terrain, théories de l'écriture, de l'information et de la communication"
+      ]
+    }
+  ],
+
+  "FeatureProjects.Title": "Mes projets",
+  "FeatureProjects.Projects": [
+    {
+      "Label": "ENI Ecole Informatique - 2026",
+      "Title": "Projet FullStack Angular - Django",
+      "Description": "Analyse et conception, développement d’un frontend <span class='underline'>Angular</span> connecté à un backend <span class='underline'>Python avec Django</span> reposant sur une base\nde données relationnelle, selon une architecture\nRESTful conforme aux standards professionnels",
+      "imgs": [
+        "assets/images/csoon.gif"
+      ],
+      "Technologies": ["Angular", "SASS", "RxJS", "Python", "Django", "MongoDB"]
+    },
+    {
+      "Label": "Web design sensoriel - 2018",
+      "Title": "Gestion de projet & Web design",
+      "Description": "Analyse et conception, gestion d'une équipe de trois personnes et création d'un site web destiné à un artiste local",
+      "imgs": [
+        "assets/images/Webdesign/le_temps_d-une_oeuvre.png",
+        "assets/images/Webdesign/mini_site_art.jpg",
+        "assets/images/Webdesign/accueil.png",
+        "assets/images/Webdesign/galerie.jpg",
+        "assets/images/Webdesign/img3.png"
+      ],
+      "Technologies": ["Suite Adobe", "HTML5", "CSS3", "JavaScript", "PHP"]
+    },
+    {
+      "Label": "SEHV - 2017",
+      "Title": "Web design & intégration",
+      "Description": "Analyse et conseption, création d'une newsletter et refonte graphique du site existant ainsi que son intégration.",
+      "imgs": [
+        "assets/images/SEHV/sehv-site.jpg"
+      ],
+      "Technologies": ["Suite Adobe", "HTML5", "CSS3", "JavaScript"]
+    },
+    {
+      "Label": "\uD83D\uDE48 - 2016",
+      "Title": "Premier Portfolio",
+      "Description": "Premier portfolio accès web design pour m'éxercer au développement front",
+      "imgs": [
+        "assets/images/1rst-Portfolio/1.png",
+        "assets/images/1rst-Portfolio/2.png",
+        "assets/images/1rst-Portfolio/3.png",
+        "assets/images/1rst-Portfolio/4.png"
+      ],
+      "Technologies": ["HTML5", "CSS3", "JavaScript", "JQuery"]
+    }
+  ],
+
+  "OtherProjects.Title": "Plus de projets",
+  "OtherProjects.Projects": [
+    {
+      "Title": "Phaser.js - 2026",
+      "Description": "Je m'exerce actuellement à créer un petit jeu navigateur grâce à Phaser",
+      "imgs": ["https://www.codecademy.com/learn/learn-phaser"],
+      "ghLink": "https://www.codecademy.com/learn/learn-phaser",
+      "demoLink": "https://www.codecademy.com/learn/learn-phaser",
+      "Technologies": ["Phaser", "Git"]
+    },
+    {
+      "Title": "Carbon Footprint Calculator - 2026",
+      "Description": "Petit programme qui permet de calculer notre empreinte carbone en fonction de nos voyages. Toujours en cours de développement pour l'habiller avec Tailwind que j'expérimente",
+      "imgs": [""],
+      "ghLink": "",
+      "demoLink": "",
+      "Technologies": ["Angular", "TypeScript", "RxJS", "Tailwind CSS"]
+    },
+    {
+      "Title": "Eco bâtisseurs - 2018",
+      "Description": "Création d'une landing page fictive pour un site de de construction de maisons bio-climatiques, réalisée dans le cadre de ma licence professionnelle en Webdesign",
+      "ghLink": "",
+      "demoLink": "assets/images/Webdesign/ecobat.pdf",
+      "Technologies": ["Web design", "Suite Adobe"]
+    },
+    {
+      "Title": "Bo Concept - 2018",
+      "Description": "Création d'une Newsletter pour présenter une entreprise fictive de vente de mobilier, réalisée dans le cadre de ma licence professionnelle en Webdesign",
+      "ghLink": "",
+      "demoLink": "assets/images/Webdesign/boconcept.jpg",
+      "Technologies": ["Web design", "Suite Adobe"]
+    },
+    {
+      "Title": "Dossier de Gestion de Projet Web - 2018",
+      "Description": "Dossier de gestion de projet, réalisé lors d'un projet tuteuré dans le cadre de ma licence professionnelle en Webdesign",
+      "ghLink": "",
+      "demoLink": "assets/images/Webdesign/dossier_tut.pdf",
+      "Technologies": ["In Design"]
+    },
+    {
+      "Title": "Dossier de rapport de Projet Web - 2018",
+      "Description": "Rapport complet décrivant l'analyse et le processus de création d'une newsletter ainsi que la refonte du site web du SEHV. Réalisé dans le cadre d'un stage de 4 mois.",
+      "ghLink": "",
+      "demoLink": "assets/images/SEHV/mémoire_sehv.pdf",
+      "Technologies": [""]
+    }
+  ],
+
+  "Contact.Pretitle": "Et... Maintenant ?",
+  "Contact.Title": "J'ai plein de petits projets en tête, et mon envie d'apprendre de nouvelles choses grandit de jour en jour !",
+  "Contact.Content": "N'hésitez pas à télécharger mon CV disponible sur ce site, et pourquoi pas à venir discuter avec moi !",
+  "Contact.Btn": "Me contacter"
+}
