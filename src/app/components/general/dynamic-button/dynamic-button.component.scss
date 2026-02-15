@@ -1,27 +1,5 @@
 @use "../../../../variables" as *;
 
-/*
-  ✨ BOTÓN SÚPER LIMPIO SIN FONDOS:
-
-  🎯 ACTUAL - Solo Borde + Texto + Efectos Internos:
-  - Solo el borde básico del botón
-  - Sin pseudo-elementos de fondo
-  - Colores puros que contrastan naturalmente
-  - Transformaciones 3D pronunciadas
-
-  🔥 CARACTERÍSTICAS TÉCNICAS:
-  - Sin ::before ni ::after en el botón = máxima limpieza
-  - Efectos internos: partículas, shine, liquid waves
-  - transform: translateY(-6px) rotateX(8deg) scale(1.02) en hover
-  - z-index simple: texto (5), glitch (6)
-
-  ⚡ COLORES CONTRASTANTES:
-  - Estado normal: Verde ($Green) con sombra negra fuerte
-  - Estado hover: Blanco (#ffffff) con sombra negra profunda
-  - Efecto glitch: Rosa (#ff0066) y Verde agua (#00ffaa) brillantes
-  - Código ultra limpio sin elementos innecesarios
-*/
-
 .dynamic-btn {
   position: relative;
   display: inline-block;
@@ -40,11 +18,8 @@
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   transform-style: preserve-3d;
   perspective: 1000px;
-
-        // Estado inicial
   background: transparent;
 
-  // Background animado
   .btn-bg {
     position: absolute;
     top: 0;
@@ -62,7 +37,6 @@
     z-index: 1;
   }
 
-  // Contenedor de ondas líquidas
   .liquid-container {
     position: absolute;
     top: 0;
@@ -108,7 +82,6 @@
     animation-delay: 0.4s;
   }
 
-  // Contenedor de partículas
   .particles-container {
     position: absolute;
     top: 0;
@@ -139,7 +112,6 @@
     &:nth-child(8) { top: 85%; left: 75%; transition-delay: 0.45s; }
   }
 
-  // Efecto de brillo
   .shine-effect {
     position: absolute;
     top: -50%;
@@ -157,7 +129,6 @@
     z-index: 4;
   }
 
-        // Texto del botón
   .btn-text {
     position: relative;
     z-index: 5;
@@ -169,7 +140,6 @@
     font-weight: 600;
   }
 
-  // Efecto glitch overlay
   .glitch-overlay {
     position: absolute;
     top: 0;
@@ -181,17 +151,23 @@
     pointer-events: none;
   }
 
+  @media (max-width: 768px){
+    .glitch-text {
+      visibility: hidden;
+    }
+  }
+
   .glitch-text {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 65%;
+    width: 100%;
     transform: translate(-50%, -50%);
     color: #ffffff;
     font-family: $CodeFont;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
     text-shadow:
       0 2px 4px rgba(0, 0, 0, 1),
       0 0 15px rgba(0, 0, 0, 0.8);
@@ -215,7 +191,6 @@
     }
   }
 
-        // Estados de hover
   &:hover {
     transform: translateY(-6px) rotateX(8deg) scale(1.02);
     border-color: $LightestSlate;
@@ -290,47 +265,14 @@
     }
   }
 
-      // Variante secundaria
   &.dynamic-btn-secondary {
-    border-color: $Slate;
-    color: $Slate;
-
-    .btn-bg {
-      background: linear-gradient(
-        45deg,
-        transparent 30%,
-        rgba(136, 146, 176, 0.03) 50%,
-        transparent 70%
-      );
-    }
-
-    .particle {
-      background: $Slate;
-    }
-
-    .btn-text {
-      color: $Slate;
-      text-shadow:
-        0 1px 3px rgba(0, 0, 0, 0.8),
-        0 0 8px rgba(0, 0, 0, 0.5);
-      font-weight: 600;
-    }
-
     &:hover {
-      border-color: rgba(136, 146, 176, 0.9);
-
-      .btn-text {
-        color: #ffffff;
-        text-shadow:
-          0 2px 4px rgba(0, 0, 0, 1),
-          0 0 12px rgba(0, 0, 0, 0.8),
-          0 0 20px rgba(0, 0, 0, 0.6);
-        font-weight: 700;
+      .glitch-overlay {
+       visibility: hidden;
       }
     }
   }
 
-  // Variante small - para el menú
   &.dynamic-btn-small {
     padding: 0.366263rem 1rem;
     font-size: 11px;

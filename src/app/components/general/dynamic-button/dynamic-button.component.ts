@@ -28,7 +28,6 @@ export class DynamicButtonComponent {
       return;
     }
 
-    // Enviar evento de analytics si está configurado
     if (this.analyticsEvent && this.analyticsCategory && this.analyticsLabel) {
       this.analyticsService.sendAnalyticEvent(
         this.analyticsEvent,
@@ -37,7 +36,6 @@ export class DynamicButtonComponent {
       );
     }
 
-    // Emitir evento personalizado
     this.buttonClick.emit(event);
   }
 }

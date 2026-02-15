@@ -15,7 +15,42 @@
                            [attr.data-animate-delay]="200 + (i * 300)"
                            data-animate-duration="800">
                         </p>
+                        <div class="about-title mt-5" data-animate="slideInUp" data-animate-duration="1000">
+                          <h3 class="section-title">
+                            {{"AboutMe.Skills" | translate}}
+                          </h3>
+                        </div>
                         <ul class="skills-list" data-animate="fadeInUp" data-animate-delay="800">
+                            <li class="skill-element"
+                                data-animate="scaleIn"
+                                data-animate-delay="1200">
+                              <span class="underline">HTML5 &amp; (S)CSS </span>
+                            </li>
+                            <li class="skill-element"
+                                data-animate="scaleIn"
+                                data-animate-delay="1300">
+                              <span class="underline">JavaScript</span>
+                            </li>
+                            <li class="skill-element"
+                                data-animate="scaleIn"
+                                data-animate-delay="1300">
+                              <span class="underline">JQuery | Typescript</span>
+                            </li>
+                            <li class="skill-element"
+                                data-animate="scaleIn"
+                                data-animate-delay="1700">
+                              <span class="underline">Java </span>
+                            </li>
+                            <li class="skill-element"
+                                data-animate="scaleIn"
+                                data-animate-delay="1700">
+                              <span class="underline">PHP </span>
+                            </li>
+                            <li class="skill-element"
+                                data-animate="scaleIn"
+                                data-animate-delay="1700">
+                              <span class="underline">Python </span>
+                            </li>
                             <li class="skill-element"
                                 data-animate="scaleIn"
                                 data-animate-delay="1000">
@@ -28,33 +63,23 @@
                             </li>
                             <li class="skill-element"
                                 data-animate="scaleIn"
-                                data-animate-delay="1200">
-                                <span class="underline">HTML &amp; (S)CSS </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1300">
-                                <span class="underline">Laravel </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
                                 data-animate-delay="1400">
                                 <span class="underline">Express </span>
                             </li>
                             <li class="skill-element"
                                 data-animate="scaleIn"
                                 data-animate-delay="1500">
-                                <span class="underline">WordPress </span>
+                                <span class="underline">React </span>
                             </li>
                             <li class="skill-element"
                                 data-animate="scaleIn"
                                 data-animate-delay="1600">
-                                <span class="underline">Jasmine / Karma (TDD) </span>
+                                <span class="underline">Transact SQL / SQL </span>
                             </li>
                             <li class="skill-element"
                                 data-animate="scaleIn"
                                 data-animate-delay="1700">
-                                <span class="underline">CI / CD </span>
+                              <span class="underline">Django </span>
                             </li>
                         </ul>
                     </div>
@@ -67,10 +92,48 @@
                         <img (click)='onImageClick()'
                              class="rounded about-image clickable"
                              width="100%"
-                             src="assets/images/me6.jpg"
+                             src="assets/images/couv.png"
                              alt="Mathilde Fauveau"
                              [title]='"AboutMe.ImgTitle" | translate'>
                     </div>
+                  <!-- A conserver peut-être pour plus tard -->
+                  <!--<div class="about-title environnement-title" data-animate="slideInUp" data-animate-duration="1000">
+                    <h3 class="section-title">
+                      Environnements et Méthodologies
+                    </h3>
+                  </div>
+                  <ul class="skills-list" data-animate="fadeInUp" data-animate-delay="800">
+                    <li class="skill-element"
+                        data-animate="scaleIn"
+                        data-animate-delay="1200">
+                      <span class="underline">Visual Studio Code </span>
+                    </li>
+                    <li class="skill-element"
+                        data-animate="scaleIn"
+                        data-animate-delay="1300">
+                      <span class="underline">Méthode Agile (Scrum)</span>
+                    </li>
+                    <li class="skill-element"
+                        data-animate="scaleIn"
+                        data-animate-delay="1300">
+                      <span class="underline">Suite JetBrains</span>
+                    </li>
+                    <li class="skill-element"
+                        data-animate="scaleIn"
+                        data-animate-delay="1700">
+                      <span class="underline">UML </span>
+                    </li>
+                    <li class="skill-element"
+                        data-animate="scaleIn"
+                        data-animate-delay="1700">
+                      <span class="underline">Jupiter</span>
+                    </li>
+                    <li class="skill-element"
+                        data-animate="scaleIn"
+                        data-animate-delay="1100">
+                      <span class="underline">Modélisation de données</span>
+                    </li>
+                  </ul>-->
                 </div>
             </div>
         </div>
@@ -88,8 +151,8 @@
                 <span>&times;</span>
             </button>
             <img class="modal-image"
-                 src="assets/images/me6.jpg"
-                 alt="José Andrés - Imagen ampliada"
+                 src="assets/images/couv.png"
+                 alt="Mathilde Fauveau - Image Pleine"
                  [@zoomIn]>
         </div>
     </div>

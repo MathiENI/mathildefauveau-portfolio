@@ -9,17 +9,21 @@
 
   "Banner.Pretitle": "Hello! My name is",
   "Banner.Subtitle": "Future Software Developer & Designer",
-  "Banner.Description": "I have <span class='underline'>+10 years of experience</span> developing systems, interfaces, bots, and technological solutions to make the web a better place. I am dedicated to writing and refactoring clean, reusable, and scalable code in <span class='underline'>Angular</span> and <span class='underline'>Laravel</span>, applying good practices and development standards.",
-  "Banner.ActionBtn": "Help ?",
+  "Banner.Description": "Holding a degree in Web Design and Communication, I am currently enrolled in a <span class='underline'>Software Development program</span>, I am learning to design modern, structured interfaces that adhere to current professional standards. I am actively seeking an <span class='underline'>internship</span> to validate my training and contribute to concrete projects.",
+  "Banner.Countdown1" : "I have",
+  "Banner.Countdown2" : "left to find my next internship. \uD83D\uDC40",
+  "Banner.ActionBtn": "Me contacter ?",
 
   "AboutMe.Title": "About Me",
   "AboutMe.Paragraphs": [
-    "In <span class='underline'>+10 years of experience</span> I have covered many roles: <span class='underline'>Systems Analyst</span>, <span class='underline'>Backend Developer</span>, <span class='underline'>Frontend Developer</span>, and <span class='underline'>Technical Lead</span>. I love contributing my knowledge to create new things that help solve problems.",
-    "My capabilities also include implementing system improvements, optimizing sites, standardizing patterns, and suggesting and executing ideas that add value to the project I am working on.",
-    "I also program things for my personal use, whether for hobby or utility.",
-    "Some of the technologies I have trained and worked with include (but are not limited to):"
+    "As a <span class='underline'>front-end developer</span> for two years on a development team, I contributed to the design and evolution of features for a marketing product.",
+    "After a difficult personal period between 2020 and 2023, which allowed me to step back and rebuild, I chose to return to development with <span class='underline'>renewed ambition</span>.",
+    "Currently training to be a <span class='underline'>Software Designer and Developer</span>, I am consolidating and expanding my skills as a Web Designer, UI/UX Designer, and Front-end Developer to <span class='underline'>Back-end projects</span>, with the ambition of eventually becoming a <span class='underline'>Full-Stack Developer</span>.",
+    "Determined and meticulous, I am looking to transform this new step into a <span class='underline'>concrete impact for my future</span>.",
+    "Here are some of the languages and technologies I have had the opportunity to experiment with and discover in recent years:"
   ],
   "AboutMe.ImgTitle": "Click to view image in full screen",
+  "AboutMe.Skills": "Languages et Technologies",
 
   "Experience.Title": "Retrospective",
   "Experience.Jobs": [
@@ -28,13 +32,13 @@
       "Title": "Software Designer and Developer Training",
       "Date": "ENI Ecole Informatique",
       "Description": [
-        "Leader in technical decision making",
-        "Hiring technical talent for the company",
-        "Team leader of the technology department",
-        "Creation and maintenance of an internal process management platform for course sales",
-        "Programming custom functions and plugins for customizing a WordPress platform",
+        "Learn to design and code secure applications using a multi-layered software architecture, starting from the expression of a need.",
+        "Learn to design or modify a data model (UML), and to create or modify a database.",
+        "Advanced Programming: Object-Oriented Programming with Java and JavaScript.",
+        "Web Development: Advanced JavaScript/TypeScript and in-depth learning of Angular for the front end.",
+        "Introduction and learning of Python, Artificial Intelligence, and Django for the back end.",
         "Implementation of continuous integration and daily backups.",
-        "Planning and reporting meetings."
+        "Project Management and DevOps."
       ]
     },
     {
@@ -42,22 +46,18 @@
       "Title": "Bartender",
       "Date": "Le Bistrot Gourmand",
       "Description": [
-        "Creation and maintenance of a monitoring platform with charts in WordPress.",
-        "Functional programming in templates and plugins to add necessary monitoring features.",
-        "Implementation of continuous integration and daily backups.",
-        "Creation and maintenance of a second Monitoring Platform made with Angular, Angular Material, Laravel, MySQL, RxJS, Sass with configurable charts, alarm systems, and user management and general configuration settings.",
-        "Planning and reporting meetings."
+        "Preparation and service of cocktails / drinks.",
+        "Welcoming customers.",
+        "Inventory management.",
+        "Bar and restaurant maintenance."
       ]
     },
     {
       "Tab": "2020 - 2023",
-      "Title": "...",
-      "Date": "...",
+      "Title": "[...]",
+      "Date": "",
       "Description": [
-        "Continuous improvements implementation, working on frontend and backend.",
-        "Creation of platforms with Angular, Laravel, WordPress programmed with functional, reactive, and object-oriented programming paradigms.",
-        "Process automation with data structures.",
-        "Template designs with SASS, Bootstrap, Materialize, Bulma, etc."
+        "Because life sometimes throws us all sorts of curveballs, this period represents a time of total reassessment for me, allowing me to refocus on what's essential."
       ]
     },
     {
@@ -65,21 +65,23 @@
       "Title": "Frontend Developer",
       "Date": "Iconosquare",
       "Description": [
-        "Leading a team of 4 people in the development of a tourism data management platform made in Angular, Laravel, and MySQL.",
-        "Implementation of CI/CD in Azure. Refactoring and optimizing application load times.",
-        "Coding API requests with RxJS.",
-        "Creating modules with complex reactive forms.",
-        "Writing weekly reports about goals and plans."
+        "Team-based frontend development of evolving features for the Iconosquare product. (Iconosquare is an international platform for professionals who want to track their social media activity statistically and analytically.)",
+        "Maintenance of project features and Customer Support.",
+        "Working in collaboration with the Marketing and Design teams.",
+        "Creating complex features with JavaScript and ReactJs.",
+        "Implementing in-house solutions and software."
       ]
     },
     {
       "Tab": "2018",
       "Title": "Web Developer Training",
-      "Date": "Aliptic",
+      "Date": "Aliptic - Opquast Certification",
       "Description": [
-        "Creating WordPress templates with ACF, functional programming in JavaScript/jQuery, styles in SASS.",
-        "Integrating design and load time improvements for templates.",
-        "Effective communication with the design team, working with Avocode/Figma."
+        "Learning the fundamentals of web development.",
+        "Understanding development environments.",
+        "Introduction to PHP and the Symfony framework during a group project",
+        "Introduction to UX/UI.",
+        "Study of best practices."
       ]
     },
     {
@@ -87,8 +89,9 @@
       "Title": "Web designer",
       "Date": "Le Syndicat Energies, Haute-Vienne",
       "Description": [
-        "Programming new functionalities for an existing employee management platform made with Angular and ExpressJS.",
-        "Refactoring old code. Ensuring compatibility of each dependency with each update, including regular Angular updates."
+        "Setting up a newsletter and integrating it using HTML/CSS.",
+        "Graphic redesign and integration of the existing website.",
+        "Creation of print and digital communication materials."
       ]
     },
     {
@@ -96,8 +99,11 @@
       "Title": "Professional Bachelor's Degree in Sensory Web Design and Online Creation Strategies",
       "Date": "University de Limoges",
       "Description": [
-        "Programming new functionalities for an existing employee management platform made with Angular and ExpressJS.",
-        "Refactoring old code. Ensuring compatibility of each dependency with each update, including regular Angular updates."
+        "Design and development of digital interfaces on various types of screen media. Proficiency in Sketch, Illustrator and Photoshop software.",
+        "Technical development of websites: Designing the HTML5, CSS3 and Javascript (Vanilla & jQuery) integration of a project.",
+        "Using CSS3 preprocessors: LESS & Sass.",
+        "Multimedia creation (animation, video editing).",
+        "Project management, law & economics of the web"
       ]
     },
     {
@@ -105,169 +111,108 @@
       "Title": "Bachelor's Degree in Language, Information and Communication Sciences",
       "Date": "January 2015 - July 2015",
       "Description": [
-        "Teaching basic English to a student body of over 200 students."
+        "Linguistics and semiotics, phonetics, phonology, morphosyntax, lexicology, sociolinguistics and field linguistics, theories of writing, information and communication."
       ]
     }
   ],
 
-  "FeatureProjects.Title": "My Projects",
-  "FeatureProjects.Label": "Highlighted Project",
+  "FeatureProjects.Title": "My projects",
   "FeatureProjects.Projects": [
     {
-      "Title": "Gisselle",
-      "Description": "Web application for internal company management that covers sales, collection, and tracking departments, very extensive and complex with various functions made in <span class='underline'>Angular</span> and <span class='underline'>Laravel</span>. It works with <span class='underline'>websockets</span>, <span class='underline'>schedules</span>, <span class='underline'>laravel jobs</span>, integrations with WordPress, Zadarma, LiveConnect, etc.",
+      "Label": "ENI Ecole Informatique - 2026",
+      "Title": "FullStack Angular Project - Django",
+      "Description": "Analysis, design, and development of an Angular frontend connected to a Python backend with Django, based on a relational database, using a RESTful architecture compliant with professional standards.",
       "imgs": [
-        "assets/images/gisselle/Captura de pantalla 2024-05-19 1009582.png",
-        "assets/images/gisselle/Captura de pantalla 2024-05-19 115514.png",
-        "assets/images/gisselle/Captura de pantalla 2024-05-19 115702.png",
-        "assets/images/gisselle/Captura de pantalla 2024-05-19 115829.png",
-        "assets/images/gisselle/Captura de pantalla 2024-05-19 1009582.png"
+        "assets/images/csoon.gif"
       ],
-      "Technologies": ["Laravel", "Angular", "SASS", "Angular Material", "RxJS"]
+      "Technologies": ["Angular", "SASS", "RxJS", "Python", "Django", "MongoDB"]
     },
     {
-      "Title": "Emelteciot",
-      "Description": "Monitoring application for data query, made with <span class='underline'>Angular</span> and <span class='underline'>Laravel</span>. The <span class='underline'>chart.js</span> library is applied.",
+      "Label": "Sensory web design - 2018",
+      "Title": "Project Management & Web design",
+      "Description": "Analysis and design, management of a three-person team, and creation of a website for a local artist",
       "imgs": [
-        "assets/images/proyex2/Captura de pantalla 2024-07-28 102852.png",
-        "assets/images/proyex2/849c117f-bed9-4406-9c13-c8669f655acc.png",
-        "assets/images/proyex2/62cdf90c-6196-4a6e-b639-8919cda4f749.png",
-        "assets/images/proyex2/8c919208-d6a8-48f4-890d-4817323b6923.png",
-        "assets/images/proyex2/8c919208-d6a8-48f4-890d-4817323b6923 (1).png"
+        "assets/images/Webdesign/le_temps_d-une_oeuvre.png",
+        "assets/images/Webdesign/mini_site_art.jpg",
+        "assets/images/Webdesign/accueil.png",
+        "assets/images/Webdesign/galerie.jpg",
+        "assets/images/Webdesign/img3.png"
       ],
-      "Technologies": ["Laravel", "Angular", "SASS", "Angular Material", "RxJS"]
+      "Technologies": ["Suite Adobe", "HTML5", "CSS3", "JavaScript", "PHP"]
     },
     {
-      "Title": "Vas Aviation",
-      "Description": "Application for tracking fuel supply requests for aircraft. It has an <span class='underline'>email module</span>, <span class='underline'>real-time notifications</span>, <span class='underline'>CSV file handling for data import</span>, <span class='underline'>price quotes</span>. Developed in <span class='underline'>Angular</span> and <span class='underline'>Laravel</span>.",
+      "Label": "SEHV - 2017",
+      "Title": "Web design",
+      "Description": "Analysis and design, creation of a newsletter and graphic redesign of the existing website as well as its integration",
       "imgs": [
-        "assets/images/vasaviation/capture0.png",
-        "assets/images/vasaviation/capture1.png",
-        "assets/images/vasaviation/capture2.png",
-        "assets/images/vasaviation/capture3.png",
-        "assets/images/vasaviation/capture4.png",
-        "assets/images/vasaviation/capture5.png"
+        "assets/images/SEHV/sehv-site.jpg"
       ],
-      "Technologies": ["Laravel", "Angular", "SASS", "Angular Material", "RxJS"]
+      "Technologies": ["Suite Adobe", "HTML5", "CSS3", "JavaScript"]
     },
     {
-      "Title": "GlobalJobs",
-      "Description": "E-learning platform developed with WordPress. Fully customized design, with plugins developed from scratch. It has a customized payment module, virtual classroom, course tracking dashboard.",
+      "Label": "\uD83D\uDE48 - 2016",
+      "Title": "First Portfolio",
+      "Description": "My first web design portfolio was used to practice front-end development.",
       "imgs": [
-        "assets/images/globaljobs/capture1.png",
-        "assets/images/globaljobs/capture2.png",
-        "assets/images/globaljobs/capture3.png",
-        "assets/images/globaljobs/capture4.png",
-        "assets/images/globaljobs/capture5.png",
-        "assets/images/globaljobs/capture6.png"
+        "assets/images/1rst-Portfolio/1.png",
+        "assets/images/1rst-Portfolio/2.png",
+        "assets/images/1rst-Portfolio/3.png",
+        "assets/images/1rst-Portfolio/4.png"
       ],
-      "Technologies": ["WordPress", "WordPress Codex", "PHP", "MySQL"]
-    },
-    {
-      "Title": "MBElectronics",
-      "Description": "E-commerce platform for technology products. Developed with WordPress and implementing a shipping system for products. It has sales reporting through customized programming.",
-      "imgs": [
-        "assets/images/mbelectronics/capture0.png",
-        "assets/images/mbelectronics/capture1.png",
-        "assets/images/mbelectronics/capture2.png"
-      ],
-      "Technologies": ["WordPress", "Elementor", "Woocommerce", "WordPress Codex", "PHP", "MySQL"]
-    },
-    {
-      "Title": "Agrourbana",
-      "Description": "Monitoring application made from scratch with an auth module, <span class='underline'>configurable graphs</span>, <span class='underline'>configurable alarms</span>, and <span class='underline'>user management</span>. It also has logic for reactive forms for parameter configuration.",
-      "imgs": [
-        "assets/images/agrourbana/agrourbana1.png",
-        "assets/images/agrourbana/agrourbana2.png",
-        "assets/images/agrourbana/agrourbana3.png",
-        "assets/images/agrourbana/agrourbana4.png",
-        "assets/images/agrourbana/agrourbana5.png"
-      ],
-      "Technologies": ["Laravel", "Angular", "SASS", "Angular Material", "RxJS"]
-    },
-    {
-      "Title": "Tu Super Plan",
-      "Description": "Health plans quoter that has an advanced search engine. The plans are shown based on the user's age, monthly income, and location. It has a <span class='underline'>live chat</span>, <span class='underline'>contact form</span>, <span class='underline'>notification system via WhatsApp and email</span>, <span class='underline'>auth</span>, and <span class='underline'>internal information management through the admin role</span>.",
-      "imgs": [
-        "assets/images/tusuperplan/tusuperplan1.png",
-        "assets/images/tusuperplan/tusuperplan2.png",
-        "assets/images/tusuperplan/tusuperplan3.png",
-        "assets/images/tusuperplan/tusuperplan4.png",
-        "assets/images/tusuperplan/tusuperplan5.png"
-      ],
-      "Technologies": ["Laravel", "Angular", "SASS", "Angular Material", "RxJS"]
-    },
-    {
-      "Title": "Proyexiot",
-      "Description": "Data monitoring platform for water wells, tugboats, and various installations made from scratch with an auth module, <span class='underline'>configurable graphs</span>, <span class='underline'>configurable alarms</span>, <span class='underline'>user management</span>, and <span class='underline'>geolocation with openlayers</span>. It also has logic for reactive forms for parameter configuration.",
-      "imgs": [
-        "assets/images/proyex/proyex1.png",
-        "assets/images/proyex/proyex2.png",
-        "assets/images/proyex/proyex3.png",
-        "assets/images/proyex/proyex4.png",
-        "assets/images/proyex/proyex5.png",
-        "assets/images/proyex/proyex6.png",
-        "assets/images/proyex/proyex7.png",
-        "assets/images/proyex/proyex8.png",
-        "assets/images/proyex/proyex9.png",
-        "assets/images/proyex/proyex10.png",
-        "assets/images/proyex/proyex11.png",
-        "assets/images/proyex/proyex12.png"
-      ],
-      "Technologies": ["Laravel", "Angular", "SASS", "Angular Material", "RxJS"]
+      "Technologies": ["HTML5", "CSS3", "JavaScript", "JQuery"]
     }
   ],
 
   "OtherProjects.Title": "More Projects",
   "OtherProjects.Projects": [
     {
-      "Title": "Hands Game",
-      "Description": "Extended rock-paper-scissors game. A personal project developed in Angular where you play randomly against the machine. It features the use of services, interfaces, and components.",
-      "imgs": ["assets/images/hands-game.png"],
-      "ghLink": "https://github.com/andresjosehr/hands-game",
-      "demoLink": "https://projects.andresjosehr.com/hands-game",
-      "Technologies": ["Angular", "CSS GRID", "SASS", "Angular animations"]
+      "Title": "Phaser.js - In progress",
+      "Description": "I'm currently practicing creating a small browser game using Phaser.",
+      "imgs": ["https://www.codecademy.com/learn/learn-phaser"],
+      "ghLink": "https://www.codecademy.com/learn/learn-phaser",
+      "demoLink": "https://www.codecademy.com/learn/learn-phaser",
+      "Technologies": ["Phaser", "Git", "In progress"]
     },
     {
-      "Title": "Countries Viewer",
-      "Description": "Interface that consumes a countries API where you can view a list of countries, see details of each country, filter by name and region. It also has a dark mode to switch between dark and light themes.",
-      "imgs": ["assets/images/countries-viewer.png"],
-      "ghLink": "https://github.com/andresjosehr/countries-viewer",
-      "demoLink": "https://projects.andresjosehr.com/countries-viewer",
-      "Technologies": ["Angular", "RxJS", "SASS", "API"]
+      "Title": "Carbon Footprint Calculator - In progress",
+      "Description": "A small program that calculates our carbon footprint based on our travels, used for practicing form and guard management, as well as operators in RxJS; still under development to be integrated with Tailwind, which I'm experimenting with.",
+      "imgs": [""],
+      "ghLink": "",
+      "demoLink": "",
+      "Technologies": ["Angular", "TypeScript", "RxJS", "Tailwind CSS", "In progress"]
     },
     {
-      "Title": "Four Card Feature Section",
-      "Description": "A single page with a minimalist design listing 4 features in 4 cards. Entry animations are used with Angular animations.",
-      "ghLink": "https://github.com/andresjosehr/four-card-feature-section",
-      "demoLink": "https://projects.andresjosehr.com/four-card-feature-section",
-      "Technologies": ["Angular", "SASS", "CSS GRID"]
+      "Title": "Eco bâtisseurs - 2018",
+      "Description": "Landing page to present a fictional bioclimatic house construction company, created as part of my professional degree in Web Design",
+      "ghLink": "",
+      "demoLink": "",
+      "Technologies": ["Web design", "Adobe suite"]
     },
     {
-      "Title": "Social Proof Section",
-      "Description": "Personal project of a page designed from a design made in Figma. Angular was used for development along with SASS and CSS GRID.",
-      "ghLink": "https://github.com/andresjosehr/social-proof-section",
-      "demoLink": "https://projects.andresjosehr.com/social-proof-section",
-      "Technologies": ["Angular", "CSS GRID", "GIT"]
+      "Title": "Bo Concept - 2018",
+      "Description": "Landing page to present a fictional furniture sales company, created as part of my professional degree in Web Design",
+      "ghLink": "",
+      "demoLink": "",
+      "Technologies": ["Web design", "Adobe suite"]
     },
     {
-      "Title": "FAQ Accordion Card",
-      "Description": "Frequently asked questions accordion with logic and animations made in Angular.",
-      "ghLink": "https://github.com/andresjosehr/faq-accordion",
-      "demoLink": "https://projects.andresjosehr.com/faq-accordion",
-      "Technologies": ["Angular", "CSS GRID", "Angular animations"]
+      "Title": "Web Project Management Folder - 2018",
+      "Description": "Project management report, produced during a supervised project as part of my professional degree in Web Design.",
+      "ghLink": "",
+      "demoLink": "assets/images/Webdesign/dossier_tut.pdf",
+      "Technologies": ["In Design"]
     },
     {
-      "Title": "Profile Card",
-      "Description": "Simple design of a page featuring a profile card with basic information of a person.",
-      "ghLink": "https://github.com/andresjosehr/profile-card-component",
-      "demoLink": "https://projects.andresjosehr.com/profile-card-component",
-      "Technologies": ["Angular", "SASS", "GIT"]
+      "Title": "Web Project Report Folder - 2018",
+      "Description": "Complete report describing the analysis and creation process of a newsletter and the redesign of the SEHV website. Completed as part of a 4-month internship.",
+      "ghLink": "",
+      "demoLink": "assets/images/SEHV/mémoire_sehv.pdf",
+      "Technologies": [""]
     }
   ],
 
   "Contact.Pretitle": "And... Now?",
-  "Contact.Title": "Say Hi!",
+  "Contact.Title": "I have lots of little projects in mind, and my desire to learn new things grows every day!",
   "Contact.Content": "I will be glad to hear from you if you want to discuss new opportunities. Write to me, and I will respond as soon as I see your message.",
-  "Contact.Btn": "Contact Me"
+  "Contact.Btn": "Say Hi!"
 }

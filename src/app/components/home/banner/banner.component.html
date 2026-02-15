@@ -29,6 +29,12 @@
                 <div class='banner-description'>
                     <p [innerHTML]='"Banner.Description" | translate' class="mt-4"></p>
                 </div>
+                <div class="countdown">
+                  <p>{{"Banner.Countdown1" | translate}}
+                    <span class="banner-count">{{ daysLeft }}<span>J</span>  </span>
+                    <span class="banner-count">{{ hoursLeft }}<span>H</span>  </span>
+                    <span class="banner-count">{{ minutesLeft }}<span>M</span>  </span>{{"Banner.Countdown2" | translate}}</p>
+                </div>
             </div>
             <div class="div-btn-banner">
                 <app-dynamic-button

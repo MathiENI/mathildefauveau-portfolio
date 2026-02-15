@@ -7,8 +7,13 @@
         max-width: 480px;
     }
 
+    .environnement-title {
+      margin-top: 105px;
+    }
+
     .about-img-container{
         margin: auto;
+        height: 330px;
 
         &:after{
             content: "";
@@ -64,6 +69,7 @@
         padding: 0;
         margin: 20px 0 0 0;
         list-style: none;
+        text-align: left;
     }
 
     .skill-element{

@@ -19,15 +19,15 @@
                 <a ngbNavLink (click)='scroll("contact")'><span class='nav-number'>04. </span> <span class="underline nav-text"> {{"Header.Item4" | translate}}</span></a>
                 <ng-template ngbNavContent>Second content</ng-template>
             </li>
-            <li ngbNavItem>
+            <li ngbNavItem class="cv-button">
                 <app-dynamic-button
                   [text]="'Header.cvBtn' | translate"
                   (buttonClick)="downloadCV()"
-                  variant="primary"
+                  variant="secondary"
                   size="small"
                   analyticsEvent="click_cv"
                   analyticsCategory="menu"
-                  analyticsLabel="cv_download">
+                  analyticsLabel="cv_download" class="glitch-none">
                 </app-dynamic-button>
             </li>
             <li>
@@ -115,11 +115,6 @@
                                 </div>
                             </div>
                       </li>
-                        <!-- <li>
-                            <img src="https://www.worldometers.info/img/flags/us-flag.gif" alt="English">
-                        </li> -->
-
-
                     </ol>
                 </nav>
             </aside>

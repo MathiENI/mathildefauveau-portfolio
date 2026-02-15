@@ -37,7 +37,7 @@ export class AppComponent implements OnInit, OnDestroy{
 
     this.metaService.addTags([
       {name: 'keywords', content: 'Frontend, software, developer'},
-      {name: 'description', content: 'Con 4 años de experiencia desarrollando sistemas, interfaces, bots y soluciones tecnológicas  para hacer de la web un lugar mejor. En mi trabajo me gusta liderar, proponer y ejecutar ideas, escribir y refactorizar código limpio, reutilizable y escalable.'},
+      {name: 'description', content: 'Actuellement en formation de Concepteur Développeur d\'Applications, je suis activement à la recherche d\'un stage pour mettre en oeuvre mes compétences.'},
     ]);
 
     // Inicializar partículas globales después de un breve delay

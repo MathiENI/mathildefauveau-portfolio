@@ -1,7 +1,7 @@
 {
   "Header.Item1": "Qui suis-je ?",
   "Header.Item2": "Rétrospective",
-  "Header.Item3": "Expériences",
+  "Header.Item3": "Projets",
   "Header.Item4": "Contact",
   "Header.cvBtn": "CV",
   "Header.cvName": "CV_Mathilde_Fauveau.pdf",
@@ -9,17 +9,21 @@
 
   "Banner.Pretitle": "Hello World! Je m'appelle",
   "Banner.Subtitle": "Future Conceptrice Développeuse d'Applications",
-  "Banner.Description": "I have <span class='underline'>+10 years of experience</span> developing systems, interfaces, bots, and technological solutions to make the web a better place. I am dedicated to writing and refactoring clean, reusable, and scalable code in <span class='underline'>Angular</span> and <span class='underline'>Laravel</span>, applying good practices and development standards.",
-  "Banner.ActionBtn": "Help ?",
+  "Banner.Description": "Titulaire d'un babage en Web design et en Communication, je suis actuellement en formation de <span class='underline'>Conception & Développement d’Applications</span>. J'apprends à concevoir des interfaces modernes, structurées et respectant les normes professionnelles actuelles.<br>Je recherche activement un <span class='underline'>stage</span> pour valider ma formation et contribuer à des projets concrets.",
+  "Banner.Countdown1" : "Il reste",
+  "Banner.Countdown2" : "pour trouver mon prochain stage. \uD83D\uDC40",
+  "Banner.ActionBtn": "Me contacter ?",
 
   "AboutMe.Title": "Qui suis-je ?",
   "AboutMe.Paragraphs": [
-    "In <span class='underline'>+10 years of experience</span> I have covered many roles: <span class='underline'>Systems Analyst</span>, <span class='underline'>Backend Developer</span>, <span class='underline'>Frontend Developer</span>, and <span class='underline'>Technical Lead</span>. I love contributing my knowledge to create new things that help solve problems.",
-    "My capabilities also include implementing system improvements, optimizing sites, standardizing patterns, and suggesting and executing ideas that add value to the project I am working on.",
-    "I also program things for my personal use, whether for hobby or utility.",
-    "Some of the technologies I have trained and worked with include (but are not limited to):"
+    "<span class='underline'>Développeuse front-end</span> pendant deux ans au sein d’une équipe de développement, j’ai contribué à la conception et à l’évolution de fonctionnalités d'un produit marketing.",
+    "Après une période personnelle difficile entre 2020 et 2023, qui m’a permis de prendre du recul et de me reconstruire, j’ai choisi de revenir au développement avec <span class='underline'>une ambition renouvelée</span>.",
+    "Aujourd’hui en formation pour devenir <span class='underline'>Concepteur Développeur d’Applications</span>, je consolide et étends mes compétences de Web designer, UI/UX Designer et Développeur Front end à des <span class='underline'>projets Back end</span>, avec comme ambition de devenir, à terme, <span class='underline'>Développeuse Full Stack</span>.",
+    "Déterminée et rigoureuse, je cherche à transformer cette nouvelle étape en <span class='underline'>impact concret pour mon futur</span>.",
+    "Voici quelques langages et technologies que j'ai pu expérimenter et découvrir ces dernières années :"
   ],
   "AboutMe.ImgTitle": "Cliquez pour voir l'image en plein écran",
+  "AboutMe.Skills": "Langages et Technologies",
 
   "Experience.Title": "Rétrsopective",
   "Experience.Jobs": [
@@ -28,13 +32,12 @@
       "Title": "Formation Concepteur(rice) Développeur(euse) d'Applications",
       "Date": "ENI Ecole Informatique",
       "Description": [
-        "Leader in technical decision making",
-        "Hiring technical talent for the company",
-        "Team leader of the technology department",
-        "Creation and maintenance of an internal process management platform for course sales",
-        "Programming custom functions and plugins for customizing a WordPress platform",
-        "Implementation of continuous integration and daily backups.",
-        "Planning and reporting meetings."
+        "Apprendre à concevoir des  applications sécurisées en utilisant une architecture logicielle multicouche à partir de l'expression d'un besoin",
+        "Apprendre à concevoir ou modifier un modèle des données (UML), et à créer ou modifier une base de données.",
+        "Programmation avancée : Programmation Orientée Objet avec Java et JavaScript.",
+        "Développement Web : Javascript avancé/Typescript et apprentissage en profondeur d'Angular pour la partie front.",
+        "Découverte et apprentissage de Python, de l'Intelligence Artificielle et de Django pour la partie back.",
+        "Gestion de projet et DevOps."
       ]
     },
     {
@@ -42,42 +45,41 @@
       "Title": "Barmaid",
       "Date": "Le Bistrot Gourmand",
       "Description": [
-        "Creation and maintenance of a monitoring platform with charts in WordPress.",
-        "Functional programming in templates and plugins to add necessary monitoring features.",
-        "Implementation of continuous integration and daily backups.",
-        "Creation and maintenance of a second Monitoring Platform made with Angular, Angular Material, Laravel, MySQL, RxJS, Sass with configurable charts, alarm systems, and user management and general configuration settings.",
-        "Planning and reporting meetings."
+        "Réalisation et service de cocktails / boissons.",
+        "Accueil des clients.",
+        "Gestion des stocks",
+        "Entretien du bar et du restaurant."
       ]
     },
     {
-      "Tab": "2020 / 2023",
-      "Title": "...",
-      "Date": "...",
+      "Tab": "2020 - 2023",
+      "Title": "[...]",
+      "Date": "",
       "Description": [
-        "Teaching basic English to a student body of over 200 students."
+        "Parce que la vie nous en fait parfois voir de toutes les couleurs, cette période correspond à un moment de remise en question totale pour moi, pour me permettre de me reconcenter sur l'essentiel."
       ]
     },
     {
-      "Tab": "2018 / 2020",
+      "Tab": "2018 - 2020",
       "Title": "Développeuse Frontend",
       "Date": "Iconosquare",
       "Description": [
-        "Continuous improvements implementation, working on frontend and backend.",
-        "Creation of platforms with Angular, Laravel, WordPress programmed with functional, reactive, and object-oriented programming paradigms.",
-        "Process automation with data structures.",
-        "Template designs with SASS, Bootstrap, Materialize, Bulma, etc."
+        "Développement frontend en équipe des fonctionnalités évolutives du produit Iconosquare. (Iconosquare est une plateforme internationale à destination des professionnels qui souhaitent avoir un suivi statistique et analytique de leurs réseaux sociaux.)",
+        "Maintenance des fonctionnalités du projet et écoute du support client.",
+        "Travail en collaboration avec l'équipe Marketing et Design.",
+        "Mise en place de solutions et logiciels en interne."
       ]
     },
     {
       "Tab": "2018",
       "Title": "Formation Concepteur Développeur Web",
-      "Date": "Aliptic",
+      "Date": "Aliptic - Certification Opquast",
       "Description": [
-        "Leading a team of 4 people in the development of a tourism data management platform made in Angular, Laravel, and MySQL.",
-        "Implementation of CI/CD in Azure. Refactoring and optimizing application load times.",
-        "Coding API requests with RxJS.",
-        "Creating modules with complex reactive forms.",
-        "Writing weekly reports about goals and plans."
+        "Apprentissage des bases du développement web.",
+        "Connaissance des environnements de développement",
+        "Initiation au PHP et au framework Symfony au cours d'un travail de groupe",
+        "Sensibilisation à l'UX/UI",
+        "Etude des bonnes pratiques"
       ]
     },
     {
@@ -85,188 +87,130 @@
       "Title": "Webdesigner - Intégratrice",
       "Date": "Le Syndicat Energies, Haute-Vienne",
       "Description": [
-        "Creating WordPress templates with ACF, functional programming in JavaScript/jQuery, styles in SASS.",
-        "Integrating design and load time improvements for templates.",
-        "Effective communication with the design team, working with Avocode/Figma."
+        "Mise en place d'une Newsletter et intégration en HTML/CSS.",
+        "Refonte graphique et intégration du site web existant.",
+        "Réalisation de supports de communication prints et numériques."
       ]
     },
     {
-      "Tab": "2016 / 2017",
+      "Tab": "2016 - 2017",
       "Title": "Licence Professionnelle Webdesign Sensoriel et Stratégies de Création en Ligne",
       "Date": "Université de Limoges",
       "Description": [
-        "Programming new functionalities for an existing employee management platform made with Angular and ExpressJS.",
-        "Refactoring old code. Ensuring compatibility of each dependency with each update, including regular Angular updates."
+        "Conception et design d’interfaces numériques sur différents types de supports écrans. Manipulation des logiciels Sketch, Illustrator et Photoshop.",
+        "Réalisation technique de sites Internet : Concevoir l’intégration HTML5, CSS3 et Javascript (Vanille & JQuery) d’un projet.",
+        "Utilisation de préprocesseur CSS3 : LESS & Sass.",
+        "Composition d’univers multimédia (animation, montage vidéo).",
+        "Gestion de projet, droit & économie du web"
       ]
     },
     {
-      "Tab": "2013 / 2016",
+      "Tab": "2013 - 2016",
       "Title": "Licence Générale Sciences du Langage, de l'Information et de la Communication",
       "Date": "Université de Limoges",
       "Description": [
-        "Teaching basic English to a student body of over 200 students."
+        "Linguistique et sémiologie, phonétique, phonologie, morphosyntaxe, lexicologie, sociolinguistique et linguistique de terrain, théories de l'écriture, de l'information et de la communication"
       ]
     }
   ],
 
-  "FeatureProjects.Title": "My Projects",
-  "FeatureProjects.Label": "Highlighted Project",
+  "FeatureProjects.Title": "Mes projets",
   "FeatureProjects.Projects": [
     {
-      "Title": "Gisselle",
-      "Description": "Web application for internal company management that covers sales, collection, and tracking departments, very extensive and complex with various functions made in <span class='underline'>Angular</span> and <span class='underline'>Laravel</span>. It works with <span class='underline'>websockets</span>, <span class='underline'>schedules</span>, <span class='underline'>laravel jobs</span>, integrations with WordPress, Zadarma, LiveConnect, etc.",
+      "Label": "ENI Ecole Informatique - 2026",
+      "Title": "Projet FullStack Angular - Django",
+      "Description": "Analyse et conception, développement d’un frontend <span class='underline'>Angular</span> connecté à un backend <span class='underline'>Python avec Django</span> reposant sur une base\nde données relationnelle, selon une architecture\nRESTful conforme aux standards professionnels",
       "imgs": [
-        "assets/images/gisselle/Captura de pantalla 2024-05-19 1009582.png",
-        "assets/images/gisselle/Captura de pantalla 2024-05-19 115514.png",
-        "assets/images/gisselle/Captura de pantalla 2024-05-19 115702.png",
-        "assets/images/gisselle/Captura de pantalla 2024-05-19 115829.png",
-        "assets/images/gisselle/Captura de pantalla 2024-05-19 1009582.png"
+        "assets/images/csoon.gif"
       ],
-      "Technologies": ["Laravel", "Angular", "SASS", "Angular Material", "RxJS"]
+      "Technologies": ["Angular", "SASS", "RxJS", "Python", "Django", "MongoDB"]
     },
     {
-      "Title": "Emelteciot",
-      "Description": "Monitoring application for data query, made with <span class='underline'>Angular</span> and <span class='underline'>Laravel</span>. The <span class='underline'>chart.js</span> library is applied.",
+      "Label": "Web design sensoriel - 2018",
+      "Title": "Gestion de projet & Web design",
+      "Description": "Analyse et conception, gestion d'une équipe de trois personnes et création d'un site web destiné à un artiste local",
       "imgs": [
-        "assets/images/proyex2/Captura de pantalla 2024-07-28 102852.png",
-        "assets/images/proyex2/849c117f-bed9-4406-9c13-c8669f655acc.png",
-        "assets/images/proyex2/62cdf90c-6196-4a6e-b639-8919cda4f749.png",
-        "assets/images/proyex2/8c919208-d6a8-48f4-890d-4817323b6923.png",
-        "assets/images/proyex2/8c919208-d6a8-48f4-890d-4817323b6923 (1).png"
+        "assets/images/Webdesign/le_temps_d-une_oeuvre.png",
+        "assets/images/Webdesign/mini_site_art.jpg",
+        "assets/images/Webdesign/accueil.png",
+        "assets/images/Webdesign/galerie.jpg",
+        "assets/images/Webdesign/img3.png"
       ],
-      "Technologies": ["Laravel", "Angular", "SASS", "Angular Material", "RxJS"]
+      "Technologies": ["Suite Adobe", "HTML5", "CSS3", "JavaScript", "PHP"]
     },
     {
-      "Title": "Vas Aviation",
-      "Description": "Application for tracking fuel supply requests for aircraft. It has an <span class='underline'>email module</span>, <span class='underline'>real-time notifications</span>, <span class='underline'>CSV file handling for data import</span>, <span class='underline'>price quotes</span>. Developed in <span class='underline'>Angular</span> and <span class='underline'>Laravel</span>.",
+      "Label": "SEHV - 2017",
+      "Title": "Web design & intégration",
+      "Description": "Analyse et conseption, création d'une newsletter et refonte graphique du site existant ainsi que son intégration.",
       "imgs": [
-        "assets/images/vasaviation/capture0.png",
-        "assets/images/vasaviation/capture1.png",
-        "assets/images/vasaviation/capture2.png",
-        "assets/images/vasaviation/capture3.png",
-        "assets/images/vasaviation/capture4.png",
-        "assets/images/vasaviation/capture5.png"
+        "assets/images/SEHV/sehv-site.jpg"
       ],
-      "Technologies": ["Laravel", "Angular", "SASS", "Angular Material", "RxJS"]
+      "Technologies": ["Suite Adobe", "HTML5", "CSS3", "JavaScript"]
     },
     {
-      "Title": "GlobalJobs",
-      "Description": "E-learning platform developed with WordPress. Fully customized design, with plugins developed from scratch. It has a customized payment module, virtual classroom, course tracking dashboard.",
+      "Label": "\uD83D\uDE48 - 2016",
+      "Title": "Premier Portfolio",
+      "Description": "Premier portfolio accès web design pour m'éxercer au développement front",
       "imgs": [
-        "assets/images/globaljobs/capture1.png",
-        "assets/images/globaljobs/capture2.png",
-        "assets/images/globaljobs/capture3.png",
-        "assets/images/globaljobs/capture4.png",
-        "assets/images/globaljobs/capture5.png",
-        "assets/images/globaljobs/capture6.png"
+        "assets/images/1rst-Portfolio/1.png",
+        "assets/images/1rst-Portfolio/2.png",
+        "assets/images/1rst-Portfolio/3.png",
+        "assets/images/1rst-Portfolio/4.png"
       ],
-      "Technologies": ["WordPress", "WordPress Codex", "PHP", "MySQL"]
-    },
-    {
-      "Title": "MBElectronics",
-      "Description": "E-commerce platform for technology products. Developed with WordPress and implementing a shipping system for products. It has sales reporting through customized programming.",
-      "imgs": [
-        "assets/images/mbelectronics/capture0.png",
-        "assets/images/mbelectronics/capture1.png",
-        "assets/images/mbelectronics/capture2.png"
-      ],
-      "Technologies": ["WordPress", "Elementor", "Woocommerce", "WordPress Codex", "PHP", "MySQL"]
-    },
-    {
-      "Title": "Agrourbana",
-      "Description": "Monitoring application made from scratch with an auth module, <span class='underline'>configurable graphs</span>, <span class='underline'>configurable alarms</span>, and <span class='underline'>user management</span>. It also has logic for reactive forms for parameter configuration.",
-      "imgs": [
-        "assets/images/agrourbana/agrourbana1.png",
-        "assets/images/agrourbana/agrourbana2.png",
-        "assets/images/agrourbana/agrourbana3.png",
-        "assets/images/agrourbana/agrourbana4.png",
-        "assets/images/agrourbana/agrourbana5.png"
-      ],
-      "Technologies": ["Laravel", "Angular", "SASS", "Angular Material", "RxJS"]
-    },
-    {
-      "Title": "Tu Super Plan",
-      "Description": "Health plans quoter that has an advanced search engine. The plans are shown based on the user's age, monthly income, and location. It has a <span class='underline'>live chat</span>, <span class='underline'>contact form</span>, <span class='underline'>notification system via WhatsApp and email</span>, <span class='underline'>auth</span>, and <span class='underline'>internal information management through the admin role</span>.",
-      "imgs": [
-        "assets/images/tusuperplan/tusuperplan1.png",
-        "assets/images/tusuperplan/tusuperplan2.png",
-        "assets/images/tusuperplan/tusuperplan3.png",
-        "assets/images/tusuperplan/tusuperplan4.png",
-        "assets/images/tusuperplan/tusuperplan5.png"
-      ],
-      "Technologies": ["Laravel", "Angular", "SASS", "Angular Material", "RxJS"]
-    },
-    {
-      "Title": "Proyexiot",
-      "Description": "Data monitoring platform for water wells, tugboats, and various installations made from scratch with an auth module, <span class='underline'>configurable graphs</span>, <span class='underline'>configurable alarms</span>, <span class='underline'>user management</span>, and <span class='underline'>geolocation with openlayers</span>. It also has logic for reactive forms for parameter configuration.",
-      "imgs": [
-        "assets/images/proyex/proyex1.png",
-        "assets/images/proyex/proyex2.png",
-        "assets/images/proyex/proyex3.png",
-        "assets/images/proyex/proyex4.png",
-        "assets/images/proyex/proyex5.png",
-        "assets/images/proyex/proyex6.png",
-        "assets/images/proyex/proyex7.png",
-        "assets/images/proyex/proyex8.png",
-        "assets/images/proyex/proyex9.png",
-        "assets/images/proyex/proyex10.png",
-        "assets/images/proyex/proyex11.png",
-        "assets/images/proyex/proyex12.png"
-      ],
-      "Technologies": ["Laravel", "Angular", "SASS", "Angular Material", "RxJS"]
+      "Technologies": ["HTML5", "CSS3", "JavaScript", "JQuery"]
     }
   ],
 
-  "OtherProjects.Title": "More Projects",
+  "OtherProjects.Title": "Plus de projets",
   "OtherProjects.Projects": [
     {
-      "Title": "Hands Game",
-      "Description": "Extended rock-paper-scissors game. A personal project developed in Angular where you play randomly against the machine. It features the use of services, interfaces, and components.",
-      "imgs": ["assets/images/hands-game.png"],
-      "ghLink": "https://github.com/andresjosehr/hands-game",
-      "demoLink": "https://projects.andresjosehr.com/hands-game",
-      "Technologies": ["Angular", "CSS GRID", "SASS", "Angular animations"]
+      "Title": "Phaser.js - 2026",
+      "Description": "Je m'exerce actuellement à créer un petit jeu navigateur grâce à Phaser",
+      "imgs": ["https://www.codecademy.com/learn/learn-phaser"],
+      "ghLink": "https://www.codecademy.com/learn/learn-phaser",
+      "demoLink": "https://www.codecademy.com/learn/learn-phaser",
+      "Technologies": ["Phaser", "Git"]
     },
     {
-      "Title": "Countries Viewer",
-      "Description": "Interface that consumes a countries API where you can view a list of countries, see details of each country, filter by name and region. It also has a dark mode to switch between dark and light themes.",
-      "imgs": ["assets/images/countries-viewer.png"],
-      "ghLink": "https://github.com/andresjosehr/countries-viewer",
-      "demoLink": "https://projects.andresjosehr.com/countries-viewer",
-      "Technologies": ["Angular", "RxJS", "SASS", "API"]
+      "Title": "Carbon Footprint Calculator - 2026",
+      "Description": "Petit programme qui permet de calculer notre empreinte carbone en fonction de nos voyages. Toujours en cours de développement pour l'habiller avec Tailwind que j'expérimente",
+      "imgs": [""],
+      "ghLink": "",
+      "demoLink": "",
+      "Technologies": ["Angular", "TypeScript", "RxJS", "Tailwind CSS"]
     },
     {
-      "Title": "Four Card Feature Section",
-      "Description": "A single page with a minimalist design listing 4 features in 4 cards. Entry animations are used with Angular animations.",
-      "ghLink": "https://github.com/andresjosehr/four-card-feature-section",
-      "demoLink": "https://projects.andresjosehr.com/four-card-feature-section",
-      "Technologies": ["Angular", "SASS", "CSS GRID"]
+      "Title": "Eco bâtisseurs - 2018",
+      "Description": "Création d'une landing page fictive pour un site de de construction de maisons bio-climatiques, réalisée dans le cadre de ma licence professionnelle en Webdesign",
+      "ghLink": "",
+      "demoLink": "assets/images/Webdesign/ecobat.pdf",
+      "Technologies": ["Web design", "Suite Adobe"]
     },
     {
-      "Title": "Social Proof Section",
-      "Description": "Personal project of a page designed from a design made in Figma. Angular was used for development along with SASS and CSS GRID.",
-      "ghLink": "https://github.com/andresjosehr/social-proof-section",
-      "demoLink": "https://projects.andresjosehr.com/social-proof-section",
-      "Technologies": ["Angular", "CSS GRID", "GIT"]
+      "Title": "Bo Concept - 2018",
+      "Description": "Création d'une Newsletter pour présenter une entreprise fictive de vente de mobilier, réalisée dans le cadre de ma licence professionnelle en Webdesign",
+      "ghLink": "",
+      "demoLink": "assets/images/Webdesign/boconcept.jpg",
+      "Technologies": ["Web design", "Suite Adobe"]
     },
     {
-      "Title": "FAQ Accordion Card",
-      "Description": "Frequently asked questions accordion with logic and animations made in Angular.",
-      "ghLink": "https://github.com/andresjosehr/faq-accordion",
-      "demoLink": "https://projects.andresjosehr.com/faq-accordion",
-      "Technologies": ["Angular", "CSS GRID", "Angular animations"]
+      "Title": "Dossier de Gestion de Projet Web - 2018",
+      "Description": "Dossier de gestion de projet, réalisé lors d'un projet tuteuré dans le cadre de ma licence professionnelle en Webdesign",
+      "ghLink": "",
+      "demoLink": "assets/images/Webdesign/dossier_tut.pdf",
+      "Technologies": ["In Design"]
     },
     {
-      "Title": "Profile Card",
-      "Description": "Simple design of a page featuring a profile card with basic information of a person.",
-      "ghLink": "https://github.com/andresjosehr/profile-card-component",
-      "demoLink": "https://projects.andresjosehr.com/profile-card-component",
-      "Technologies": ["Angular", "SASS", "GIT"]
+      "Title": "Dossier de rapport de Projet Web - 2018",
+      "Description": "Rapport complet décrivant l'analyse et le processus de création d'une newsletter ainsi que la refonte du site web du SEHV. Réalisé dans le cadre d'un stage de 4 mois.",
+      "ghLink": "",
+      "demoLink": "assets/images/SEHV/mémoire_sehv.pdf",
+      "Technologies": [""]
     }
   ],
 
   "Contact.Pretitle": "Et... Maintenant ?",
-  "Contact.Title": "Say Hi!",
+  "Contact.Title": "J'ai plein de petits projets en tête, et mon envie d'apprendre de nouvelles choses grandit de jour en jour !",
   "Contact.Content": "N'hésitez pas à télécharger mon CV disponible sur ce site, et pourquoi pas à venir discuter avec moi !",
   "Contact.Btn": "Me contacter"
 }

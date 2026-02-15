@@ -4,36 +4,15 @@
     min-height: 100vh;
     position: relative;
     overflow: hidden;
-    // z-index: 9999;
-
-    // Fallback: gradiente de fondo en caso de que el video no funcione
     background: linear-gradient(135deg, #0a192f 0%, #172a45 50%, #1e3a5f 100%);
 
-    // Video de fondo
-    .banner-video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 1;
-        opacity: 0;
-        transition: opacity 1.2s ease-in-out;
-
-        &.loaded {
-            opacity: 1;
-        }
-    }
-
-    // Overlay para oscurecer el video
     .banner-overlay {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(10, 25, 47, 0.85); // Más oscuro para mejor legibilidad
+        background: rgba(10, 25, 47, 0.85);
         z-index: 2;
         opacity: 0;
         transition: opacity 1s ease-in-out;
@@ -145,9 +124,31 @@
                 }
             }
 
-            .div-btn-banner{
-                height: 43px;
+            .countdown p {
+              display: flex;
+              align-items: anchor-center;
+              flex-wrap: wrap;
+              .banner-count {
+                font-weight: 600;
+                font-size: 60px;
+                line-height: 1.1;
+                font-family: $MainFont;
+                color: $LightestSlate;
+                overflow: hidden;
+                white-space: nowrap;
+                margin-left: 15px;
+                span {
+                  color: $Green;
+                  font-weight: 400;
+                  font-size: 45px;
+                }
+                span:last-child {
+                  margin-right: 10px;
+                }
+              }
+            }
 
+            .div-btn-banner{
                 .main-btn {
                     opacity: 0;
                     transform: scale(0.8);
@@ -214,7 +215,13 @@
         .container .section-box-banner {
             .banner-name,
             .banner-subtitle {
-                font-size: 50px;
+                font-size: 40px;
+            }
+
+            .countdown {
+              .banner-count {
+                font-size: 30px;
+              }
             }
 
             .content {
@@ -233,7 +240,11 @@
         .container .section-box-banner {
             .banner-name,
             .banner-subtitle {
-                font-size: 40px;
+                font-size: 30px;
+            }
+
+            .countdown span {
+                font-size: 30px!important;
             }
 
             .banner-description p {
@@ -242,11 +253,4 @@
         }
     }
 }
-
-@media only screen and (max-width: 768px) {
-  .banner-video {
-    object-position: 80% 50%;
-  }
-}
-
 

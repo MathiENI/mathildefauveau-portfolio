@@ -28,7 +28,6 @@ export class JobsComponent implements OnInit, AfterViewInit {
   private initAnimations(): void {
     const jobsSection = this.elementRef.nativeElement;
 
-    // Animar título
     const title = jobsSection.querySelector('.about-title');
     if (title) {
       this.animationsService.observeElement(title, {
@@ -37,7 +36,6 @@ export class JobsComponent implements OnInit, AfterViewInit {
       });
     }
 
-    // Animar contenedor de tabs
     const tabsContainer = jobsSection.querySelector('.jobs-tabs');
     if (tabsContainer) {
       this.animationsService.observeElement(tabsContainer as HTMLElement, {
@@ -47,7 +45,6 @@ export class JobsComponent implements OnInit, AfterViewInit {
       });
     }
 
-    // Animar tabs individuales
     const tabs = jobsSection.querySelectorAll('li[ngbNavItem]');
     tabs.forEach((tab: HTMLElement, index: number) => {
       this.animationsService.observeElement(tab, {
@@ -55,11 +52,9 @@ export class JobsComponent implements OnInit, AfterViewInit {
         delay: 600 + (index * 150)
       });
 
-      // Añadir efectos hover
       this.animationsService.addHoverEffects(tab, ['lift']);
     });
 
-    // Animar contenido de trabajos (con delay para que aparezcan después de hacer click)
     setTimeout(() => {
       const jobDescriptions = jobsSection.querySelectorAll('.job-description');
       jobDescriptions.forEach((desc: HTMLElement, index: number) => {

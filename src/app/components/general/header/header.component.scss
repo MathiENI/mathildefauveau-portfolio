@@ -4,12 +4,6 @@
     background: transparent;
     font-family: $CodeFont;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-    // z-index: 9999999 !important;
-
-    .m-logo {
-      font-family: $CodeFont;
-      color: $Green;
-    }
 
     &.nav-shadow {
         background: $Navy;
@@ -17,28 +11,26 @@
 
     .menu-ul{
       li{
-        margin: 0px 13px;
+        margin: 0 13px;
       }
-      // First and Last li has no margin
       li:first-child{
-        margin-left: 0px;
+        margin-left: 0;
       }
       li:last-child{
-        margin-right: 0px;
+        margin-right: 0;
       }
-
     }
     .menu-responsive {
         position: fixed;
-        top: 0px;
-        bottom: 0px;
-        right: 0px;
+        top: 0;
+        bottom: 0;
+        right: 0;
         width: 100%;
         height: 100vh;
         z-index: 10;
         transform: translateX(0vw);
         visibility: visible;
-        outline: 0px;
+        outline: 0;
         transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
         li{
           a{
@@ -52,8 +44,8 @@
             width: 200px;
             margin-left: 18px;
             margin-top: 50px;
-            padding-left: 0px;
-            padding-bottom: 0px;
+            padding-left: 0;
+            padding-bottom: 0;
           }
           .language-container-selector{
             display: flex;
@@ -66,14 +58,12 @@
     }
     .aside-show {
         transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-        right: 0px;
+        right: 0;
     }
     aside {
         width: 75vw;
         display: flex;
-        -webkit-box-pack: center;
         justify-content: center;
-        -webkit-box-align: center;
         align-items: center;
         flex-direction: column;
         background-color: $LightNavy;
@@ -97,12 +87,12 @@
             color: $LightestSlate;
             ol {
                 width: 100%;
-                padding: 0px;
-                margin: 0px;
+                padding: 0;
+                margin: 0;
                 list-style: none;
                 li {
                     font-size: 16px;
-                    margin: 0px auto 10px;
+                    margin: 0 auto 10px;
                     span {
                         display: block;
                         color: $Green;
@@ -124,13 +114,13 @@
             }
         }
     }
-    .cv-btn{
+    .cv-btn {
       padding: 7px 15px !important;
     }
     .nav-link {
-        padding: 5px 0px;
+        padding: 5px 0;
         color: inherit;
-        margin: 0px;
+        margin: 0;
         font-size: 13px;
         &:hover {
             color: $Green;
@@ -201,14 +191,14 @@
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 100; // Muy por encima de todo para evitar interferencias
+    z-index: 100;
     height: 100px;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 
 .nav-shadow {
     height: 70px;
-    background: $Navy !important; // Fondo sólido cuando hay scroll
+    background: $Navy !important;
     box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
@@ -271,18 +261,6 @@
     background: #172a45 !important;
 }
 
-// .language-container-selector.active:after {
-//     content: " ";
-//     background: #58e2c4;
-//     width: 61%;
-//     height: 1px;
-//     position: absolute;
-//     border-radius: 10px;
-//     left: 0;
-//     right: 0;
-//     margin: auto;
-//     margin-top: 21px;
-// }
 .arrow-language {
     font-size: 10px;
     height: 10px;

@@ -26,7 +26,6 @@ export class ContactComponent implements OnInit, AfterViewInit {
   private initAnimations(): void {
     const contactSection = this.elementRef.nativeElement;
 
-    // Animar contenedor del título
     const titleContainer = contactSection.querySelector('.mb-4');
     if (titleContainer) {
       this.animationsService.observeElement(titleContainer, {
@@ -35,7 +34,6 @@ export class ContactComponent implements OnInit, AfterViewInit {
       });
     }
 
-    // Animar título principal con typewriter
     const mainTitle = contactSection.querySelector('.contact-title');
     if (mainTitle) {
       this.animationsService.observeElement(mainTitle, {
@@ -44,7 +42,6 @@ export class ContactComponent implements OnInit, AfterViewInit {
       });
     }
 
-    // Animar párrafo de descripción
     const description = contactSection.querySelector('p');
     if (description) {
       this.animationsService.observeElement(description, {
@@ -54,17 +51,15 @@ export class ContactComponent implements OnInit, AfterViewInit {
       });
     }
 
-    // Animar botón de contacto
-    const contactButton = contactSection.querySelector('.contact-btn');
-    if (contactButton) {
-      this.animationsService.observeElement(contactButton.parentElement as HTMLElement, {
-        type: 'scaleIn',
-        duration: 800,
-        delay: 3500
-      });
-
-      // Añadir efectos hover especiales al botón
-      this.animationsService.addHoverEffects(contactButton as HTMLElement, ['lift', 'glow']);
-    }
+    // const contactButton = contactSection.querySelector('.contact-btn');
+    // if (contactButton) {
+    //   this.animationsService.observeElement(contactButton.parentElement as HTMLElement, {
+    //     type: 'scaleIn',
+    //     duration: 800,
+    //     delay: 3500
+    //   });
+    //
+    //   this.animationsService.addHoverEffects(contactButton as HTMLElement, ['lift', 'glow']);
+    // }
   }
 }

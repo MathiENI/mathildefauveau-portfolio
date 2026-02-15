@@ -5,7 +5,7 @@
         <h3 class="contact-pre-title big-subtitle">
           05. {{ "Contact.Pretitle" | translate }}
         </h3>
-        <h4 class="e-font contact-title big-title"
+        <h4 class="e-font contact-title"
             data-animate="typewriter"
             data-animate-delay="500">
           {{ "Contact.Title" | translate }}
@@ -22,12 +22,13 @@
            data-animate-delay="3500">
         <app-dynamic-button
           [text]='"Contact.Btn" | translate'
-          href="mailto:andresjosehr@gmail.com"
+          href="mailto:mathilde.fauveau87@gmail.com"
           target="_blank"
           analyticsEvent="click_send_mail"
           analyticsCategory="contact"
           analyticsLabel="email"
-          variant="primary">
+          variant="secondary"
+          class="contact-btn">
         </app-dynamic-button>
       </div>
     </div>

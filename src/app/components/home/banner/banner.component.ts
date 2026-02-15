@@ -3,7 +3,6 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 import { LoadingService } from 'src/app/services/loading/loading.service';
 import { Subscription } from 'rxjs';
 
-// Configuración centralizada de animaciones
 interface AnimationConfig {
   delay: number;
   duration?: number;
@@ -19,7 +18,6 @@ interface AnimationConfig {
 })
 export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
 
-  // Configuración fácil de modificar
   private readonly animationTimings = {
     pretitle: 100,
     name: 800,
@@ -36,7 +34,10 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
   private animationTimeouts: number[] = [];
   private animationsStarted = false;
   private loadingSubscription?: Subscription;
-  private videoElement?: HTMLVideoElement;
+  public intervalId: any;
+  daysLeft: number = 0;
+  hoursLeft: number = 0;
+  minutesLeft: number = 0;
 
   constructor(
     public analyticsService: AnalyticsService,
@@ -45,23 +46,25 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
   ) { }
 
   ngOnInit(): void {
-    // Suscribirse a cuando las animaciones deben comenzar
     this.loadingSubscription = this.loadingService.animationsStarted$.subscribe((shouldStart) => {
       if (shouldStart && !this.animationsStarted) {
         this.animationsStarted = true;
         this.initAnimations();
-        this.showVideo();
       }
     });
+
+    const deadline = new Date('2026-05-04T09:00:00');
+    this.updateCountdown(deadline);
+
+    this.intervalId = setInterval(() => {
+      this.updateCountdown(deadline);
+    }, 1000);
   }
 
   ngAfterViewInit(): void {
-    this.initVideoPlayback();
-    // Check if animations should already be started
     if (this.loadingService.animationsStarted && !this.animationsStarted) {
       this.animationsStarted = true;
       this.initAnimations();
-      this.showVideo();
     }
   }
 
@@ -70,12 +73,30 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
     if (this.loadingSubscription) {
       this.loadingSubscription.unsubscribe();
     }
+
+    clearInterval(this.intervalId);
+  }
+
+  updateCountdown(deadline: Date) {
+    const now = new Date().getTime();
+    const diff = deadline.getTime() - now;
+
+    if (diff <= 0) {
+      this.daysLeft = 0;
+      this.hoursLeft = 0;
+      this.minutesLeft = 0;
+      clearInterval(this.intervalId);
+      return;
+    }
+
+    this.daysLeft = Math.floor(diff / (1000 * 60 * 60 * 24));
+    this.hoursLeft = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    this.minutesLeft = Math.floor((diff / (1000 * 60)) % 60);
   }
 
   private initAnimations(): void {
     const banner = this.elementRef.nativeElement;
 
-    // Configuración de animaciones secuenciales
     const animations: AnimationConfig[] = [
       {
         delay: this.animationTimings.pretitle,
@@ -184,13 +205,11 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
     const description = banner.querySelector('.banner-description') as HTMLElement;
     if (!description) return;
 
-    // Forzar el estado inicial limpio
     description.style.setProperty('opacity', '0', 'important');
     description.style.setProperty('transform', 'translateY(20px)', 'important');
     description.style.setProperty('filter', 'blur(3px)', 'important');
     description.style.setProperty('transition', 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)', 'important');
 
-    // Trigger reveal elegante
     requestAnimationFrame(() => {
       description.style.setProperty('opacity', '1', 'important');
       description.style.setProperty('transform', 'translateY(0)', 'important');
@@ -211,7 +230,6 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
     this.animationTimeouts = [];
   }
 
-  // Métodos públicos para facilitar la configuración externa
   public updateAnimationTiming(element: keyof typeof this.animationTimings, delay: number): void {
     (this.animationTimings as any)[element] = delay;
   }
@@ -222,103 +240,5 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
 
   public updateCursorBlinkRate(rate: number): void {
     this.typewriterConfig.cursorBlinkRate = rate;
-  }
-
-  private showVideo(): void {
-    if (this.videoElement) {
-      // Mostrar video y comenzar reproducción cuando se inician las animaciones
-      this.videoElement.classList.add('loaded');
-      this.startVideoPlayback();
-    }
-    
-    // Mostrar overlay con la misma animación que el video
-    const overlay = this.elementRef.nativeElement.querySelector('.banner-overlay') as HTMLElement;
-    if (overlay) {
-      overlay.classList.add('loaded');
-    }
-  }
-
-  private startVideoPlayback(): void {
-    if (!this.videoElement) return;
-
-    // Asegurar que el video esté silenciado
-    this.videoElement.muted = true;
-    this.videoElement.volume = 0;
-
-    // Cargar el video completo ahora que el splash screen se ha ocultado
-    this.videoElement.preload = 'auto';
-    this.videoElement.load();
-
-    // Agregar listener para errores de carga específicos para GitHub Pages
-    this.videoElement.addEventListener('error', (e) => {
-      console.warn('Error loading video:', e);
-      // Fallback: reintentar con un delay
-      setTimeout(() => {
-        if (this.videoElement && this.videoElement.error) {
-          this.videoElement.load();
-        }
-      }, 1000);
-    });
-
-    // Intentar reproducir el video cuando esté listo
-    const playWhenReady = () => {
-      if (this.videoElement!.readyState >= 3) { // HAVE_FUTURE_DATA
-        this.videoElement!.play().catch(error => {
-          console.warn('Error al reproducir video:', error);
-          this.setupUserInteractionPlayback(this.videoElement!);
-        });
-      } else {
-        this.videoElement!.addEventListener('canplay', () => {
-          this.videoElement!.play().catch(error => {
-            console.warn('Error al reproducir video:', error);
-            this.setupUserInteractionPlayback(this.videoElement!);
-          });
-        }, { once: true });
-      }
-    };
-
-    playWhenReady();
-  }
-
-  // Método para configurar el video sin reproducir automáticamente
-  private initVideoPlayback(): void {
-    const video = this.elementRef.nativeElement.querySelector('.banner-video') as HTMLVideoElement;
-
-    if (!video) return;
-
-    this.videoElement = video;
-
-    // Asegurar que el video esté completamente silenciado
-    video.muted = true;
-    video.volume = 0;
-
-    // Configurar el video para carga lazy hasta que termine el splash screen
-    video.preload = 'none';
-    
-    console.log('Video configurado para carga diferida');
-  }
-
-
-
-  private setupUserInteractionPlayback(video: HTMLVideoElement): void {
-    const playOnInteraction = () => {
-      if (video.paused) {
-        video.muted = true;
-        video.volume = 0;
-        video.play().catch(error => {
-          console.warn('Error al reproducir video después de interacción:', error);
-        });
-      }
-    };
-
-    // Agregar listeners para diferentes tipos de interacción
-    const events = ['click', 'touchstart', 'keydown', 'scroll'];
-
-    events.forEach(eventType => {
-      document.addEventListener(eventType, playOnInteraction, {
-        once: true,
-        passive: true
-      });
-    });
   }
 }

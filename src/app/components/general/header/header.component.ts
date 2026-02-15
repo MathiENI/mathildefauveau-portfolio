@@ -45,9 +45,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
 
     this.languageFormControl.valueChanges.subscribe(val => this.languageService.changeLanguage(val))
-
     this.languageFormControl.setValue(this.languageService.language)
-
   }
 
   scroll(el) {
