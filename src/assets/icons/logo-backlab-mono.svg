@@ -1,0 +1,8 @@
+<svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BackLab">
+  <!-- Monochrome — charcoal B on white badge, for use on colored backgrounds -->
+  <rect width="56" height="56" rx="11" fill="white"/>
+  <path
+    d="M12 10L20 10A15 9 0 0 1 20 28A17 10 0 0 1 24 46L22 43L20 46L12 46Z"
+    fill="#0a0f1e"
+  />
+</svg>

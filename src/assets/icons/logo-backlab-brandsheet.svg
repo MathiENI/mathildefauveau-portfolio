@@ -1,0 +1,159 @@
+<svg viewBox="0 0 760 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- BackLab Brand Sheet — Identity Overview -->
+
+  <defs>
+    <linearGradient id="s-bg" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5ab3ff"/>
+      <stop offset="100%" stop-color="#3892e8"/>
+    </linearGradient>
+    <linearGradient id="s-bg2" x1="0" y1="0" x2="96" y2="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5ab3ff"/>
+      <stop offset="100%" stop-color="#3892e8"/>
+    </linearGradient>
+    <linearGradient id="s-bg3" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5ab3ff"/>
+      <stop offset="100%" stop-color="#3892e8"/>
+    </linearGradient>
+    <linearGradient id="s-bg4" x1="0" y1="0" x2="20" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#5ab3ff"/>
+      <stop offset="100%" stop-color="#3892e8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ─────────────── CARD 1 — Light ─────────────── -->
+  <!-- White card, left half -->
+  <rect x="20" y="20" width="360" height="400" rx="16" fill="white" stroke="#e8edf3" stroke-width="1"/>
+
+  <!-- Label -->
+  <text x="44" y="56"
+    font-family="Inter, -apple-system, sans-serif"
+    font-size="11" font-weight="500"
+    letter-spacing="1.5" fill="#7a8ba3">LIGHT VERSION</text>
+
+  <!-- Full logo — large -->
+  <!-- Icon 56×56 -->
+  <rect x="44" y="74" width="56" height="56" rx="11" fill="url(#s-bg)"/>
+  <path d="M56 84L64 84A15 9 0 0 1 64 102A17 10 0 0 1 68 120L66 117L64 120L56 120Z" fill="white"/>
+  <!-- Wordmark -->
+  <text x="112" y="102" dominant-baseline="middle"
+    font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif"
+    font-size="22" font-weight="600" letter-spacing="-0.4">
+    <tspan fill="#0a0f1e">Back</tspan><tspan fill="#3892e8">Lab</tspan>
+  </text>
+
+  <!-- Divider -->
+  <line x1="44" y1="158" x2="336" y2="158" stroke="#e8edf3" stroke-width="1"/>
+
+  <!-- Icon sizes showcase -->
+  <text x="44" y="183"
+    font-family="Inter, -apple-system, sans-serif"
+    font-size="10" font-weight="500" letter-spacing="1" fill="#7a8ba3">ICON SIZES</text>
+
+  <!-- 96px -->
+  <rect x="44" y="198" width="96" height="96" rx="19" fill="url(#s-bg2)"/>
+  <path d="M61 214L75 214A22 13 0 0 1 75 240A24 14 0 0 1 81 266L77 260L75 266L61 266Z" fill="white"/>
+  <text x="92" y="310" text-anchor="middle" font-family="Inter, -apple-system, sans-serif"
+    font-size="10" fill="#7a8ba3">96×96</text>
+
+  <!-- 56px -->
+  <rect x="166" y="226" width="56" height="56" rx="11" fill="url(#s-bg)"/>
+  <path d="M178 236L186 236A15 9 0 0 1 186 254A17 10 0 0 1 190 272L188 269L186 272L178 272Z" fill="white"/>
+  <text x="194" y="310" text-anchor="middle" font-family="Inter, -apple-system, sans-serif"
+    font-size="10" fill="#7a8ba3">56×56</text>
+
+  <!-- 32px -->
+  <rect x="240" y="242" width="32" height="32" rx="7" fill="url(#s-bg3)"/>
+  <path d="M247 248L252 248A9 5 0 0 1 252 258A10 6 0 0 1 252 268L247 268Z" fill="white"/>
+  <text x="256" y="310" text-anchor="middle" font-family="Inter, -apple-system, sans-serif"
+    font-size="10" fill="#7a8ba3">32×32</text>
+
+  <!-- 20px -->
+  <rect x="290" y="252" width="20" height="20" rx="4" fill="url(#s-bg4)"/>
+  <path d="M294 256L298 256A6 3 0 0 1 298 262A7 4 0 0 1 298 268L294 268Z" fill="white"/>
+  <text x="300" y="310" text-anchor="middle" font-family="Inter, -apple-system, sans-serif"
+    font-size="10" fill="#7a8ba3">20×20</text>
+
+  <!-- Divider -->
+  <line x1="44" y1="330" x2="336" y2="330" stroke="#e8edf3" stroke-width="1"/>
+
+  <!-- Color swatch -->
+  <text x="44" y="355"
+    font-family="Inter, -apple-system, sans-serif"
+    font-size="10" font-weight="500" letter-spacing="1" fill="#7a8ba3">PALETTE</text>
+
+  <rect x="44" y="368" width="36" height="24" rx="5" fill="#5ab3ff"/>
+  <text x="62" y="403" text-anchor="middle" font-family="Inter, -apple-system, sans-serif"
+    font-size="9" fill="#7a8ba3">#5ab3ff</text>
+
+  <rect x="90" y="368" width="36" height="24" rx="5" fill="#3892e8"/>
+  <text x="108" y="403" text-anchor="middle" font-family="Inter, -apple-system, sans-serif"
+    font-size="9" fill="#7a8ba3">#3892e8</text>
+
+  <rect x="136" y="368" width="36" height="24" rx="5" fill="#0a0f1e"/>
+  <text x="154" y="403" text-anchor="middle" font-family="Inter, -apple-system, sans-serif"
+    font-size="9" fill="#7a8ba3">#0a0f1e</text>
+
+  <rect x="182" y="368" width="36" height="24" rx="5" fill="#e8f0fa" stroke="#e8edf3" stroke-width="1"/>
+  <text x="200" y="403" text-anchor="middle" font-family="Inter, -apple-system, sans-serif"
+    font-size="9" fill="#7a8ba3">#e8f0fa</text>
+
+
+  <!-- ─────────────── CARD 2 — Dark ──────────────── -->
+  <!-- Dark card, right half -->
+  <rect x="400" y="20" width="340" height="400" rx="16" fill="#0a0f1e"/>
+
+  <!-- Label -->
+  <text x="424" y="56"
+    font-family="Inter, -apple-system, sans-serif"
+    font-size="11" font-weight="500"
+    letter-spacing="1.5" fill="#4da6ff">DARK VERSION</text>
+
+  <!-- Full logo dark — large -->
+  <rect x="424" y="74" width="56" height="56" rx="11" fill="url(#s-bg)"/>
+  <path d="M436 84L444 84A15 9 0 0 1 444 102A17 10 0 0 1 448 120L446 117L444 120L436 120Z" fill="white"/>
+  <text x="492" y="102" dominant-baseline="middle"
+    font-family="Inter, -apple-system, BlinkMacSystemFont, sans-serif"
+    font-size="22" font-weight="600" letter-spacing="-0.4">
+    <tspan fill="#e8f0fa">Back</tspan><tspan fill="#5ab3ff">Lab</tspan>
+  </text>
+
+  <!-- Divider -->
+  <line x1="424" y1="158" x2="716" y2="158" stroke="#1a2740" stroke-width="1"/>
+
+  <!-- Design concept note -->
+  <text x="424" y="183"
+    font-family="Inter, -apple-system, sans-serif"
+    font-size="10" font-weight="500" letter-spacing="1" fill="#4da6ff">DESIGN CONCEPT</text>
+
+  <text x="424" y="210"
+    font-family="Inter, -apple-system, sans-serif"
+    font-size="13" fill="#a8b8cc">The "B" monogram encodes</text>
+  <text x="424" y="230"
+    font-family="Inter, -apple-system, sans-serif"
+    font-size="13" fill="#a8b8cc">the brand concept:</text>
+
+  <text x="424" y="265"
+    font-family="Inter, -apple-system, sans-serif"
+    font-size="14" font-weight="600" fill="#e8f0fa">Recovery. Return.</text>
+  <text x="424" y="285"
+    font-family="Inter, -apple-system, sans-serif"
+    font-size="14" font-weight="600" fill="#e8f0fa">Reclaim lost opportunities.</text>
+
+  <text x="424" y="320"
+    font-family="Inter, -apple-system, sans-serif"
+    font-size="12" fill="#7a8ba3">The lower bowl's V-notch</text>
+  <text x="424" y="338"
+    font-family="Inter, -apple-system, sans-serif"
+    font-size="12" fill="#7a8ba3">is the FedEx-arrow of BackLab.</text>
+  <text x="424" y="356"
+    font-family="Inter, -apple-system, sans-serif"
+    font-size="12" fill="#7a8ba3">Invisible at favicon scale.</text>
+  <text x="424" y="374"
+    font-family="Inter, -apple-system, sans-serif"
+    font-size="12" fill="#7a8ba3">Deliberate at 64px+.</text>
+
+  <!-- Brand tagline -->
+  <text x="424" y="408"
+    font-family="Inter, -apple-system, sans-serif"
+    font-size="11" font-weight="500" letter-spacing="0.5" fill="#3892e8">backlab.fr</text>
+</svg>

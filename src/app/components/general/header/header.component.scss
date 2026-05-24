@@ -19,20 +19,13 @@
         text-decoration: none;
         cursor: pointer;
 
-        .logo-mark {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 32px;
-            height: 32px;
-            background: $Green;
-            color: $Navy;
-            font-family: $MainFont;
-            font-weight: 800;
-            font-size: 17px;
-            border-radius: 7px;
-            letter-spacing: -1px;
+        .logo-icon-svg {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
             flex-shrink: 0;
+            transition: box-shadow 0.25s ease, transform 0.25s ease;
+            display: block;
         }
 
         .logo-text {
@@ -41,11 +34,13 @@
             font-size: 17px;
             color: $LightestSlate;
             letter-spacing: -0.3px;
+            transition: color 0.25s ease;
         }
 
         &:hover {
-            .logo-mark {
-                box-shadow: 0 0 16px rgba(77, 166, 255, 0.4);
+            .logo-icon-svg {
+                box-shadow: 0 0 20px rgba(77, 166, 255, 0.45);
+                transform: scale(1.04);
             }
             .logo-text {
                 color: $Green;
