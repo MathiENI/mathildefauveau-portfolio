@@ -9,6 +9,12 @@
   [class.dynamic-btn-small]="size === 'small'"
   (click)="onButtonClick($event)">
 
+  <div class="liquid-container">
+    <div class="liquid-wave wave-1"></div>
+    <div class="liquid-wave wave-2"></div>
+    <div class="liquid-wave wave-3"></div>
+  </div>
+
   <div class="particles-container">
     <div class="particle" *ngFor="let p of [1,2,3,4,5,6,7,8]; index as i"></div>
   </div>
