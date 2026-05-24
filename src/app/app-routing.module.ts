@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
+import { MentionsLegalesComponent } from './components/legal/mentions-legales/mentions-legales.component';
+import { PolitiqueConfidentialiteComponent } from './components/legal/politique-confidentialite/politique-confidentialite.component';
 
 const routes: Routes = [
 
-  {path: ':language?',      component: HomeComponent},
+  {path: 'mentions-legales',          component: MentionsLegalesComponent},
+  {path: 'politique-confidentialite', component: PolitiqueConfidentialiteComponent},
 
-  // {path: 'profile'        ,   component: ProfileComponent         , canActivate: [AuthGuard]},
-  // {path: 'users'          ,   component: UsersComponent           , canActivate: [AuthGuard]},
-  // {path: 'register-user'  ,   component: RegisterUserComponent    , canActivate: [AuthGuard]},
+  {path: ':language?',      component: HomeComponent},
 
   {path: '**', pathMatch: 'full', redirectTo: '/'},
 

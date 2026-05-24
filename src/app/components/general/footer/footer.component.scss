@@ -80,19 +80,14 @@ footer {
         display: flex;
         align-items: center;
         gap: 10px;
+        text-decoration: none;
+        transition: opacity 0.2s ease;
 
-        .footer-logo-mark {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 28px;
-            height: 28px;
-            background: $Green;
-            color: $Navy;
-            font-family: $MainFont;
-            font-weight: 800;
-            font-size: 15px;
-            border-radius: 6px;
+        &:hover { opacity: 0.75; }
+
+        .footer-logo-icon {
+            display: block;
+            flex-shrink: 0;
         }
 
         .footer-logo-name {
@@ -119,6 +114,19 @@ footer {
 
             &:hover { color: $Green; }
         }
+
+        &--legal a {
+            font-size: 11px;
+            color: rgba(122, 139, 163, 0.6);
+
+            &:hover { color: $Slate; }
+        }
+    }
+
+    .footer-divider {
+        width: 40px;
+        height: 1px;
+        background: rgba(77, 166, 255, 0.15);
     }
 
     .footer-copy {

@@ -1,0 +1,122 @@
+@use "../../../variables" as *;
+
+.legal-page {
+  min-height: 100vh;
+  padding: 120px 0 80px;
+  background: $Navy;
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  // ── Header ──────────────────────────────────────────
+  .legal-header {
+    margin-bottom: 56px;
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: $Green;
+    font-family: $CodeFont;
+    font-size: 13px;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    margin-bottom: 32px;
+    transition: gap 0.2s ease, opacity 0.2s ease;
+
+    &:hover {
+      gap: 12px;
+      opacity: 0.8;
+    }
+  }
+
+  .legal-title {
+    font-family: $MainFont;
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: 700;
+    color: $LightestSlate;
+    margin: 0;
+
+    &::after {
+      content: '.';
+      color: $Green;
+    }
+  }
+
+  // ── Contenu ─────────────────────────────────────────
+  .legal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .legal-block {
+    border-left: 2px solid rgba(77, 166, 255, 0.2);
+    padding-left: 24px;
+
+    h2 {
+      font-family: $MainFont;
+      font-size: 16px;
+      font-weight: 600;
+      color: $LightestSlate;
+      margin: 0 0 12px;
+    }
+
+    p {
+      font-family: $MainFont;
+      font-size: 15px;
+      line-height: 1.75;
+      color: $LightSlate;
+      margin: 0 0 12px;
+
+      &:last-child { margin-bottom: 0; }
+    }
+
+    ul {
+      margin: 8px 0 12px;
+      padding-left: 20px;
+
+      li {
+        font-family: $MainFont;
+        font-size: 15px;
+        line-height: 1.75;
+        color: $LightSlate;
+        margin-bottom: 4px;
+      }
+    }
+
+    a {
+      color: $Green;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease;
+
+      &:hover { border-bottom-color: $Green; }
+    }
+
+    strong {
+      color: $LightestSlate;
+      font-weight: 600;
+    }
+
+    &--update {
+      border-left: none;
+      padding-left: 0;
+
+      p {
+        font-family: $CodeFont;
+        font-size: 12px;
+        color: $Slate;
+        font-style: italic;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 100px 0 60px;
+  }
+}

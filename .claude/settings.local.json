@@ -7,7 +7,9 @@
       "Bash(git commit -m 'feat: logo BackLab SVG — monograma B geometrico con concepto return *)",
       "Bash(git push *)",
       "Bash(git commit -m 'fix\\(btn\\): remplace les anciennes couleurs hover par #846afb *)",
-      "Bash(python3 -)"
+      "Bash(python3 -)",
+      "Bash(git commit -m 'fix\\(loader\\): remplace les 289 occurrences de rose dans loader.json *)",
+      "Bash(git commit -m 'feat: logo, footer amélioré, pages légales *)"
     ]
   }
 }

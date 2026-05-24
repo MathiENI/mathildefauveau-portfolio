@@ -24,16 +24,19 @@
 
     <!-- Footer central -->
     <div class="footer-credits text-center">
-        <div class="footer-logo">
-            <span class="footer-logo-mark">B</span>
+        <a routerLink="/" class="footer-logo">
+            <img src="assets/icons/logo-backlab-icon.svg" alt="BackLab" width="28" height="28" class="footer-logo-icon">
             <span class="footer-logo-name">BackLab Solutions</span>
-        </div>
+        </a>
         <nav class="footer-nav">
             <a href="#products">Produits</a>
             <a href="#services">Services</a>
             <a href="#contact">Contact</a>
-            <a href="#">Mentions légales</a>
-            <a href="#">Politique de confidentialité</a>
+        </nav>
+        <div class="footer-divider"></div>
+        <nav class="footer-nav footer-nav--legal">
+            <a routerLink="/mentions-legales">Mentions légales</a>
+            <a routerLink="/politique-confidentialite">Politique de confidentialité</a>
         </nav>
         <div class="footer-copy">
             © {{ currentYear }} BackLab Solutions — Tous droits réservés

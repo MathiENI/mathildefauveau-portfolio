@@ -1,36 +1,26 @@
-<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BackLab">
+<svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BackLab">
   <!--
-    BackLab Icon — 8-arm asterisk mark — v3.0
-    8 arms from center (100,100) with round caps.
-    Right 3 arms are long (forming the K/>  shape).
-    Left 3 arms are short (teardrops/pills).
-    Top & bottom are medium.
-    Gradient: violet #7B5CF6 (upper-left) → cyan #00D4FF (lower-right).
-    Transparent background.
+    BackLab Icon v3.0 — reproduction fidèle du favicon à l'échelle ×3.75
+    5-arm K-hybrid, centre (64,60), fond transparent.
+    Dégradé cyan #00d4ff (bas-gauche) → bleu #4da6ff → violet #8B5CF6 (haut-droite).
   -->
   <defs>
-    <linearGradient id="g" x1="20" y1="20" x2="180" y2="180" gradientUnits="userSpaceOnUse">
-      <stop offset="0%"   stop-color="#7B5CF6"/>
-      <stop offset="55%"  stop-color="#5B7AF6"/>
-      <stop offset="100%" stop-color="#00D4FF"/>
+    <linearGradient id="ig" x1="0" y1="120" x2="120" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#00d4ff"/>
+      <stop offset="50%"  stop-color="#4da6ff"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
     </linearGradient>
   </defs>
-  <g stroke="url(#g)" stroke-width="20" stroke-linecap="round">
-    <!-- Right — long -->
-    <line x1="100" y1="100" x2="163" y2="100"/>
-    <!-- Upper-right — long (45°) -->
-    <line x1="100" y1="100" x2="144" y2="56"/>
-    <!-- Lower-right — long (315°) -->
-    <line x1="100" y1="100" x2="144" y2="144"/>
-    <!-- Up — medium -->
-    <line x1="100" y1="100" x2="100" y2="44"/>
-    <!-- Down — medium -->
-    <line x1="100" y1="100" x2="100" y2="156"/>
-    <!-- Upper-left — short teardrop (135°) -->
-    <line x1="100" y1="100" x2="77"  y2="77"/>
-    <!-- Left — short pill (180°) -->
-    <line x1="100" y1="100" x2="67"  y2="100"/>
-    <!-- Lower-left — short teardrop (225°) -->
-    <line x1="100" y1="100" x2="77"  y2="123"/>
+  <g stroke="url(#ig)" stroke-width="19" stroke-linecap="round">
+    <!-- Bras gauche long -->
+    <line x1="64" y1="60" x2="8"  y2="60"/>
+    <!-- Diagonale haut-gauche -->
+    <line x1="64" y1="60" x2="23" y2="19"/>
+    <!-- Diagonale bas-gauche -->
+    <line x1="64" y1="60" x2="23" y2="101"/>
+    <!-- Court haut-droite -->
+    <line x1="64" y1="60" x2="90" y2="34"/>
+    <!-- Court bas-droite -->
+    <line x1="64" y1="60" x2="90" y2="86"/>
   </g>
 </svg>
