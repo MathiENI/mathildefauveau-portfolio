@@ -1,46 +1,32 @@
-<svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BackLab">
+<svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BackLab">
   <!--
-    BackLab B Monogram — v1.0
-    ─────────────────────────────────────────────────────────────────
-    Construction:
-      Spine    x=12–20, y=10–46  (8px wide, 36px tall)
-      Upper D  arc rx=15 ry=9    from (20,10) → (20,28)  clockwise
-      Lower D  arc rx=17 ry=10   from (20,28) → (24,46)  clockwise
-      Return   V-notch at base   (24,46)→(22,43)→(20,46)
-
-    The V-notch encodes the brand concept:
-    recovering lost opportunities, returning what was missed.
-    At small sizes it reads as a clean B.
-    At large sizes the return indicator is intentional.
-
-    Colors:
-      Badge gradient  #5ab3ff → #3892e8  (BackLab blue)
-      Monogram        #ffffff
-  ─────────────────────────────────────────────────────────────────
+    BackLab Icon — Asterisk/K-hybrid mark — v2.0
+    5 arms radiating from center (62, 60):
+      · Long horizontal left arm
+      · Upper-left diagonal
+      · Lower-left diagonal
+      · Upper-right short arm
+      · Lower-right short arm
+    Gradient: cyan #00d4ff → blue #4da6ff → purple #8B5CF6
+    Transparent background — no badge.
   -->
   <defs>
-    <linearGradient id="bl-bg" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse">
-      <stop offset="0%"   stop-color="#5ab3ff"/>
-      <stop offset="100%" stop-color="#3892e8"/>
+    <linearGradient id="ig" x1="0" y1="120" x2="120" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#00d4ff"/>
+      <stop offset="50%"  stop-color="#4da6ff"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
     </linearGradient>
   </defs>
-
-  <!-- Badge: blue gradient rounded square -->
-  <rect width="56" height="56" rx="11" fill="url(#bl-bg)"/>
-
-  <!--
-    B monogram — single filled path:
-    Spine + upper D-bowl + lower D-bowl + return V-notch
-  -->
-  <path
-    d="M12 10
-       L20 10
-       A15 9  0 0 1 20 28
-       A17 10 0 0 1 24 46
-       L22 43
-       L20 46
-       L12 46
-       Z"
-    fill="white"
-  />
+  <g stroke="url(#ig)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Long horizontal left arm -->
+    <line x1="62" y1="60" x2="8"  y2="60"/>
+    <!-- Upper-left diagonal arm -->
+    <line x1="62" y1="60" x2="22" y2="20"/>
+    <!-- Lower-left diagonal arm -->
+    <line x1="62" y1="60" x2="22" y2="100"/>
+    <!-- Upper-right short arm -->
+    <line x1="62" y1="60" x2="86" y2="36"/>
+    <!-- Lower-right short arm -->
+    <line x1="62" y1="60" x2="86" y2="84"/>
+  </g>
 </svg>

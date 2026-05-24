@@ -1,24 +1,26 @@
 <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
   <!--
     BackLab Favicon — 32×32
-    Simplified B for maximum legibility at small sizes.
-    Return notch omitted (too small to render cleanly at 16-32px).
-    Flat blue #4da6ff — no gradient for consistent browser rendering.
+    Simplified 5-arm asterisk/K-hybrid mark.
+    Flat gradient for legibility at small sizes.
   -->
-  <rect width="32" height="32" rx="7" fill="#4da6ff"/>
-  <!--
-    B path scaled from 56×56 icon (~0.571 scale):
-    Spine: x=7–12, y=6–26
-    Upper arc: rx=9  ry=5 from (12,6)  to (12,16) — semicircle
-    Lower arc: rx=10 ry=6 from (12,16) to (12,26) — semicircle, slightly larger
-  -->
-  <path
-    d="M7 6
-       L12 6
-       A9 5  0 0 1 12 16
-       A10 6 0 0 1 12 26
-       L7 26
-       Z"
-    fill="white"
-  />
+  <defs>
+    <linearGradient id="fg" x1="0" y1="32" x2="32" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#00d4ff"/>
+      <stop offset="50%"  stop-color="#4da6ff"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <g stroke="url(#fg)" stroke-width="5" stroke-linecap="round">
+    <!-- Long left arm -->
+    <line x1="17" y1="16" x2="2"  y2="16"/>
+    <!-- Upper-left diagonal -->
+    <line x1="17" y1="16" x2="6"  y2="5"/>
+    <!-- Lower-left diagonal -->
+    <line x1="17" y1="16" x2="6"  y2="27"/>
+    <!-- Upper-right short -->
+    <line x1="17" y1="16" x2="24" y2="9"/>
+    <!-- Lower-right short -->
+    <line x1="17" y1="16" x2="24" y2="23"/>
+  </g>
 </svg>

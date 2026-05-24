@@ -22,9 +22,9 @@
         .logo-icon-svg {
             width: 36px;
             height: 36px;
-            border-radius: 8px;
+            border-radius: 0;
             flex-shrink: 0;
-            transition: box-shadow 0.25s ease, transform 0.25s ease;
+            transition: filter 0.25s ease, transform 0.25s ease;
             display: block;
         }
 
@@ -39,8 +39,8 @@
 
         &:hover {
             .logo-icon-svg {
-                box-shadow: 0 0 20px rgba(77, 166, 255, 0.45);
-                transform: scale(1.04);
+                filter: drop-shadow(0 0 8px rgba(77, 166, 255, 0.6));
+                transform: scale(1.06);
             }
             .logo-text {
                 color: $Green;
