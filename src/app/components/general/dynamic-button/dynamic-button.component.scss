@@ -4,9 +4,7 @@
   position: relative;
   display: inline-block;
   padding: 1.25rem 2rem;
-  border: 2px solid $Green;
   border-radius: 8px;
-  color: $Green;
   font-family: $CodeFont;
   font-size: 14px;
   font-weight: 500;
@@ -15,321 +13,117 @@
   letter-spacing: 1.5px;
   overflow: hidden;
   cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   transform-style: preserve-3d;
   perspective: 1000px;
-  background: transparent;
 
-  .btn-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      45deg,
-      transparent 30%,
-      rgba(132, 106, 251, 0.03) 50%,
-      transparent 70%
-    );
-    background-size: 200% 200%;
-    animation: bgFlow 4s ease-in-out infinite;
-    z-index: 1;
-  }
+  // ── Gradient border — navy fill inside, gradient visible sur le border ──
+  border: 2px solid transparent;
+  background:
+    linear-gradient($Navy, $Navy) padding-box,
+    linear-gradient(135deg, $Green 0%, #846afb 100%) border-box;
 
-  .liquid-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: 2;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
+  transition:
+    transform    0.4s cubic-bezier(0.23, 1, 0.32, 1),
+    box-shadow   0.4s cubic-bezier(0.23, 1, 0.32, 1);
 
-  .liquid-wave {
-    position: absolute;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(
-      circle at center,
-        rgba(132, 106, 251, 0.18) 0%,
-        rgba(132, 106, 251, 0.07) 30%,
-      transparent 70%
-    );
-    border-radius: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-
-  .wave-1 {
-    top: 50%;
-    left: 30%;
-    animation-delay: 0s;
-  }
-
-  .wave-2 {
-    top: 50%;
-    left: 70%;
-    animation-delay: 0.2s;
-  }
-
-  .wave-3 {
-    top: 50%;
-    left: 50%;
-    animation-delay: 0.4s;
-  }
-
+  // ── Particles ────────────────────────────────────────
   .particles-container {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     pointer-events: none;
     z-index: 3;
   }
 
   .particle {
     position: absolute;
-    width: 2px;
-    height: 2px;
-    background: $Green;
+    width: 2px; height: 2px;
+    background: #846afb;
     border-radius: 50%;
     opacity: 0;
     transform: scale(0);
     transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
-    &:nth-child(1) { top: 20%; left: 15%; transition-delay: 0.1s; }
+    &:nth-child(1) { top: 20%; left: 15%; transition-delay: 0.10s; }
     &:nth-child(2) { top: 80%; left: 25%; transition-delay: 0.15s; }
-    &:nth-child(3) { top: 60%; left: 80%; transition-delay: 0.2s; }
+    &:nth-child(3) { top: 60%; left: 80%; transition-delay: 0.20s; }
     &:nth-child(4) { top: 40%; left: 70%; transition-delay: 0.25s; }
-    &:nth-child(5) { top: 30%; left: 50%; transition-delay: 0.3s; }
+    &:nth-child(5) { top: 30%; left: 50%; transition-delay: 0.30s; }
     &:nth-child(6) { top: 70%; left: 60%; transition-delay: 0.35s; }
-    &:nth-child(7) { top: 50%; left: 20%; transition-delay: 0.4s; }
+    &:nth-child(7) { top: 50%; left: 20%; transition-delay: 0.40s; }
     &:nth-child(8) { top: 85%; left: 75%; transition-delay: 0.45s; }
   }
 
+  // ── Shine sweep ──────────────────────────────────────
   .shine-effect {
     position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
+    top: -50%; left: -50%;
+    width: 200%; height: 200%;
     background: linear-gradient(
       45deg,
       transparent 40%,
-      rgba(255, 255, 255, 0.1) 50%,
+      rgba(255, 255, 255, 0.07) 50%,
       transparent 60%
     );
     transform: translateX(-100%) rotate(45deg);
-    transition: transform 0.6s ease;
+    transition: transform 0.65s ease;
     z-index: 4;
   }
 
+  // ── Text ─────────────────────────────────────────────
   .btn-text {
     position: relative;
     z-index: 5;
-    transition: all 0.3s ease;
-    color: $Green;
-    text-shadow:
-      0 1px 3px rgba(0, 0, 0, 0.8),
-      0 0 8px rgba(0, 0, 0, 0.5);
+    color: $LightestSlate;
     font-weight: 600;
+    transition: color 0.3s ease;
   }
 
-  .glitch-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 6;
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  @media (max-width: 768px){
-    .glitch-text {
-      visibility: hidden;
-    }
-  }
-
-  .glitch-text {
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    font-family: $CodeFont;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-shadow:
-      0 2px 4px rgba(0, 0, 0, 1),
-      0 0 15px rgba(0, 0, 0, 0.8);
-    opacity: 0;
-    transition: opacity 0.1s ease;
-
-    &:nth-child(1) {
-      color: $Navy;
-      animation: none;
-      text-shadow:
-        0 0 10px $LightestSlate,
-        0 2px 4px rgba(0, 0, 0, 1);
-    }
-
-    &:nth-child(2) {
-      color: $LightestSlate;
-      animation: none;
-      text-shadow:
-        0 0 10px $Green,
-        0 2px 4px $GreenOpacity;
-    }
-  }
-
+  // ── Hover ─────────────────────────────────────────────
   &:hover {
-    transform: translateY(-6px) rotateX(8deg) scale(1.02);
-    border-color: #846afb;
-
-    .btn-bg {
-      animation-duration: 1.5s;
-      background: linear-gradient(
-        45deg,
-        rgba(132, 106, 251, 0.05) 30%,
-        rgba(132, 106, 251, 0.15) 50%,
-        rgba(132, 106, 251, 0.05) 70%
-      );
-    }
-
-    .liquid-container {
-      opacity: 1;
-    }
-
-    .liquid-wave {
-      transform: translate(-50%, -50%) scale(1);
-    }
+    transform: translateY(-4px) scale(1.02);
+    box-shadow:
+      0 0 18px rgba(132, 106, 251, 0.30),
+      0 0 36px rgba(77,  166, 255, 0.12),
+      0 10px 28px rgba(0, 0, 0, 0.22);
 
     .particle {
-      opacity: 1;
-      transform: scale(1) translateY(-10px);
+      opacity: 0.85;
+      transform: scale(1) translateY(-8px);
     }
 
     .shine-effect {
       transform: translateX(100%) rotate(45deg);
     }
 
-    .btn-text {
-      color: #ffffff;
-      text-shadow:
-        0 2px 4px rgba(0, 0, 0, 1),
-        0 0 12px rgba(0, 0, 0, 0.8),
-        0 0 20px rgba(0, 0, 0, 0.6);
-      font-weight: 700;
-    }
+    .btn-text { color: #ffffff; }
   }
 
-  // Estado activo/presionado
-  &:hover {
-    transform: translateY(-2px) rotateX(2deg) scale(0.98);
-
-    .glitch-overlay {
-      opacity: 1;
-      animation: glitchFlash 0.1s ease;
-    }
-
-    .glitch-text {
-      opacity: 1;
-
-      &:nth-child(1) {
-        animation: glitch1 0.3s infinite;
-      }
-
-      &:nth-child(2) {
-        animation: glitch2 0.3s infinite;
-      }
-    }
-  }
-
-    // Estado disabled
+  // ── Disabled ──────────────────────────────────────────
   &.disabled {
-    opacity: 0.5;
+    opacity: 0.4;
     pointer-events: none;
     cursor: not-allowed;
-
-    &:hover {
-      transform: none;
-    }
+    &:hover { transform: none; box-shadow: none; }
   }
 
-  &.dynamic-btn-secondary {
-    &:hover {
-      .glitch-overlay {
-       visibility: hidden;
-      }
-    }
-  }
-
+  // ── Small variant ─────────────────────────────────────
   &.dynamic-btn-small {
-    padding: 0.366263rem 1rem;
+    padding: 0.37rem 1rem;
     font-size: 11px;
     letter-spacing: 1px;
     border-radius: 4px;
     transform-style: initial;
     perspective: initial;
 
-    .btn-text {
-      font-weight: 500;
-      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-    }
-
-    .particle {
-      width: 1px;
-      height: 1px;
-    }
-
-    .liquid-wave {
-      width: 150%;
-      height: 150%;
-    }
-
-    .glitch-text {
-      font-size: 12px;
-      font-weight: 600;
-    }
+    .btn-text { font-weight: 500; }
+    .particle  { width: 1px; height: 1px; }
 
     &:hover {
       transform: translateY(-2px) scale(1.01);
-
-      .btn-text {
-        font-weight: 600;
-        text-shadow:
-          0 1px 3px rgba(0, 0, 0, 0.8),
-          0 0 8px rgba(0, 0, 0, 0.5);
-      }
-
-      .glitch-overlay {
-        opacity: 1;
-        animation: glitchFlash 0.1s ease;
-      }
-
-      .glitch-text {
-        opacity: 1;
-
-        &:nth-child(1) {
-          animation: glitch1 0.3s infinite;
-        }
-
-        &:nth-child(2) {
-          animation: glitch2 0.3s infinite;
-        }
-      }
+      .btn-text { font-weight: 600; }
     }
 
-    // Responsive para small
     @media (max-width: 768px) {
       padding: 0.4rem 0.8rem;
       font-size: 11px;
@@ -343,45 +137,13 @@
   }
 }
 
-// Animaciones keyframes
-@keyframes bgFlow {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-
-@keyframes glitch1 {
-  0% { transform: translate(-50%, -50%); }
-  20% { transform: translate(-52%, -48%); }
-  40% { transform: translate(-48%, -52%); }
-  60% { transform: translate(-52%, -48%); }
-  80% { transform: translate(-48%, -52%); }
-  100% { transform: translate(-50%, -50%); }
-}
-
-@keyframes glitch2 {
-  0% { transform: translate(-50%, -50%); }
-  25% { transform: translate(-48%, -52%); }
-  50% { transform: translate(-52%, -48%); }
-  75% { transform: translate(-48%, -52%); }
-  100% { transform: translate(-50%, -50%); }
-}
-
-@keyframes glitchFlash {
-  0% { opacity: 0; }
-  50% { opacity: 0.7; }
-  100% { opacity: 0; }
-}
-
-// Responsive design
+// ── Responsive ────────────────────────────────────────────
 @media (max-width: 768px) {
   .dynamic-btn {
     padding: 1rem 1.5rem;
     font-size: 12px;
     letter-spacing: 1px;
-
-    &:hover {
-      transform: translateY(-2px);
-    }
+    &:hover { transform: translateY(-2px); }
   }
 }
 
