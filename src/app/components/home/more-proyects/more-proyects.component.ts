@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Component } from '@angular/core';
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 
 @Component({
@@ -8,27 +7,12 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
     styleUrls: ['./more-proyects.component.scss'],
     standalone: false
 })
-export class MoreProyectsComponent implements OnInit {
+export class MoreProyectsComponent {
+  openIndex: number | null = null;
 
-  constructor(
-    private router: Router,
-    public analyticsService: AnalyticsService
-    ) { }
+  constructor(public analyticsService: AnalyticsService) {}
 
-    ngOnInit() {
-        this.router.events.subscribe((evt) => {
-            if (!(evt instanceof NavigationEnd)) {
-                return;
-            }
-            window.scrollTo(0, 0)
-        });
-    }
-    redirect(route: string, event) {
-      const id = event.target.id;
-      if(id=='demoLink' || id=='ghLink'){
-        return
-      }
-      window.open(route, '_blank');
-    }
-
+  toggle(index: number): void {
+    this.openIndex = this.openIndex === index ? null : index;
+  }
 }

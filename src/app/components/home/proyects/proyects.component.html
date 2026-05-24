@@ -1,75 +1,42 @@
-<section class="section projects" id="projects">
+<section class="section services-section" id="services">
   <div class="container">
     <div class="section-box">
 
       <div data-aos="fade-up" data-aos-duration="1000">
         <h3 class="section-title">
-          <span class="n-section-title">03.</span>
-          {{ "FeatureProjects.Title" | translate }}
+          <span class="n-section-title">04.</span>
+          {{ "Services.Title" | translate }}
         </h3>
+        <p class="section-subtitle">{{ "Services.Subtitle" | translate }}</p>
       </div>
 
-      <div
-        *ngFor="let project of 'FeatureProjects.Projects' | translate; let i = index"
-        class="project-container"
-        [class.reverse]="i % 2 !== 0"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
+      <div class="services-grid">
+        <div
+          *ngFor="let service of 'Services.Items' | translate; let i = index"
+          class="service-card"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          [attr.data-aos-delay]="100 + (i * 80)">
 
-        <!-- IMAGE SLIDER -->
-        <div class="image-slider">
-          <div class="image-track">
-            <div class="img-container" *ngFor="let img of project.imgs">
-              <img
-                class="img-feature-project"
-                [src]="img"
-                [alt]="project.Title"
-              />
-            </div>
-          </div>
+          <div class="service-icon">{{ service.Icon }}</div>
+          <h4 class="service-title">{{ service.Title }}</h4>
+          <p class="service-desc">{{ service.Description }}</p>
         </div>
-
-        <!-- PROJECT INFO -->
-        <div class="project-info">
-          <h4 class="feature-project">
-            {{ project.Label | translate }}
-          </h4>
-
-          <h5 class="project-name">
-            {{ project.Title }}
-          </h5>
-
-          <div class="project-description-box">
-            <p [innerHTML]="project.Description"></p>
-          </div>
-
-          <ul class="project-skills">
-            <li *ngFor="let technology of project.Technologies">
-              <span class="underline technology">{{ technology }}</span>
-            </li>
-          </ul>
-
-          <div class="project-links">
-            <a
-              *ngIf="project['ghLink']"
-              [href]="project['ghLink']"
-              target="_blank"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-
-            <a
-              *ngIf="project['demoLink']"
-              [href]="project['demoLink']"
-              target="_blank"
-            >
-              <i class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-        </div>
-
       </div>
+
+      <div class="services-cta" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+        <p class="services-cta-text">Vous avez un besoin précis ? Un projet à lancer ? Parlons-en.</p>
+        <app-dynamic-button
+          [text]='"Services.Cta" | translate'
+          href="mailto:contact@backlab.fr"
+          target="_blank"
+          analyticsEvent="click_services_cta"
+          analyticsCategory="services"
+          analyticsLabel="contact"
+          variant="primary">
+        </app-dynamic-button>
+      </div>
+
     </div>
   </div>
 </section>

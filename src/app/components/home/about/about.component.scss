@@ -1,208 +1,84 @@
 @use "./../../../../variables" as *;
 
-.about{
+.about {
+  padding: 80px 0;
 
-    .about-description{
-        margin-top: 30px;
-        max-width: 480px;
-    }
+  .section-subtitle {
+    color: $Slate;
+    font-size: 18px;
+    margin-top: 12px;
+    max-width: 560px;
+    line-height: 1.6;
+  }
 
-    .environnement-title {
-      margin-top: 105px;
-    }
+  // ── Grille problèmes ──────────────────────────────
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+  }
 
-    .about-img-container{
-        margin: auto;
-        height: 330px;
-
-        &:after{
-            content: "";
-            border: 2px solid $Green;
-            z-index: 0;
-            display: block;
-            position: relative;
-            width: 530px;
-            height: 330px;
-            border-radius: 3px;
-            bottom: 313px;
-            left: 23px;
-        }
-
-        @media (max-width: 1200px){
-            &:after {
-                width: 446px;
-                height: 273px;
-                bottom: 257px;
-                left: 23px;
-            }
-        }
-
-        @media (max-width: 992px){
-            &:after {
-                width: 300px;
-                height: 180px;
-                bottom: 180px;
-                left: 23px;
-            }
-        }
-
-        img{
-            z-index: 2;
-            position: relative;
-
-            &.clickable {
-                cursor: pointer;
-                transition: transform 0.3s ease, filter 0.3s ease;
-
-                &:hover {
-                    transform: scale(1.02);
-                    filter: brightness(1.1);
-                }
-            }
-        }
-    }
-
-    .skills-list{
-        display: grid;
-        grid-template-columns: repeat(2,minmax(140px,200px));
-        overflow: hidden;
-        padding: 0;
-        margin: 20px 0 0 0;
-        list-style: none;
-        text-align: left;
-    }
-
-    .skill-element{
-        position: relative;
-        margin-bottom: 10px;
-        padding-left: 20px;
-        font-size: 13px;
-        font-family: $CodeFont;
-        color: $Slate;
-        span{
-          padding-bottom: 5px;
-        }
-
-        &:before {
-            content: '▹';
-            position: absolute;
-            left: 0;
-            color: $Green;
-            font-size: 14px;
-            line-height: 12px;
-        }
-    }
-
-}
-
-// Estilos para el modal de imagen
-.image-modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    backdrop-filter: blur(5px);
-}
-
-.image-modal-container {
-    position: relative;
-    max-width: 90vw;
-    max-height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-image {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 8px;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
-    border: 2px solid $Green;
-}
-
-.modal-close-btn {
-    position: absolute;
-    top: -50px;
-    right: -10px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid $Green;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    color: $Green;
-    font-size: 24px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
+  .problem-card {
+    background: $LightNavy;
+    border: 1px solid rgba(77, 166, 255, 0.12);
+    border-radius: 12px;
+    padding: 32px 28px;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-        background: rgba(255, 255, 255, 0.2);
-        transform: scale(1.1);
-        color: white;
-        border-color: white;
+      border-color: rgba(77, 166, 255, 0.35);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(77, 166, 255, 0.08);
     }
 
-    span {
-        line-height: 1;
-        margin-top: -2px;
+    .problem-icon {
+      font-size: 32px;
+      margin-bottom: 16px;
+      line-height: 1;
     }
+
+    .problem-title {
+      font-family: $MainFont;
+      font-weight: 600;
+      font-size: 18px;
+      color: $LightestSlate;
+      margin-bottom: 10px;
+    }
+
+    .problem-desc {
+      font-size: 15px;
+      color: $Slate;
+      line-height: 1.6;
+      margin: 0;
+    }
+  }
+
+  // ── Section Vision ────────────────────────────────
+  .vision-box {
+    margin-top: 80px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(77, 166, 255, 0.10);
+  }
+
+  .vision-manifesto {
+    margin-top: 40px;
+
+    blockquote {
+      font-size: 19px;
+      line-height: 1.85;
+      color: $LightSlate;
+      border-left: 3px solid $Green;
+      padding-left: 28px;
+      margin: 0;
+      max-width: 720px;
+
+      .underline {
+        color: $LightestSlate;
+        text-decoration: underline;
+        text-decoration-color: $Green;
+        text-underline-offset: 4px;
+      }
+    }
+  }
 }
-
-@media (min-width: 992px) and (max-width: 1300px){
-    .about-img-container{
-        margin-left: auto;
-        margin-right: 0;
-    }
-}
-
-@media (max-width: 500px){
-    .about{
-
-        .about-img-container:after {
-            width: 200px;
-            height: 200px;
-            bottom: 190px;
-            left: 74px;
-        }
-    }
-
-    .modal-close-btn {
-        top: -40px;
-        right: 0;
-        width: 35px;
-        height: 35px;
-        font-size: 20px;
-    }
-
-    .image-modal-container {
-        max-width: 95vw;
-        max-height: 80vh;
-    }
-}
-
-@media (max-width: 500px){
-    .about{
-
-        .about-img-container {
-            width: 100%;
-
-
-
-            &:after {
-                display: none;
-            }
-        }
-    }
-}
-

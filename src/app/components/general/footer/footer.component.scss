@@ -1,52 +1,53 @@
 @use "./../../../../variables" as *;
 
-footer{
+footer {
     color: $LightSlate;
 
-    .footer-left-bar:after, .footer-right-bar:after{
-        content: '';
-        display: block;
-        width: 1px;
-        height: 90px;
-        margin: 0 auto;
-        background-color: $LightSlate;
+    // ── Barres latérales fixes ────────────────────────
+    .footer-left-bar,
+    .footer-right-bar {
+        &::after {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 90px;
+            margin: 0 auto;
+            background-color: rgba(168, 184, 204, 0.3);
+        }
+
+        li { list-style: none; }
     }
 
-    .footer-left-bar li, .footer-right-bar li{
-        list-style: none;
-    }
-
-    .footer-left-bar{
+    .footer-left-bar {
         position: fixed;
         bottom: -16px;
         left: 51px;
         padding: 0;
 
-        i{
+        i {
             font-size: 19px;
             color: $LightSlate;
+            transition: color 0.25s ease, transform 0.25s ease;
+
+            &:hover {
+                color: $Green;
+                transform: translateY(-3px);
+            }
         }
 
-        li{
-            margin: 20px 0px;
-
-            &:last-of-type {
-                margin-bottom: 33px;
-            }
+        li {
+            margin: 20px 0;
+            &:last-of-type { margin-bottom: 33px; }
         }
     }
 
-    .footer-right-bar{
+    .footer-right-bar {
         position: fixed;
-        bottom: 0px;
+        bottom: 0;
         right: 41px;
         padding: 0;
 
-        li{
-            transform: rotate(90deg);
-        }
-
-        a{
+        a {
             font-family: $CodeFont;
             font-size: 12px;
             letter-spacing: 0.1em;
@@ -54,30 +55,75 @@ footer{
             margin: 20px auto;
             padding: 10px;
             color: $LightSlate;
+            transition: color 0.25s ease, transform 0.25s ease;
+
+            &:hover {
+                color: $Green;
+                transform: translateY(-3px);
+            }
         }
     }
-    .footer-credits{
+
+    // ── Footer central ────────────────────────────────
+    .footer-credits {
         font-family: $CodeFont;
         font-size: 12px;
         line-height: 1;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin-top: -60px;
+        padding: 48px 24px 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .footer-logo-mark {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: $Green;
+            color: $Navy;
+            font-family: $MainFont;
+            font-weight: 800;
+            font-size: 15px;
+            border-radius: 6px;
+        }
+
+        .footer-logo-name {
+            font-family: $MainFont;
+            font-weight: 700;
+            font-size: 15px;
+            color: $LightSlate;
+            letter-spacing: -0.2px;
+        }
+    }
+
+    .footer-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 24px;
+        justify-content: center;
 
         a {
-            color: $LightSlate;
-            -webkit-transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-            transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-            transition-property: all;
-            transition-duration: 0.25s;
-            transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-            transition-delay: 0s;
+            color: $Slate;
+            text-decoration: none;
+            font-size: 12px;
+            letter-spacing: 0.05em;
+            transition: color 0.2s ease;
 
-            &:hover, &:focus {
-                text-decoration: none;
-                color: $Green;
-            }
+            &:hover { color: $Green; }
         }
+    }
+
+    .footer-copy {
+        color: $LightestNavy;
+        font-size: 11px;
+        letter-spacing: 0.05em;
     }
 }

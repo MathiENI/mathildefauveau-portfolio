@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
+import { Component, AfterViewInit, ElementRef } from '@angular/core';
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 import { AnimationsService } from 'src/app/services/animations/animations.service';
 
@@ -8,7 +8,7 @@ import { AnimationsService } from 'src/app/services/animations/animations.servic
     styleUrls: ['./contact.component.scss'],
     standalone: false
 })
-export class ContactComponent implements OnInit, AfterViewInit {
+export class ContactComponent implements AfterViewInit {
 
   constructor(
     public analyticsService: AnalyticsService,
@@ -16,50 +16,31 @@ export class ContactComponent implements OnInit, AfterViewInit {
     private elementRef: ElementRef
   ) { }
 
-  ngOnInit(): void {
-  }
-
   ngAfterViewInit(): void {
     this.initAnimations();
   }
 
   private initAnimations(): void {
-    const contactSection = this.elementRef.nativeElement;
+    const section = this.elementRef.nativeElement;
 
-    const titleContainer = contactSection.querySelector('.mb-4');
-    if (titleContainer) {
-      this.animationsService.observeElement(titleContainer, {
-        type: 'fadeInDown',
-        duration: 1000
-      });
+    const pretitle = section.querySelector('.contact-pretitle');
+    if (pretitle) {
+      this.animationsService.observeElement(pretitle, { type: 'fadeInDown', duration: 1000 });
     }
 
-    const mainTitle = contactSection.querySelector('.contact-title');
-    if (mainTitle) {
-      this.animationsService.observeElement(mainTitle, {
-        type: 'typewriter',
-        delay: 500
-      });
+    const title = section.querySelector('.contact-title');
+    if (title) {
+      this.animationsService.observeElement(title, { type: 'typewriter', delay: 300 });
     }
 
-    const description = contactSection.querySelector('p');
-    if (description) {
-      this.animationsService.observeElement(description, {
-        type: 'morphIn',
-        duration: 1200,
-        delay: 2500
-      });
+    const content = section.querySelector('.contact-content');
+    if (content) {
+      this.animationsService.observeElement(content, { type: 'morphIn', duration: 1000, delay: 1500 });
     }
 
-    // const contactButton = contactSection.querySelector('.contact-btn');
-    // if (contactButton) {
-    //   this.animationsService.observeElement(contactButton.parentElement as HTMLElement, {
-    //     type: 'scaleIn',
-    //     duration: 800,
-    //     delay: 3500
-    //   });
-    //
-    //   this.animationsService.addHoverEffects(contactButton as HTMLElement, ['lift', 'glow']);
-    // }
+    const actions = section.querySelector('.contact-actions');
+    if (actions) {
+      this.animationsService.observeElement(actions as HTMLElement, { type: 'scaleIn', duration: 800, delay: 2200 });
+    }
   }
 }

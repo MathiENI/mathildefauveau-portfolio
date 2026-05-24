@@ -1,218 +1,153 @@
 {
-  "Header.Item1": "About Me",
-  "Header.Item2": "Retrospective",
-  "Header.Item3": "Projects",
+  "Header.Item1": "Products",
+  "Header.Item2": "Vision",
+  "Header.Item3": "Services",
   "Header.Item4": "Contact",
-  "Header.cvBtn": "Resume",
-  "Header.cvName": "CV_Mathilde_Fauveau.pdf",
+  "Header.cvBtn": "Get in touch",
+  "Header.cvName": "",
   "Loading": "Loading...",
 
-  "Banner.Pretitle": "Hello! My name is",
-  "Banner.Subtitle": "Future Software Developer & Designer",
-  "Banner.Description": "Holding a degree in Web Design and Communication, I am currently enrolled in a <span class='underline'>Software Development program</span>, I am learning to design modern, structured interfaces that adhere to current professional standards. I am actively seeking an <span class='underline'>internship</span> to validate my training and contribute to concrete projects.",
-  "Banner.Countdown1" : "I have",
-  "Banner.Countdown2" : "left to find my next internship. \uD83D\uDC40",
-  "Banner.ActionBtn": "Me contacter ?",
+  "Banner.Pretitle": "Welcome to",
+  "Banner.Title": "BackLab Solutions.",
+  "Banner.Subtitle": "Less software. More business.",
+  "Banner.Description": "We build <span class='underline'>simple, affordable and immediately useful tools</span> for ambitious small businesses. No bloat. No unnecessary features. Just the essentials that work.",
+  "Banner.ActionBtn": "Discover our products",
+  "Banner.ActionBtn2": "Talk about your need",
 
-  "AboutMe.Title": "About Me",
-  "AboutMe.Paragraphs": [
-    "As a <span class='underline'>front-end developer</span> for two years on a development team, I contributed to the design and evolution of features for a marketing product.",
-    "After a difficult personal period between 2020 and 2023, which allowed me to step back and rebuild, I chose to return to development with <span class='underline'>renewed ambition</span>.",
-    "Currently training to be a <span class='underline'>Software Designer and Developer</span>, I am consolidating and expanding my skills as a Web Designer, UI/UX Designer, and Front-end Developer to <span class='underline'>Back-end projects</span>, with the ambition of eventually becoming a <span class='underline'>Full-Stack Developer</span>.",
-    "Determined and meticulous, I am looking to transform this new step into a <span class='underline'>concrete impact for my future</span>.",
-    "Here are some of the languages and technologies I have had the opportunity to experiment with and discover in recent years:"
-  ],
-  "AboutMe.ImgTitle": "Click to view image in full screen",
-  "AboutMe.Skills": "Languages et Technologies",
-
-  "Experience.Title": "Retrospective",
-  "Experience.Jobs": [
+  "Problem.Title": "Small businesses deserve better.",
+  "Problem.Subtitle": "The market offers them tools designed for large teams. Not for them.",
+  "Problem.Items": [
     {
-      "Tab": "2026",
-      "Title": "Software Designer and Developer Training",
-      "Date": "ENI Ecole Informatique",
-      "Description": [
-        "Learn to design and code secure applications using a multi-layered software architecture, starting from the expression of a need.",
-        "Learn to design or modify a data model (UML), and to create or modify a database.",
-        "Advanced Programming: Object-Oriented Programming with Java and JavaScript.",
-        "Web Development: Advanced JavaScript/TypeScript and in-depth learning of Angular for the front end.",
-        "Introduction and learning of Python, Artificial Intelligence, and Django for the back end.",
-        "Implementation of continuous integration and daily backups.",
-        "Project Management and DevOps."
-      ]
+      "Icon": "💸",
+      "Title": "Too expensive",
+      "Description": "Subscriptions designed for 50-person teams, billed to a single person."
     },
     {
-      "Tab": "2023 - 2025",
-      "Title": "Bartender",
-      "Date": "Le Bistrot Gourmand",
-      "Description": [
-        "Preparation and service of cocktails / drinks.",
-        "Welcoming customers.",
-        "Inventory management.",
-        "Bar and restaurant maintenance."
-      ]
+      "Icon": "🌀",
+      "Title": "Too complex",
+      "Description": "Interfaces with 200 options to do one thing. The learning curve takes weeks."
     },
     {
-      "Tab": "2020 - 2023",
-      "Title": "[...]",
-      "Date": "",
-      "Description": [
-        "Because life sometimes throws us all sorts of curveballs, this period represents a time of total reassessment for me, allowing me to refocus on what's essential."
-      ]
+      "Icon": "😰",
+      "Title": "Too intimidating",
+      "Description": "Dashboards designed for product managers, not for craftspeople or bar owners."
     },
     {
-      "Tab": "2018 - 2020",
-      "Title": "Frontend Developer",
-      "Date": "Iconosquare",
-      "Description": [
-        "Team-based frontend development of evolving features for the Iconosquare product. (Iconosquare is an international platform for professionals who want to track their social media activity statistically and analytically.)",
-        "Maintenance of project features and Customer Support.",
-        "Working in collaboration with the Marketing and Design teams.",
-        "Creating complex features with JavaScript and ReactJs.",
-        "Implementing in-house solutions and software."
-      ]
-    },
-    {
-      "Tab": "2018",
-      "Title": "Web Developer Training",
-      "Date": "Aliptic - Opquast Certification",
-      "Description": [
-        "Learning the fundamentals of web development.",
-        "Understanding development environments.",
-        "Introduction to PHP and the Symfony framework during a group project",
-        "Introduction to UX/UI.",
-        "Study of best practices."
-      ]
-    },
-    {
-      "Tab": "2017",
-      "Title": "Web designer",
-      "Date": "Le Syndicat Energies, Haute-Vienne",
-      "Description": [
-        "Setting up a newsletter and integrating it using HTML/CSS.",
-        "Graphic redesign and integration of the existing website.",
-        "Creation of print and digital communication materials."
-      ]
-    },
-    {
-      "Tab": "2016 - 2017",
-      "Title": "Professional Bachelor's Degree in Sensory Web Design and Online Creation Strategies",
-      "Date": "University de Limoges",
-      "Description": [
-        "Design and development of digital interfaces on various types of screen media. Proficiency in Sketch, Illustrator and Photoshop software.",
-        "Technical development of websites: Designing the HTML5, CSS3 and Javascript (Vanilla & jQuery) integration of a project.",
-        "Using CSS3 preprocessors: LESS & Sass.",
-        "Multimedia creation (animation, video editing).",
-        "Project management, law & economics of the web"
-      ]
-    },
-    {
-      "Tab": "2013 - 2016",
-      "Title": "Bachelor's Degree in Language, Information and Communication Sciences",
-      "Date": "January 2015 - July 2015",
-      "Description": [
-        "Linguistics and semiotics, phonetics, phonology, morphosyntax, lexicology, sociolinguistics and field linguistics, theories of writing, information and communication."
-      ]
+      "Icon": "🗑️",
+      "Title": "Too much bloat",
+      "Description": "90% of features will never be used. But they're there, slowing everything down."
     }
   ],
 
-  "FeatureProjects.Title": "My projects",
-  "FeatureProjects.Projects": [
+  "Vision.Title": "Why BackLab exists",
+  "Vision.Manifesto": "We believe the best tools do less, not more.<br><br>We build the <span class='underline'>10% of features that generate 90% of the value</span>. Tools that launch in minutes, not weeks. Interfaces you understand without training. Prices accessible to those running their business alone.<br><br>BackLab is the anti-bloat solution.",
+
+  "Products.Title": "Our products",
+  "Products.Subtitle": "A coherent range of simple tools, designed for small businesses.",
+  "Products.Items": [
     {
-      "Label": "ENI Ecole Informatique - 2026",
-      "Title": "FullStack Angular Project - Django",
-      "Description": "Analysis, design, and development of an Angular frontend connected to a Python backend with Django, based on a relational database, using a RESTful architecture compliant with professional standards.",
-      "imgs": [
-        "assets/images/csoon.gif"
-      ],
-      "Technologies": ["Angular", "SASS", "RxJS", "Python", "Django", "MongoDB"]
+      "Name": "BackBoost",
+      "Tagline": "Recover forgotten quotes and keep control of your follow-ups.",
+      "Description": "Stop losing revenue on quotes that sit untouched. BackBoost automates your follow-ups and gives you a clear view of your pipeline.",
+      "Status": "In development",
+      "Icon": "⚡"
     },
     {
-      "Label": "Sensory web design - 2018",
-      "Title": "Project Management & Web design",
-      "Description": "Analysis and design, management of a three-person team, and creation of a website for a local artist",
-      "imgs": [
-        "assets/images/Webdesign/le_temps_d-une_oeuvre.png",
-        "assets/images/Webdesign/mini_site_art.jpg",
-        "assets/images/Webdesign/accueil.png",
-        "assets/images/Webdesign/galerie.jpg",
-        "assets/images/Webdesign/img3.png"
-      ],
-      "Technologies": ["Suite Adobe", "HTML5", "CSS3", "JavaScript", "PHP"]
+      "Name": "BackCall",
+      "Tagline": "Never let a missed call become a lost customer again.",
+      "Description": "Every unanswered call is an opportunity that goes to your competitor. BackCall reminds you who called and helps you reach back before it's too late.",
+      "Status": "In development",
+      "Icon": "📞"
     },
     {
-      "Label": "SEHV - 2017",
-      "Title": "Web design",
-      "Description": "Analysis and design, creation of a newsletter and graphic redesign of the existing website as well as its integration",
-      "imgs": [
-        "assets/images/SEHV/sehv-site.jpg"
-      ],
-      "Technologies": ["Suite Adobe", "HTML5", "CSS3", "JavaScript"]
+      "Name": "BackReview",
+      "Tagline": "Turn satisfied customers into reviews that matter.",
+      "Description": "Online reviews build your reputation. BackReview simplifies review collection and boosts your visibility effortlessly.",
+      "Status": "In development",
+      "Icon": "⭐"
     },
     {
-      "Label": "\uD83D\uDE48 - 2016",
-      "Title": "First Portfolio",
-      "Description": "My first web design portfolio was used to practice front-end development.",
-      "imgs": [
-        "assets/images/1rst-Portfolio/1.png",
-        "assets/images/1rst-Portfolio/2.png",
-        "assets/images/1rst-Portfolio/3.png",
-        "assets/images/1rst-Portfolio/4.png"
-      ],
-      "Technologies": ["HTML5", "CSS3", "JavaScript", "JQuery"]
+      "Name": "BackFill",
+      "Tagline": "Fill your empty slots before they cost you money.",
+      "Description": "An empty slot is lost revenue. BackFill helps you optimize your schedule and fill your availability intelligently.",
+      "Status": "In development",
+      "Icon": "📅"
+    },
+    {
+      "Name": "BackBar",
+      "Tagline": "Manage your margins and restocking without an infernal ERP.",
+      "Description": "Built for bars and restaurants, BackBar gives you a simple, clear view of your inventory, margins and restock — without the complexity of an ERP.",
+      "Status": "In development",
+      "Icon": "🍺"
     }
   ],
 
-  "OtherProjects.Title": "More Projects",
-  "OtherProjects.Projects": [
+  "Services.Title": "Need something more specific?",
+  "Services.Subtitle": "BackLab doesn't only build its own products. We also help certain small businesses create simple and effective digital solutions.",
+  "Services.Items": [
     {
-      "Title": "Phaser.js - In progress",
-      "Description": "I'm currently practicing creating a small browser game using Phaser.",
-      "imgs": ["https://www.codecademy.com/learn/learn-phaser"],
-      "ghLink": "https://www.codecademy.com/learn/learn-phaser",
-      "demoLink": "https://www.codecademy.com/learn/learn-phaser",
-      "Technologies": ["Phaser", "Git", "In progress"]
+      "Icon": "🌐",
+      "Title": "Showcase websites",
+      "Description": "A professional, fast, beautiful website designed to convert — without agency prices."
     },
     {
-      "Title": "Carbon Footprint Calculator - In progress",
-      "Description": "A small program that calculates our carbon footprint based on our travels, used for practicing form and guard management, as well as operators in RxJS; still under development to be integrated with Tailwind, which I'm experimenting with.",
-      "imgs": [""],
-      "ghLink": "",
-      "demoLink": "",
-      "Technologies": ["Angular", "TypeScript", "RxJS", "Tailwind CSS", "In progress"]
+      "Icon": "🎯",
+      "Title": "Landing pages",
+      "Description": "Conversion-focused landing pages, with copy that convinces and a structure that guides."
     },
     {
-      "Title": "Eco bâtisseurs - 2018",
-      "Description": "Landing page to present a fictional bioclimatic house construction company, created as part of my professional degree in Web Design",
-      "ghLink": "",
-      "demoLink": "",
-      "Technologies": ["Web design", "Adobe suite"]
+      "Icon": "⚙️",
+      "Title": "Simple automations",
+      "Description": "Automate repetitive tasks that waste your time. Without becoming a developer."
     },
     {
-      "Title": "Bo Concept - 2018",
-      "Description": "Landing page to present a fictional furniture sales company, created as part of my professional degree in Web Design",
-      "ghLink": "",
-      "demoLink": "",
-      "Technologies": ["Web design", "Adobe suite"]
+      "Icon": "🔧",
+      "Title": "Custom mini-tools",
+      "Description": "A price calculator, a quote form, a small custom tool — adapted to your business."
     },
     {
-      "Title": "Web Project Management Folder - 2018",
-      "Description": "Project management report, produced during a supervised project as part of my professional degree in Web Design.",
-      "ghLink": "",
-      "demoLink": "assets/images/Webdesign/dossier_tut.pdf",
-      "Technologies": ["In Design"]
+      "Icon": "🧭",
+      "Title": "Digital guidance",
+      "Description": "Not sure what you need? Let's talk it through and find the simplest solution."
+    }
+  ],
+  "Services.Cta": "Let's talk about your project",
+
+  "Founder.Title": "Behind BackLab",
+  "Founder.Name": "Mathilde Fauveau",
+  "Founder.Role": "Founder & Developer",
+  "Founder.Paragraphs": [
+    "BackLab wasn't born in a big office. It was born from a concrete frustration: watching small businesses struggle with tools designed for large teams, or giving up on digital entirely because it's <span class='underline'>too expensive, too complex, too intimidating</span>.",
+    "A web developer by training, with experience in digital product and real-world immersion in the world of small businesses, I wanted to create the tools I wished existed.",
+    "My approach is simple: <span class='underline'>pragmatic, useful, immediately</span>. Nothing superfluous. Everything that truly helps."
+  ],
+
+  "FAQ.Title": "Frequently asked questions",
+  "FAQ.Items": [
+    {
+      "Question": "Are your tools designed for micro-businesses?",
+      "Answer": "Yes, that's exactly what they were built for. Every BackLab product is designed for 1-10 person businesses who don't have the time or desire to deal with complex software."
     },
     {
-      "Title": "Web Project Report Folder - 2018",
-      "Description": "Complete report describing the analysis and creation process of a newsletter and the redesign of the SEHV website. Completed as part of a 4-month internship.",
-      "ghLink": "",
-      "demoLink": "assets/images/SEHV/mémoire_sehv.pdf",
-      "Technologies": [""]
+      "Question": "Do I need technical skills to use your products?",
+      "Answer": "Absolutely not. If you can use WhatsApp, you can use BackLab. Our interfaces are designed to be understood in under 5 minutes, with no training required."
+    },
+    {
+      "Question": "Are the products already available?",
+      "Answer": "They are currently in development. Sign up for the waiting list to be among the first to access them and benefit from launch pricing."
+    },
+    {
+      "Question": "Do you do custom development?",
+      "Answer": "Yes, in certain cases. If your need is simple, concrete, and none of our products cover your specific situation, we can discuss a tailored solution."
+    },
+    {
+      "Question": "Can I contact you for a specific need?",
+      "Answer": "Of course. Send us a message via the contact form or directly by email. We respond within 48 hours."
     }
   ],
 
-  "Contact.Pretitle": "And... Now?",
-  "Contact.Title": "I have lots of little projects in mind, and my desire to learn new things grows every day!",
-  "Contact.Content": "I will be glad to hear from you if you want to discuss new opportunities. Write to me, and I will respond as soon as I see your message.",
-  "Contact.Btn": "Say Hi!"
+  "Contact.Pretitle": "Let's build something simple.",
+  "Contact.Title": "We build the tools we wished existed.",
+  "Contact.Content": "A question about our products? A specific project? Want to join the waiting list? Write to us — we're human and we respond.",
+  "Contact.Btn": "Write to us"
 }

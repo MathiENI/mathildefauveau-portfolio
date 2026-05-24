@@ -1,25 +1,50 @@
 <footer>
     <div [@animateFooter]>
+        <!-- Barre gauche — réseaux -->
         <ul class="footer-left-bar d-none d-md-block">
             <li>
-                <a (click)='analyticsService.sendAnalyticEvent("click_github", "footer", "github")' href="https://github.com/MathiENI" target='_blank'>
+                <a (click)='analyticsService.sendAnalyticEvent("click_github", "footer", "github")'
+                   href="https://github.com/MathiENI"
+                   target='_blank'
+                   aria-label="GitHub BackLab">
                     <i class="fab fa-github"></i>
                 </a>
             </li>
             <li>
-                <a (click)='analyticsService.sendAnalyticEvent("click_linkedin", "footer", "linkedin")' href="https://www.linkedin.com/in/mathilde-fauveau" target='_blank'>
+                <a (click)='analyticsService.sendAnalyticEvent("click_linkedin", "footer", "linkedin")'
+                   href="https://www.linkedin.com/in/mathilde-fauveau"
+                   target='_blank'
+                   aria-label="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
             </li>
         </ul>
+
+        <!-- Barre droite — email -->
         <div class="footer-right-bar d-none d-md-block">
-            <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "footer", "email")' href="mailto:mathilde.fauveau87@gmail.com" target='_blank'>mathilde.fauveau&#64;gmail.com</a>
+            <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "footer", "email")'
+               href="mailto:contact@backlab.fr"
+               target='_blank'>
+               contact&#64;backlab.fr
+            </a>
         </div>
     </div>
 
-    <div class="footer-credits text-center" >
-      <div>Built with Angular</div>
-      <div class="mt-2">Template by Jose Andres & original design by Brittany Chiang</div>
+    <!-- Footer central -->
+    <div class="footer-credits text-center">
+        <div class="footer-logo">
+            <span class="footer-logo-mark">B</span>
+            <span class="footer-logo-name">BackLab Solutions</span>
+        </div>
+        <nav class="footer-nav">
+            <a href="#products">Produits</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#">Mentions légales</a>
+            <a href="#">Politique de confidentialité</a>
+        </nav>
+        <div class="footer-copy">
+            © {{ currentYear }} BackLab Solutions — Tous droits réservés
+        </div>
     </div>
-
 </footer>

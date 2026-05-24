@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 
 @Component({
@@ -7,28 +7,6 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
     styleUrls: ['./proyects.component.scss'],
     standalone: false
 })
-export class ProyectsComponent implements OnInit {
-
-  @ViewChild('imgContainer') imgContainer: ElementRef;
-
-
-  constructor(
-    public analyticsService: AnalyticsService
-  ) { }
-
-  ngOnInit(): void {
-
-
-
-  }
-
-debug(){
-
-  this.imgContainer.nativeElement.scroll({
-    top: this.imgContainer.nativeElement.scrollHeight,
-    left: 0,
-    behavior: 'smooth',
-  });
-}
-
+export class ProyectsComponent {
+  constructor(public analyticsService: AnalyticsService) { }
 }

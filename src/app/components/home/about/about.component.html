@@ -1,159 +1,46 @@
-<section class="section about" id='about' (keydown)="onKeyDown($event)" tabindex="0">
+<section class="section about" id="about">
+
+    <!-- SECTION PROBLÈME -->
     <div class="container">
         <div class="section-box">
             <div class="about-title" data-animate="slideInUp" data-animate-duration="1000">
                 <h3 class="section-title">
-                    <span class='n-section-title'>01.</span> {{"AboutMe.Title" | translate}}
+                    <span class='n-section-title'>01.</span> {{"Problem.Title" | translate}}
                 </h3>
+                <p class="section-subtitle" data-animate="fadeInLeft" data-animate-delay="200" data-animate-duration="800">
+                    {{"Problem.Subtitle" | translate}}
+                </p>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6 mb-4 mb-md-0">
-                    <div class="about-description">
-                        <p *ngFor='let text of "AboutMe.Paragraphs" | translate; let i = index'
-                           [innerHTML]="text"
-                           data-animate="fadeInLeft"
-                           [attr.data-animate-delay]="200 + (i * 300)"
-                           data-animate-duration="800">
-                        </p>
-                        <div class="about-title mt-5" data-animate="slideInUp" data-animate-duration="1000">
-                          <h3 class="section-title">
-                            {{"AboutMe.Skills" | translate}}
-                          </h3>
-                        </div>
-                        <ul class="skills-list" data-animate="fadeInUp" data-animate-delay="800">
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1200">
-                              <span class="underline">HTML5 &amp; (S)CSS </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1300">
-                              <span class="underline">JavaScript</span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1300">
-                              <span class="underline">JQuery | Typescript</span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1700">
-                              <span class="underline">Java </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1700">
-                              <span class="underline">PHP </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1700">
-                              <span class="underline">Python </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1000">
-                                <span class="underline">Angular </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1100">
-                                <span class="underline">RxJS </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1400">
-                                <span class="underline">Express </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1500">
-                                <span class="underline">React </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1600">
-                                <span class="underline">Transact SQL / SQL </span>
-                            </li>
-                            <li class="skill-element"
-                                data-animate="scaleIn"
-                                data-animate-delay="1700">
-                              <span class="underline">Django </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 mt-4 mt-md-0 text-center"
-                     data-animate="morphIn"
-                     data-animate-duration="1200"
-                     data-animate-delay="600">
-                    <div class="about-img-container">
-                        <img (click)='onImageClick()'
-                             class="rounded about-image clickable"
-                             width="100%"
-                             src="assets/images/couv.png"
-                             alt="Mathilde Fauveau"
-                             [title]='"AboutMe.ImgTitle" | translate'>
-                    </div>
-                  <!-- A conserver peut-être pour plus tard -->
-                  <!--<div class="about-title environnement-title" data-animate="slideInUp" data-animate-duration="1000">
-                    <h3 class="section-title">
-                      Environnements et Méthodologies
-                    </h3>
-                  </div>
-                  <ul class="skills-list" data-animate="fadeInUp" data-animate-delay="800">
-                    <li class="skill-element"
-                        data-animate="scaleIn"
-                        data-animate-delay="1200">
-                      <span class="underline">Visual Studio Code </span>
-                    </li>
-                    <li class="skill-element"
-                        data-animate="scaleIn"
-                        data-animate-delay="1300">
-                      <span class="underline">Méthode Agile (Scrum)</span>
-                    </li>
-                    <li class="skill-element"
-                        data-animate="scaleIn"
-                        data-animate-delay="1300">
-                      <span class="underline">Suite JetBrains</span>
-                    </li>
-                    <li class="skill-element"
-                        data-animate="scaleIn"
-                        data-animate-delay="1700">
-                      <span class="underline">UML </span>
-                    </li>
-                    <li class="skill-element"
-                        data-animate="scaleIn"
-                        data-animate-delay="1700">
-                      <span class="underline">Jupiter</span>
-                    </li>
-                    <li class="skill-element"
-                        data-animate="scaleIn"
-                        data-animate-delay="1100">
-                      <span class="underline">Modélisation de données</span>
-                    </li>
-                  </ul>-->
+
+            <div class="problem-grid">
+                <div *ngFor="let item of 'Problem.Items' | translate; let i = index"
+                     class="problem-card"
+                     data-animate="fadeInUp"
+                     [attr.data-animate-delay]="200 + (i * 150)"
+                     data-animate-duration="700">
+                    <div class="problem-icon">{{ item.Icon }}</div>
+                    <h4 class="problem-title">{{ item.Title }}</h4>
+                    <p class="problem-desc">{{ item.Description }}</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal para imagen ampliada -->
-    <div class="image-modal-overlay"
-         *ngIf="isImageModalOpen"
-         (click)="onModalBackdropClick($event)"
-         [@fadeInOut]>
-        <div class="image-modal-container">
-            <button class="modal-close-btn"
-                    (click)="closeImageModal()"
-                    aria-label="Cerrar modal">
-                <span>&times;</span>
-            </button>
-            <img class="modal-image"
-                 src="assets/images/couv.png"
-                 alt="Mathilde Fauveau - Image Pleine"
-                 [@zoomIn]>
+    <!-- SECTION VISION -->
+    <div class="container" id="vision">
+        <div class="section-box vision-box">
+            <div data-animate="slideInUp" data-animate-duration="1000">
+                <h3 class="section-title">
+                    <span class='n-section-title'>02.</span> {{"Vision.Title" | translate}}
+                </h3>
+            </div>
+            <div class="vision-manifesto"
+                 data-animate="morphIn"
+                 data-animate-delay="300"
+                 data-animate-duration="1000">
+                <blockquote [innerHTML]='"Vision.Manifesto" | translate'></blockquote>
+            </div>
         </div>
     </div>
+
 </section>

@@ -1,36 +1,44 @@
-<section class="section" id="contact">
-  <div class="container contact">
-    <div class="section-box">
-      <div class="mb-4" data-animate="fadeInDown" data-animate-duration="1000">
-        <h3 class="contact-pre-title big-subtitle">
-          05. {{ "Contact.Pretitle" | translate }}
-        </h3>
-        <h4 class="e-font contact-title"
-            data-animate="typewriter"
-            data-animate-delay="500">
-          {{ "Contact.Title" | translate }}
-        </h4>
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="section-box contact-box">
+
+      <div class="contact-pretitle" data-animate="fadeInDown" data-animate-duration="1000">
+        <span class="n-section-title">07.</span>
+        <span class="contact-pre-label">{{ "Contact.Pretitle" | translate }}</span>
       </div>
-      <p data-animate="morphIn"
-         data-animate-duration="1200"
-         data-animate-delay="2500">
+
+      <h4 class="contact-title e-font"
+          data-animate="typewriter"
+          data-animate-delay="300">
+        {{ "Contact.Title" | translate }}
+      </h4>
+
+      <p class="contact-content"
+         data-animate="morphIn"
+         data-animate-duration="1000"
+         data-animate-delay="1500">
         {{ "Contact.Content" | translate }}
       </p>
-      <div class="mt-5"
+
+      <div class="contact-actions"
            data-animate="scaleIn"
            data-animate-duration="800"
-           data-animate-delay="3500">
+           data-animate-delay="2200">
         <app-dynamic-button
           [text]='"Contact.Btn" | translate'
-          href="mailto:mathilde.fauveau87@gmail.com"
+          href="mailto:contact@backlab.fr"
           target="_blank"
           analyticsEvent="click_send_mail"
           analyticsCategory="contact"
           analyticsLabel="email"
-          variant="secondary"
-          class="contact-btn">
+          variant="primary">
         </app-dynamic-button>
       </div>
+
+      <div class="contact-footer-note">
+        <p>Nous répondons dans les <strong>48h</strong> — en tant qu'humains.</p>
+      </div>
+
     </div>
   </div>
 </section>

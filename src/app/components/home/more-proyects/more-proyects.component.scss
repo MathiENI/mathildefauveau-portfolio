@@ -1,83 +1,187 @@
 @use "./../../../../variables" as *;
 
-.more-proyects{
-    .proyect-col{
-        padding: 10px;
-        height: 400px;
+// ── Founder Section ────────────────────────────────────
+.founder-section {
+  padding: 80px 0;
 
-        .more-proyect-box {
-            box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
-            transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            align-items: flex-start;
-            position: relative;
-            padding: 2rem 1.75rem;
-            height: 100%;
-            border-radius: 3px;
-            background-color: $LightNavy;
-            cursor: pointer;
+  .founder-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+    margin-top: 48px;
 
-            &:hover {
-                -webkit-transform: translateY(-5px);
-                -ms-transform: translateY(-5px);
-                transform: translateY(-5px);
-            }
-            &:hover, &:focus {
-                box-shadow: 0 20px 30px -15px rgba(2,12,27,0.7);
-            }
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
 
-            svg{
-                width: 40px;
-                height: 40px;
-                color: $Green;
-            }
+  .founder-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-            .other-proyect-title{
-                margin: 0 0 10px;
-                font-size: 22px;
-                color: $LightestSlate;
-            }
+  .founder-para {
+    font-size: 17px;
+    color: $LightSlate;
+    line-height: 1.8;
+    margin: 0;
 
-            .other-proyect-description{
-                font-size: 17px;
-                color: $LightSlate;
-            }
+    .underline {
+      color: $LightestSlate;
+      text-decoration: underline;
+      text-decoration-color: $Green;
+      text-underline-offset: 4px;
+    }
+  }
 
-            .more-proyects-skills{
-                display: -webkit-box;
-                display: -webkit-flex;
-                display: flex;
-                -webkit-align-items: flex-end;
-                align-items: flex-end;
-                flex-grow: 1;
-                flex-wrap: wrap;
-                padding: 0;
-                margin: 20px 0 0 0;
-                list-style: none;
+  .founder-identity {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 8px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(77, 166, 255, 0.10);
+  }
 
-                li{
-                    font-size: 12px;
-                    color: $Slate;
-                    line-height: 1.75;
-                    margin-right: 15px;
-                    font-family: $CodeFont;
-                    .underline{
-                        padding-bottom: 3.5px;
-                    }
-                }
-            }
-        }
+  .founder-name {
+    font-family: $MainFont;
+    font-weight: 700;
+    font-size: 18px;
+    color: $LightestSlate;
+  }
+
+  .founder-role {
+    font-family: $CodeFont;
+    font-size: 13px;
+    color: $Green;
+    letter-spacing: 0.5px;
+  }
+
+  // Carte visuelle fondatrice
+  .founder-visual {
+    display: flex;
+    justify-content: center;
+  }
+
+  .founder-card {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .founder-avatar {
+    width: 280px;
+    height: 280px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid rgba(77, 166, 255, 0.20);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.30), 0 0 0 1px rgba(77, 166, 255, 0.08);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      border-color: rgba(77, 166, 255, 0.40);
+      box-shadow: 0 24px 70px rgba(77, 166, 255, 0.12), 0 0 0 1px rgba(77, 166, 255, 0.15);
     }
 
+    @media (max-width: 480px) {
+      width: 220px;
+      height: 220px;
+    }
+  }
+
+  .founder-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  .founder-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: $LightNavy;
+    border: 1px solid rgba(77, 166, 255, 0.20);
+    border-radius: 24px;
+    padding: 8px 20px;
+
+    .badge-icon { font-size: 16px; }
+    .badge-text {
+      font-family: $CodeFont;
+      font-size: 13px;
+      color: $Green;
+      letter-spacing: 0.3px;
+    }
+  }
 }
 
+// ── FAQ Section ───────────────────────────────────────
+.faq-section {
+  padding: 80px 0;
+  border-top: 1px solid rgba(77, 166, 255, 0.08);
 
-@media(max-width: 1300px){
-    .more-proyects{
-        .proyect-col{
-            height: auto;
-        }
+  .faq-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 760px;
+  }
+
+  .faq-item {
+    background: $LightNavy;
+    border: 1px solid rgba(77, 166, 255, 0.10);
+    border-radius: 10px;
+    padding: 20px 24px;
+    cursor: pointer;
+    transition: border-color 0.25s ease, background 0.25s ease;
+
+    &:hover,
+    &.faq-open {
+      border-color: rgba(77, 166, 255, 0.30);
     }
+
+    &.faq-open {
+      background: rgba(77, 166, 255, 0.04);
+    }
+  }
+
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    font-family: $MainFont;
+    font-weight: 600;
+    font-size: 16px;
+    color: $LightestSlate;
+    user-select: none;
+  }
+
+  .faq-arrow {
+    font-size: 22px;
+    color: $Green;
+    font-weight: 300;
+    flex-shrink: 0;
+    line-height: 1;
+    transition: transform 0.2s ease;
+  }
+
+  .faq-answer {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(77, 166, 255, 0.08);
+
+    p {
+      font-size: 15px;
+      color: $Slate;
+      line-height: 1.7;
+      margin: 0;
+    }
+  }
 }

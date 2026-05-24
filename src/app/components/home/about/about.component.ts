@@ -1,5 +1,4 @@
-import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
-import { trigger, state, style, transition, animate } from '@angular/animations';
+import { Component, AfterViewInit, ElementRef } from '@angular/core';
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 import { AnimationsService } from 'src/app/services/animations/animations.service';
 
@@ -7,28 +6,9 @@ import { AnimationsService } from 'src/app/services/animations/animations.servic
     selector: 'app-about',
     templateUrl: './about.component.html',
     styleUrls: ['./about.component.scss'],
-    animations: [
-        trigger('fadeInOut', [
-            transition(':enter', [
-                style({ opacity: 0 }),
-                animate('300ms ease-in', style({ opacity: 1 }))
-            ]),
-            transition(':leave', [
-                animate('300ms ease-out', style({ opacity: 0 }))
-            ])
-        ]),
-        trigger('zoomIn', [
-            transition(':enter', [
-                style({ transform: 'scale(0.3)', opacity: 0 }),
-                animate('400ms cubic-bezier(0.25, 0.8, 0.25, 1)', style({ transform: 'scale(1)', opacity: 1 }))
-            ])
-        ])
-    ],
     standalone: false
 })
-export class AboutComponent implements OnInit, AfterViewInit {
-
-  isImageModalOpen = false;
+export class AboutComponent implements AfterViewInit {
 
   constructor(
     public analyticsService: AnalyticsService,
@@ -36,83 +16,33 @@ export class AboutComponent implements OnInit, AfterViewInit {
     private elementRef: ElementRef
   ) { }
 
-  ngOnInit(): void {
-  }
-
   ngAfterViewInit(): void {
     this.initAnimations();
   }
 
-  onImageClick(): void {
-    this.analyticsService.sendAnalyticEvent("click_image", "about", "image");
-    this.openImageModal();
-  }
-
-  openImageModal(): void {
-    this.isImageModalOpen = true;
-    document.body.style.overflow = 'hidden'; // Prevenir scroll del body
-  }
-
-  closeImageModal(): void {
-    this.isImageModalOpen = false;
-    document.body.style.overflow = 'auto'; // Restaurar scroll del body
-  }
-
-  onModalBackdropClick(event: Event): void {
-    if (event.target === event.currentTarget) {
-      this.closeImageModal();
-    }
-  }
-
-  onKeyDown(event: KeyboardEvent): void {
-    if (event.key === 'Escape') {
-      this.closeImageModal();
-    }
-  }
-
   private initAnimations(): void {
-    const aboutSection = this.elementRef.nativeElement;
+    const section = this.elementRef.nativeElement;
 
-    const title = aboutSection.querySelector('.about-title');
-    if (title) {
-      this.animationsService.observeElement(title, {
-        type: 'slideInUp',
-        duration: 1000
-      });
-    }
-
-    const paragraphs = aboutSection.querySelectorAll('.about-description p');
-    paragraphs.forEach((p: HTMLElement, index: number) => {
-      this.animationsService.observeElement(p, {
-        type: 'fadeInLeft',
-        duration: 800,
-        delay: 200 + (index * 300)
-      });
+    const titles = section.querySelectorAll('.about-title');
+    titles.forEach((el: HTMLElement) => {
+      this.animationsService.observeElement(el, { type: 'slideInUp', duration: 1000 });
     });
 
-    const skillsList = aboutSection.querySelector('.skills-list');
-    if (skillsList) {
-      this.animationsService.observeElement(skillsList as HTMLElement, {
+    const cards = section.querySelectorAll('.problem-card');
+    cards.forEach((card: HTMLElement, i: number) => {
+      this.animationsService.observeElement(card, {
         type: 'fadeInUp',
-        delay: 800
+        duration: 700,
+        delay: 200 + i * 150
       });
-    }
-
-    const skills = aboutSection.querySelectorAll('.skill-element');
-    skills.forEach((skill: HTMLElement, index: number) => {
-      this.animationsService.observeElement(skill, {
-        type: 'scaleIn',
-        delay: 1000 + (index * 100)
-      });
-
     });
 
-    const imageContainer = aboutSection.querySelector('.about-img-container');
-    if (imageContainer) {
-      this.animationsService.observeElement(imageContainer as HTMLElement, {
+    const manifesto = section.querySelector('.vision-manifesto');
+    if (manifesto) {
+      this.animationsService.observeElement(manifesto as HTMLElement, {
         type: 'morphIn',
-        duration: 1200,
-        delay: 600
+        duration: 1000,
+        delay: 300
       });
     }
   }

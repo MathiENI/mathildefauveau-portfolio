@@ -1,46 +1,79 @@
-<section class="section more-proyects">
+<div>
+
+  <!-- ── SECTION FOUNDER ──────────────────────────── -->
+  <section class="section founder-section" id="founder">
     <div class="container">
-        <div class="section-box">
-            <div class="">
-                <h3 class="section-title">
-                    <span class='n-section-title'>04.</span> {{"OtherProjects.Title" | translate}}
-                </h3>
-            </div>
-            <div class="mt-5">
-                <div class="row p-0">
-
-                    <div *ngFor='let project of "OtherProjects.Projects" | translate; let i = index'
-                      (click)="redirect(project['demoLink'], $event)"
-                     class="col-12 col-md-6 col-lg-6 col-xl-4 proyect-col" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="more-proyect-box">
-                            <div class="row w-100 text-left m-0 p-0">
-                                <div class="col-6 p-0">
-                                    <img src='assets/icons/folder.svg' width="40">
-                                </div>
-                                <div class="col-6 d-flex p-0 justify-content-end">
-                                    <a (click)='analyticsService.sendAnalyticEvent("click_pokemonlist_external_link", "proyects", "click")' style='color: inherit' [href]="project['demoLink']" target="_blank"><i id="demoLink" class="ml-3 fas fa-external-link-alt"></i></a>
-                                    <a (click)='analyticsService.sendAnalyticEvent("click_pokemonlist_github", "proyects", "click")' style='color: inherit' [href]="project['ghLink']" target="_blank"><i id="ghLink" class="ml-4 fab fa-github"></i></a>
-                                </div>
-                                <h5 class="other-proyect-title mt-4">{{project.Title}}</h5>
-                                <p class="other-proyect-description">
-                                    {{project.Description}}
-                                </p>
-                            </div>
-                            <div>
-                                <ul class="more-proyects-skills">
-                                    <li *ngFor='let technology of project.Technologies'>
-                                      <span class="underline">{{technology}}</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- <div class="w-100 text-center mt-5 pt-5">
-                <a [routerLink]="'/proyectos'" class='main-btn'>Ver todo</a>
-            </div> -->
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="section-title">
+            <span class="n-section-title">05.</span>
+            {{ "Founder.Title" | translate }}
+          </h3>
         </div>
+
+        <div class="founder-content">
+          <div class="founder-text" data-aos="fade-right" data-aos-duration="900" data-aos-delay="150">
+            <p *ngFor="let para of 'Founder.Paragraphs' | translate"
+               [innerHTML]="para"
+               class="founder-para">
+            </p>
+            <div class="founder-identity">
+              <span class="founder-name">{{ "Founder.Name" | translate }}</span>
+              <span class="founder-role">{{ "Founder.Role" | translate }}</span>
+            </div>
+          </div>
+
+          <div class="founder-visual" data-aos="fade-left" data-aos-duration="900" data-aos-delay="250">
+            <div class="founder-card">
+              <div class="founder-avatar">
+                <img src="assets/images/couv.png"
+                     alt="Mathilde Fauveau — BackLab"
+                     class="founder-img" />
+              </div>
+              <div class="founder-badge">
+                <span class="badge-icon">⚡</span>
+                <span class="badge-text">BackLab Solutions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
+
+  <!-- ── SECTION FAQ ──────────────────────────────── -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-box">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <h3 class="section-title">
+            <span class="n-section-title">06.</span>
+            {{ "FAQ.Title" | translate }}
+          </h3>
+        </div>
+
+        <div class="faq-list">
+          <div
+            *ngFor="let item of 'FAQ.Items' | translate; let i = index"
+            class="faq-item"
+            [class.faq-open]="openIndex === i"
+            (click)="toggle(i)"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            [attr.data-aos-delay]="i * 80">
+
+            <div class="faq-question">
+              <span>{{ item.Question }}</span>
+              <span class="faq-arrow">{{ openIndex === i ? '−' : '+' }}</span>
+            </div>
+            <div class="faq-answer" *ngIf="openIndex === i">
+              <p>{{ item.Answer }}</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>

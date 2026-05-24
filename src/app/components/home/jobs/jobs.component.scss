@@ -1,121 +1,126 @@
 @use "./../../../../variables" as *;
 
+.products-section {
+  padding: 80px 0;
 
-::ng-deep .jobs .jobs-tabs {
+  .section-subtitle {
+    color: $Slate;
+    font-size: 18px;
+    margin-top: 12px;
+    max-width: 560px;
+    line-height: 1.6;
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  .product-card {
+    background: $LightNavy;
+    border: 1px solid rgba(77, 166, 255, 0.12);
+    border-radius: 14px;
+    padding: 32px 28px;
     display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
 
-    .tab-content{
-        margin-left: 38px;
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(77, 166, 255, 0.04) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
     }
 
-    ul{
-        display: block;
-        width: 145px;
-        border: none;
+    &:hover {
+      border-color: rgba(77, 166, 255, 0.35);
+      transform: translateY(-5px);
+      box-shadow: 0 16px 40px rgba(77, 166, 255, 0.10);
+
+      &::before {
+        opacity: 1;
+      }
+
+      .product-cta {
+        color: $Green;
+      }
     }
 
-    a.active{
-        background-color: $LightNavy !important;
-        color: $Green !important;
-        border-color: transparent !important;
-        border-radius: 0;
+    .product-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 4px;
     }
 
-    a:hover{
-        background-color: $LightNavy !important;
-        color: $Green !important;
-        border-color: transparent !important;
-        border-radius: 0;
+    .product-icon {
+      font-size: 28px;
+      line-height: 1;
     }
 
-    a{
-        text-decoration: none;
-        text-decoration-skip-ink: auto;
-        position: relative;
-        transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        background-color: transparent;
-        height: 42px;
-        padding: 0 20px 2px;
-        text-align: left;
-        white-space: nowrap;
-        font-family: $CodeFont;
-        font-size: 13px;
-        color: $Slate;
+    .product-status {
+      font-family: $CodeFont;
+      font-size: 11px;
+      color: $Green;
+      background: rgba(77, 166, 255, 0.10);
+      border: 1px solid rgba(77, 166, 255, 0.25);
+      border-radius: 20px;
+      padding: 3px 10px;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
     }
 
-    li{
-        border-left: 2px solid $LightestNavy;
-        border-left-color: rgb(48, 60, 85);
-    }
-}
-
-.jobs{
-
-    max-width: 700px;
-    margin: auto;
-
-    .title-tab-content{
-        color: $LightestSlate;
-        font-size: 22px;
-        font-weight: 500;
-        margin-bottom: 5px;
-
-        .company-tab-content{
-            color: $Green;
-        }
+    .product-name {
+      font-family: $MainFont;
+      font-weight: 700;
+      font-size: 22px;
+      color: $LightestSlate;
+      margin: 0;
     }
 
-    .job-time{
-        font-family: $CodeFont;
-        font-size: 13px;
-        font-weight: normal;
-        letter-spacing: 0.05em;
-        color: $LightSlate;
-        margin-bottom: 30px;
+    .product-tagline {
+      font-size: 15px;
+      font-weight: 500;
+      color: $LightSlate;
+      margin: 0;
+      font-style: italic;
+      line-height: 1.5;
     }
 
-    .job-description{
-        position: relative;
-        padding-left: 30px;
-        margin-bottom: 10px;
-        font-size: 18px;
-
-        &:before {
-            content: '▹';
-            position: absolute;
-            left: 0;
-            color: $Green;
-        }
+    .product-desc {
+      font-size: 14px;
+      color: $Slate;
+      line-height: 1.65;
+      margin: 0;
+      flex: 1;
     }
-}
 
-
-
-@media (max-width: 768px){
-    .jobs {
-        .job-description{
-            padding: 0;
-
-          &:before {
-            content: '';
-          }
-        }
+    .product-footer {
+      margin-top: 8px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(77, 166, 255, 0.08);
     }
-    ::ng-deep .jobs-tabs{
-        display: block !important;
 
-        .tab-content{
-            margin-left: 0 !important;
-        }
-
-        ul {
-            display: block;
-            width: 100% !important;
-            margin-bottom: 50px;
-        }
+    .product-cta {
+      font-family: $CodeFont;
+      font-size: 13px;
+      color: $LightestNavy;
+      transition: color 0.3s ease;
+      cursor: default;
     }
+  }
+
+  // Responsive
+  @media (max-width: 768px) {
+    .products-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 }

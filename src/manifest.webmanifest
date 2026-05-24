@@ -1,8 +1,9 @@
 {
-  "name": "mathildefauveau-portfolio",
-  "short_name": "mathildefauveau-portfolio",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "name": "BackLab Solutions",
+  "short_name": "BackLab",
+  "description": "Outils simples pour petites structures ambitieuses.",
+  "theme_color": "#0a0f1e",
+  "background_color": "#0a0f1e",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",

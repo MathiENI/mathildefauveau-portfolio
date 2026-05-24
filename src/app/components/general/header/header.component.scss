@@ -6,7 +6,51 @@
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 
     &.nav-shadow {
-        background: $Navy;
+        background: rgba(10, 15, 30, 0.95);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+
+    // ── Logo BackLab ──────────────────────────────────
+    .backlab-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        cursor: pointer;
+
+        .logo-mark {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: $Green;
+            color: $Navy;
+            font-family: $MainFont;
+            font-weight: 800;
+            font-size: 17px;
+            border-radius: 7px;
+            letter-spacing: -1px;
+            flex-shrink: 0;
+        }
+
+        .logo-text {
+            font-family: $MainFont;
+            font-weight: 700;
+            font-size: 17px;
+            color: $LightestSlate;
+            letter-spacing: -0.3px;
+        }
+
+        &:hover {
+            .logo-mark {
+                box-shadow: 0 0 16px rgba(77, 166, 255, 0.4);
+            }
+            .logo-text {
+                color: $Green;
+            }
+        }
     }
 
     .menu-ul{

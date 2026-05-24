@@ -24,12 +24,12 @@ export class Particle {
   }
 
   draw(ctx: CanvasRenderingContext2D): void {
-    ctx.shadowColor = 'rgba(247, 165, 165, 0.1)';
-    ctx.shadowBlur = 5;
+    ctx.shadowColor = 'rgba(77, 166, 255, 0.15)';
+    ctx.shadowBlur = 6;
 
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(247, 165, 165, 0.50)';
+    ctx.fillStyle = 'rgba(77, 166, 255, 0.40)';
     ctx.fill();
 
     ctx.shadowColor = 'transparent';
@@ -131,7 +131,7 @@ export class ParticlesService {
         if (distance < 120) {
           this.ctx.beginPath();
           const opacity = (120 - distance) / 120 * 0.2;
-          this.ctx.strokeStyle = `rgba(100, 255, 218, ${opacity})`;
+          this.ctx.strokeStyle = `rgba(77, 166, 255, ${opacity})`;
           this.ctx.lineWidth = 1;
           this.ctx.moveTo(this.particles[i].x, this.particles[i].y);
           this.ctx.lineTo(this.particles[j].x, this.particles[j].y);

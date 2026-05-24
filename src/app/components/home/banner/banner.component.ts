@@ -5,7 +5,6 @@ import { Subscription } from 'rxjs';
 
 interface AnimationConfig {
   delay: number;
-  duration?: number;
   element: string;
   action: () => void;
 }
@@ -23,21 +22,17 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
     name: 800,
     subtitle: 1800,
     description: 2400,
-    button: 3000
+    buttons: 3000
   };
 
   private readonly typewriterConfig = {
-    speed: 80,
+    speed: 60,
     cursorBlinkRate: 500
   };
 
   private animationTimeouts: number[] = [];
   private animationsStarted = false;
   private loadingSubscription?: Subscription;
-  public intervalId: any;
-  daysLeft: number = 0;
-  hoursLeft: number = 0;
-  minutesLeft: number = 0;
 
   constructor(
     public analyticsService: AnalyticsService,
@@ -52,13 +47,6 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
         this.initAnimations();
       }
     });
-
-    const deadline = new Date('2026-05-04T09:00:00');
-    this.updateCountdown(deadline);
-
-    this.intervalId = setInterval(() => {
-      this.updateCountdown(deadline);
-    }, 1000);
   }
 
   ngAfterViewInit(): void {
@@ -73,25 +61,6 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
     if (this.loadingSubscription) {
       this.loadingSubscription.unsubscribe();
     }
-
-    clearInterval(this.intervalId);
-  }
-
-  updateCountdown(deadline: Date) {
-    const now = new Date().getTime();
-    const diff = deadline.getTime() - now;
-
-    if (diff <= 0) {
-      this.daysLeft = 0;
-      this.hoursLeft = 0;
-      this.minutesLeft = 0;
-      clearInterval(this.intervalId);
-      return;
-    }
-
-    this.daysLeft = Math.floor(diff / (1000 * 60 * 60 * 24));
-    this.hoursLeft = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    this.minutesLeft = Math.floor((diff / (1000 * 60)) % 60);
   }
 
   private initAnimations(): void {
@@ -119,9 +88,9 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
         action: () => this.animateMorph(banner)
       },
       {
-        delay: this.animationTimings.button,
-        element: '.main-btn',
-        action: () => this.animateButton(banner)
+        delay: this.animationTimings.buttons,
+        element: '.div-btn-banner',
+        action: () => this.animateButtons(banner)
       }
     ];
 
@@ -133,7 +102,6 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
       const timeoutId = window.setTimeout(() => {
         animation.action();
       }, animation.delay);
-
       this.animationTimeouts.push(timeoutId);
     });
   }
@@ -141,7 +109,6 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
   private animatePretitle(banner: HTMLElement): void {
     const pretitle = banner.querySelector('.banner-pretitle h1') as HTMLElement;
     if (!pretitle) return;
-
     pretitle.style.opacity = '1';
     pretitle.style.transform = 'translateY(0)';
   }
@@ -157,7 +124,6 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
     const cursorElement = nameElement.querySelector('.cursor') as HTMLElement;
 
     nameElement.style.opacity = '1';
-
     this.startCursorBlink(cursorElement);
     this.startTypeEffect(typedTextElement, originalText);
   }
@@ -172,11 +138,9 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
 
   private startTypeEffect(textElement: HTMLElement, text: string): void {
     let charIndex = 0;
-
     const typeInterval = setInterval(() => {
       textElement.textContent = text.substring(0, charIndex + 1);
       charIndex++;
-
       if (charIndex >= text.length) {
         clearInterval(typeInterval);
       }
@@ -186,30 +150,22 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
   private animateGlitch(banner: HTMLElement): void {
     const subtitle = banner.querySelector('.banner-subtitle') as HTMLElement;
     if (!subtitle) return;
-
     subtitle.style.opacity = '1';
     subtitle.style.transform = 'translate(0) scale(1)';
     subtitle.setAttribute('data-text', subtitle.textContent || '');
-
-    this.applyGlitchEffects(subtitle);
-  }
-
-  private applyGlitchEffects(element: HTMLElement): void {
     setTimeout(() => {
-      element.style.setProperty('--before-opacity', '0.8');
-      element.style.setProperty('--after-opacity', '0.8');
+      subtitle.style.setProperty('--before-opacity', '0.8');
+      subtitle.style.setProperty('--after-opacity', '0.8');
     }, 100);
   }
 
   private animateMorph(banner: HTMLElement): void {
     const description = banner.querySelector('.banner-description') as HTMLElement;
     if (!description) return;
-
     description.style.setProperty('opacity', '0', 'important');
     description.style.setProperty('transform', 'translateY(20px)', 'important');
     description.style.setProperty('filter', 'blur(3px)', 'important');
     description.style.setProperty('transition', 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)', 'important');
-
     requestAnimationFrame(() => {
       description.style.setProperty('opacity', '1', 'important');
       description.style.setProperty('transform', 'translateY(0)', 'important');
@@ -217,28 +173,18 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
     });
   }
 
-  private animateButton(banner: HTMLElement): void {
-    const button = banner.querySelector('.main-btn') as HTMLElement;
-    if (!button) return;
-
-    button.style.opacity = '1';
-    button.style.transform = 'scale(1)';
+  private animateButtons(banner: HTMLElement): void {
+    const buttons = banner.querySelectorAll('.main-btn') as NodeListOf<HTMLElement>;
+    buttons.forEach((btn, i) => {
+      setTimeout(() => {
+        btn.style.opacity = '1';
+        btn.style.transform = 'scale(1) translateY(0)';
+      }, i * 150);
+    });
   }
 
   private clearAllTimeouts(): void {
     this.animationTimeouts.forEach(id => clearTimeout(id));
     this.animationTimeouts = [];
-  }
-
-  public updateAnimationTiming(element: keyof typeof this.animationTimings, delay: number): void {
-    (this.animationTimings as any)[element] = delay;
-  }
-
-  public updateTypewriterSpeed(speed: number): void {
-    this.typewriterConfig.speed = speed;
-  }
-
-  public updateCursorBlinkRate(rate: number): void {
-    this.typewriterConfig.cursorBlinkRate = rate;
   }
 }
