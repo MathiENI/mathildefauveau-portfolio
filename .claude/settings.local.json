@@ -3,7 +3,9 @@
     "allow": [
       "Bash(npm run *)",
       "mcp__Claude_Preview__preview_start",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m 'feat: logo BackLab SVG — monograma B geometrico con concepto return *)",
+      "Bash(git push *)"
     ]
   }
 }
