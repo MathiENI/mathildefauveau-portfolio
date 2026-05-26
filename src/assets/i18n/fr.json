@@ -128,8 +128,8 @@
     {
       "Icon": "🎓",
       "Title": "Formations et titres certifiants",
-      "Description": "Titre RNCP — Conceptrice Développeuse d'Applications. Une formation reconnue qui couvre architecture logicielle, conception produit et développement full-stack.<br><br>Titre Webdesign Sensoriel et Stratégies de Créations en Ligne — Un titre professionnel qui m'a permis l'acquisition des toutes les compétences nécessaires à la création et à la conception de sites webs modernes et designés avec ❤\uFE0F<br><br> Certification OPQUAST — Pour les bonnes pratiques et la mise en conformité de mes prestations<br><br> Titre Sciences du Langage de l'Information et de la Communication — Un parcours universitaire basé sur l'apprentissage d'une communication claire et efficace, notamment au service du digital et des stratégies marketings qui l'accompagne",
-      "Stack": ["Niveau 6 · Bac+4"]
+      "Description": "<span class='underline'>Titre RNCP — Conceptrice Développeuse d'Applications.</span> Une formation reconnue qui couvre architecture logicielle, conception produit et développement full-stack.<br><span class='underline'>Titre Webdesign Sensoriel et Stratégies de Créations en Ligne</span> — Un titre professionnel qui m'a permis l'acquisition des toutes les compétences nécessaires à la création et à la conception de sites webs modernes et designés avec ❤\uFE0F<br><span class='underline'>Certification OPQUAST</span> — Pour les bonnes pratiques et la mise en conformité de mes prestations<br><span class='underline'>Titre Sciences du Langage de l'Information et de la Communication</span> — Un parcours universitaire basé sur l'apprentissage d'une communication claire et efficace, notamment au service du digital et des stratégies marketings qui l'accompagne",
+      "Stack": ["Niveau 6", "CDA", "ENI École Informatique", "Université de Limoges"]
     },
     {
       "Icon": "💻",
