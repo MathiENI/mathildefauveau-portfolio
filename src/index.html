@@ -7,7 +7,7 @@
   <title>BackLab Solutions — Outils simples pour petites structures</title>
   <meta name="title" content="BackLab Solutions — Outils simples pour petites structures">
   <meta name="description" content="BackLab construit des outils simples, abordables et immédiatement utiles pour les artisans, indépendants, bars, restaurants et petits commerces. Moins de logiciel. Plus de business.">
-  <meta name="keywords" content="BackLab, outils SaaS petites entreprises, création site vitrine, automatisation petites structures, logiciel artisan, micro-entrepreneur, indépendant">
+  <meta name="keywords" content="BackLab, logiciel artisan, outil SaaS petite structure, relance devis automatique, appel manqué client, avis google automatique, remplissage agenda, gestion bar stock, micro-entrepreneur, indépendant, commerçant">
   <meta name="author" content="BackLab Solutions">
   <meta name="robots" content="index, follow">
 
@@ -36,23 +36,40 @@
   <link rel="manifest" href="manifest.webmanifest">
   <meta name="theme-color" content="#0a0f1e">
 
-  <!-- Structured data -->
+  <!-- Structured data — Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "BackLab Solutions",
     "url": "https://backlab.fr",
-    "description": "BackLab construit des outils simples, abordables et immédiatement utiles pour les petites structures ambitieuses.",
+    "logo": "https://backlab.fr/assets/icons/logo-backlab-icon.svg",
+    "description": "BackLab construit des outils simples, abordables et immédiatement utiles pour les artisans, commerçants et indépendants.",
     "founder": {
       "@type": "Person",
-      "name": "Mathilde Fauveau"
+      "name": "Mathilde Fauveau",
+      "jobTitle": "Fondatrice & Développeuse"
     },
     "contactPoint": {
       "@type": "ContactPoint",
       "email": "contact@backlab.com",
-      "contactType": "customer service"
-    }
+      "contactType": "customer service",
+      "availableLanguage": ["French", "English"]
+    },
+    "sameAs": []
+  }
+  </script>
+  <!-- Structured data — SoftwareApplication (BackBoost) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "BackBoost",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": { "@type": "Offer", "availability": "https://schema.org/PreOrder" },
+    "description": "Automatisez vos relances de devis et récupérez du chiffre d'affaires perdu — sans y penser.",
+    "provider": { "@type": "Organization", "name": "BackLab Solutions" }
   }
   </script>
 </head>

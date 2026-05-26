@@ -61,7 +61,7 @@
                 white-space: nowrap;
 
                 .cursor {
-                    color: rgba(100, 255, 218, 0.8);
+                    color: rgba(77, 166, 255, 0.85);
                     font-weight: normal;
                     display: inline-block;
                     animation: cursor-blink 1s infinite;
@@ -156,7 +156,7 @@
 }
 
 @keyframes blink-caret {
-    from, to { border-color: rgba(100, 255, 218, 0.8); }
+    from, to { border-color: rgba(77, 166, 255, 0.85); }
     50% { border-color: transparent; }
 }
 

@@ -1,18 +1,55 @@
 <div>
 
+  <!-- ── SECTION EXPERTISE ─────────────────────────── -->
+  <section class="section expertise-section" id="expertise">
+    <div class="container">
+      <div class="section-box">
+        <div data-animate="slideInUp" data-animate-duration="1000">
+          <h3 class="section-title">
+            <span class="n-section-title">05.</span>
+            {{ "Expertise.Title" | translate }}
+          </h3>
+          <p class="section-subtitle">{{ "Expertise.Subtitle" | translate }}</p>
+        </div>
+
+        <div class="expertise-grid">
+          <div
+            *ngFor="let item of 'Expertise.Items' | translate; let i = index"
+            class="expertise-card"
+            data-animate="fadeInUp"
+            data-animate-duration="700"
+            [attr.data-animate-delay]="150 + (i * 100)">
+
+            <div class="expertise-icon">{{ item.Icon }}</div>
+            <h4 class="expertise-title">{{ item.Title }}</h4>
+            <p class="expertise-desc">{{ item.Description }}</p>
+
+            <div class="expertise-detail" *ngIf="item.Detail">
+              <span class="detail-tag">{{ item.Detail }}</span>
+            </div>
+
+            <div class="expertise-stack" *ngIf="item.Stack">
+              <span class="stack-badge" *ngFor="let tech of item.Stack">{{ tech }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ── SECTION FOUNDER ──────────────────────────── -->
   <section class="section founder-section" id="founder">
     <div class="container">
       <div class="section-box">
-        <div data-aos="fade-up" data-aos-duration="1000">
+        <div data-animate="slideInUp" data-animate-duration="1000">
           <h3 class="section-title">
-            <span class="n-section-title">05.</span>
+            <span class="n-section-title">06.</span>
             {{ "Founder.Title" | translate }}
           </h3>
         </div>
 
         <div class="founder-content">
-          <div class="founder-text" data-aos="fade-right" data-aos-duration="900" data-aos-delay="150">
+          <div class="founder-text" data-animate="fadeInRight" data-animate-duration="900" data-animate-delay="150">
             <p *ngFor="let para of 'Founder.Paragraphs' | translate"
                [innerHTML]="para"
                class="founder-para">
@@ -23,7 +60,7 @@
             </div>
           </div>
 
-          <div class="founder-visual" data-aos="fade-left" data-aos-duration="900" data-aos-delay="250">
+          <div class="founder-visual" data-animate="fadeInLeft" data-animate-duration="900" data-animate-delay="250">
             <div class="founder-card">
               <div class="founder-avatar">
                 <img src="assets/images/couv.png"
@@ -45,9 +82,9 @@
   <section class="section faq-section" id="faq">
     <div class="container">
       <div class="section-box">
-        <div data-aos="fade-up" data-aos-duration="1000">
+        <div data-animate="slideInUp" data-animate-duration="1000">
           <h3 class="section-title">
-            <span class="n-section-title">06.</span>
+            <span class="n-section-title">07.</span>
             {{ "FAQ.Title" | translate }}
           </h3>
         </div>
@@ -58,9 +95,9 @@
             class="faq-item"
             [class.faq-open]="openIndex === i"
             (click)="toggle(i)"
-            data-aos="fade-up"
-            data-aos-duration="600"
-            [attr.data-aos-delay]="i * 80">
+            data-animate="fadeInUp"
+            data-animate-duration="600"
+            [attr.data-animate-delay]="i * 70">
 
             <div class="faq-question">
               <span>{{ item.Question }}</span>

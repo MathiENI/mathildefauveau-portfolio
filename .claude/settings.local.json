@@ -9,7 +9,9 @@
       "Bash(git commit -m 'fix\\(btn\\): remplace les anciennes couleurs hover par #846afb *)",
       "Bash(python3 -)",
       "Bash(git commit -m 'fix\\(loader\\): remplace les 289 occurrences de rose dans loader.json *)",
-      "Bash(git commit -m 'feat: logo, footer amélioré, pages légales *)"
+      "Bash(git commit -m 'feat: logo, footer amélioré, pages légales *)",
+      "Bash(git commit -m 'refactor\\(btn\\): border gradient #4da6ff→#846afb, supprime background hover *)",
+      "Bash(git commit *)"
     ]
   }
 }

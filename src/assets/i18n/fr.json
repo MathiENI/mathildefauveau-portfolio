@@ -7,147 +7,190 @@
   "Header.cvName": "",
   "Loading": "Chargement...",
 
-  "Banner.Pretitle": "Bienvenue chez",
+  "Banner.Pretitle": "Pour les artisans, commerçants & indépendants",
   "Banner.Title": "BackLab Solutions.",
-  "Banner.Subtitle": "Moins de logiciel. Plus de business.",
-  "Banner.Description": "Nous construisons des <span class='underline'>outils simples, abordables et immédiatement utiles</span> pour les petites structures ambitieuses. Pas d'usine à gaz. Pas de fonctionnalités inutiles. Juste l'essentiel qui fonctionne.",
+  "Banner.Subtitle": "Le logiciel qui ne vous complique pas la vie.",
+  "Banner.Description": "BackLab construit des outils <span class='underline'>simples, clairs et accessibles</span> pour les indépendants, artisans, commerces et petites structures. Pas de formation. Pas de jargon. Pas d'usine à gaz. <br><strong>Pas besoin d'être expert en informatique.</strong>",
   "Banner.ActionBtn": "Découvrir nos produits",
   "Banner.ActionBtn2": "Parler de votre besoin",
 
-  "Problem.Title": "Les petites structures méritent mieux.",
-  "Problem.Subtitle": "Le marché leur propose des outils pensés pour de grosses équipes. Pas pour elles.",
+  "Problem.Title": "Vous avez un métier à faire.",
+  "Problem.Subtitle": "Pas un logiciel à apprendre. Le marché propose des outils pensés pour de grosses équipes — pas pour les petites structures qui font tourner l'économie réelle.",
   "Problem.Items": [
     {
       "Icon": "💸",
       "Title": "Trop cher",
-      "Description": "Des abonnements conçus pour des équipes de 50 personnes, facturés à une personne seule."
+      "Description": "Des abonnements conçus pour des équipes de 50 personnes, facturés à quelqu'un qui travaille seul ou à deux."
     },
     {
       "Icon": "🌀",
       "Title": "Trop complexe",
-      "Description": "Des interfaces à 200 options pour faire une seule chose. L'apprentissage prend des semaines."
+      "Description": "Des interfaces avec 200 options pour faire une seule chose. L'apprentissage prend des semaines. Vous abandonner au bout de deux jours."
     },
     {
       "Icon": "😰",
       "Title": "Trop intimidant",
-      "Description": "Des dashboards pensés pour des product managers, pas pour des artisans ou gérants de bar."
+      "Description": "Des dashboards pensés pour des product managers, pas pour un artisan qui veut juste suivre ses devis ou un gérant de bar qui veut voir ses stocks."
     },
     {
       "Icon": "🗑️",
-      "Title": "Trop de bloat",
-      "Description": "90% des fonctionnalités ne seront jamais utilisées. Mais elles sont là, et elles ralentissent tout."
+      "Title": "Plein de trucs inutiles",
+      "Description": "90% des fonctionnalités ne seront jamais utilisées. Mais elles sont là, elles surchargent l'écran, et elles ralentissent tout."
     }
   ],
 
-  "Vision.Title": "Pourquoi BackLab existe",
-  "Vision.Manifesto": "Nous croyons que les meilleurs outils font moins, pas plus.<br><br>Nous construisons les <span class='underline'>10% de fonctionnalités qui génèrent 90% de la valeur</span>. Des outils qui se lancent en minutes, pas en semaines. Des interfaces qu'on comprend sans formation. Des prix accessibles pour ceux qui font tourner leur activité seuls.<br><br>BackLab, c'est l'anti-usine-à-gaz.",
+  "Vision.Title": "Ce en quoi nous croyons",
+  "Vision.Manifesto": "Le meilleur logiciel est celui qu'on oublie qu'on utilise.<br><br>Nous construisons les <span class='underline'>10% de fonctionnalités qui génèrent 90% de la valeur</span>. Des outils qui se comprennent en 5 minutes, sans formation. Des prix accessibles pour ceux qui font tourner leur activité seuls ou en petite équipe.<br><br>Pas d'interface intimidante. Pas de fonctionnalités cachées derrière des menus à rallonge. Juste l'essentiel — <span class='underline'>disponible immédiatement, utile dès le premier jour</span>.<br><br>BackLab, c'est du logiciel calme. Pour de vraies personnes, avec de vrais métiers.",
 
   "Products.Title": "Nos produits",
-  "Products.Subtitle": "Une gamme cohérente d'outils simples, pensés pour les petites structures.",
+  "Products.Subtitle": "Chaque outil BackLab résout un problème précis, pour une structure précise. Pas plus.",
   "Products.Items": [
     {
       "Name": "BackBoost",
-      "Tagline": "Récupérez les devis oubliés et gardez le contrôle sur vos relances.",
-      "Description": "Ne perdez plus de chiffre d'affaires sur des devis qui traînent. BackBoost automatise vos relances et vous donne une vue claire de votre pipeline.",
-      "Status": "En développement",
-      "Icon": "⚡"
+      "Tagline": "Récupérez les devis oubliés. Ne perdez plus de chiffre d'affaires.",
+      "Description": "Chaque devis sans suite, c'est de l'argent qui part. BackBoost automatise vos relances et vous donne une vue claire de votre pipeline commercial — sans que vous ayez à y penser.",
+      "Status": "Ouverture progressive",
+      "StatusNote": "Early access",
+      "Icon": "⚡",
+      "AccentClass": "accent-green"
     },
     {
       "Name": "BackCall",
-      "Tagline": "Ne laissez plus un appel manqué devenir un client perdu.",
-      "Description": "Chaque appel sans réponse est une opportunité qui part chez le concurrent. BackCall vous rappelle qui a appelé et vous aide à les recontacter avant qu'il ne soit trop tard.",
-      "Status": "En développement",
-      "Icon": "📞"
+      "Tagline": "Un appel manqué ne doit pas devenir un client perdu.",
+      "Description": "Chaque appel sans réponse part chez le concurrent. BackCall vous notifie qui a appelé et vous aide à les recontacter rapidement — depuis votre téléphone, en deux clics.",
+      "Status": "Ouverture progressive",
+      "StatusNote": "Early access",
+      "Icon": "📞",
+      "AccentClass": "accent-orange"
     },
     {
       "Name": "BackReview",
-      "Tagline": "Transformez vos clients satisfaits en avis qui comptent.",
-      "Description": "Les avis en ligne font votre réputation. BackReview simplifie la collecte d'avis et booste votre visibilité sans effort de votre part.",
-      "Status": "En développement",
-      "Icon": "⭐"
+      "Tagline": "Vos clients satisfaits doivent le faire savoir. Facilement.",
+      "Description": "Les avis en ligne font votre réputation locale. BackReview envoie automatiquement une invitation à laisser un avis aux clients qui viennent de passer — sans que vous ayez à demander.",
+      "Status": "Ouverture progressive",
+      "StatusNote": "Early access",
+      "Icon": "⭐",
+      "AccentClass": "accent-purple"
     },
     {
       "Name": "BackFill",
-      "Tagline": "Remplissez vos créneaux vides avant qu'ils ne coûtent de l'argent.",
-      "Description": "Un créneau vide, c'est du revenu perdu. BackFill vous aide à optimiser votre planning et à remplir vos disponibilités intelligemment.",
-      "Status": "En développement",
-      "Icon": "📅"
+      "Tagline": "Un créneau vide, c'est du revenu perdu. Remplissez-le.",
+      "Description": "BackFill identifie vos créneaux libres et les propose intelligemment à vos clients — par SMS ou notification. Plus de trous dans votre agenda, plus de temps mort facturé zéro.",
+      "Status": "Ouverture progressive",
+      "StatusNote": "Early access",
+      "Icon": "📅",
+      "AccentClass": "accent-cyan"
     },
     {
       "Name": "BackBar",
-      "Tagline": "Pilotez votre marge et votre réassort sans ERP infernal.",
-      "Description": "Conçu pour les bars et restaurants, BackBar vous donne une vision simple et claire de vos stocks, marges et réassorts — sans la complexité d'un ERP.",
-      "Status": "En développement",
-      "Icon": "🍺"
+      "Tagline": "Pilotez votre bar sans ERP. Juste ce dont vous avez besoin.",
+      "Description": "Stocks, marges, réassorts — BackBar vous donne la vision claire dont vous avez besoin pour piloter votre activité, sans la complexité d'un système à 800€/mois.",
+      "Status": "Ouverture progressive",
+      "StatusNote": "Early access",
+      "Icon": "🍺",
+      "AccentClass": "accent-amber"
     }
   ],
 
-  "Services.Title": "Besoin de quelque chose de plus spécifique ?",
-  "Services.Subtitle": "BackLab ne construit pas uniquement ses propres produits. Nous aidons aussi certaines petites structures à créer des solutions digitales simples et efficaces.",
+  "Services.Title": "Besoin d'un accompagnement sur mesure ?",
+  "Services.Subtitle": "BackLab aide aussi certaines petites structures à créer des présences digitales simples et efficaces. Pas d'agence, pas de devis à 5 chiffres — de l'expertise ciblée au bon prix.",
   "Services.Items": [
     {
       "Icon": "🌐",
       "Title": "Sites vitrines",
-      "Description": "Un site professionnel, rapide, beau et pensé pour convertir — sans les tarifs d'une agence."
+      "Description": "Un site professionnel, rapide et pensé pour convertir. Sans les tarifs d'une agence et sans les compromis d'un template générique."
     },
     {
       "Icon": "🎯",
       "Title": "Landing pages",
-      "Description": "Des pages d'atterrissage orientées conversion, avec des textes qui convainquent et une structure qui guide."
+      "Description": "Des pages d'atterrissage orientées conversion. Des textes qui convainquent, une structure qui guide le visiteur vers l'action."
     },
     {
       "Icon": "⚙️",
       "Title": "Automatisations simples",
-      "Description": "Automatisez les tâches répétitives qui vous font perdre du temps. Sans vous transformer en développeur."
+      "Description": "Automatisez les tâches répétitives qui vous font perdre du temps — relances, notifications, exports — sans devenir développeur."
     },
     {
       "Icon": "🔧",
       "Title": "Mini outils métier",
-      "Description": "Un calculateur de prix, un formulaire de devis, un petit outil sur mesure — adapté à votre activité."
+      "Description": "Un calculateur de prix, un formulaire de devis intelligent, un outil de suivi adapté à votre activité. Simple, précis, opérationnel."
     },
     {
       "Icon": "🧭",
-      "Title": "Accompagnement digital",
-      "Description": "Pas sûr(e) de ce dont vous avez besoin ? On en parle ensemble et on trouve la solution la plus simple."
+      "Title": "Conseil digital",
+      "Description": "Vous ne savez pas par où commencer ? Pas de problème. On en parle ensemble et on trouve la solution la plus simple pour votre situation."
     }
   ],
   "Services.Cta": "Discutons de votre projet",
+
+  "Expertise.Title": "Pourquoi faire confiance à BackLab ?",
+  "Expertise.Subtitle": "Derrière des interfaces simples, une vraie expertise technique et produit.",
+  "Expertise.Items": [
+    {
+      "Icon": "🎓",
+      "Title": "Formation certifiante",
+      "Description": "Titre RNCP — Conceptrice Développeuse d'Applications. Une formation reconnue qui couvre architecture logicielle, conception produit et développement full-stack.",
+      "Detail": "Niveau 6 · Bac+4"
+    },
+    {
+      "Icon": "💻",
+      "Title": "Stack moderne & éprouvée",
+      "Description": "Les outils BackLab sont construits avec les technologies qui font tourner les meilleurs SaaS du marché. Pas de bricolage.",
+      "Stack": ["Angular", "React", "TypeScript", "Supabase", "Stripe", "Python", "APIs REST"]
+    },
+    {
+      "Icon": "🎨",
+      "Title": "UX pensée pour les humains",
+      "Description": "Chaque interface est conçue pour être comprise sans formation. Design accessible, contrastes corrects, navigation claire — même sur mobile.",
+      "Detail": "WCAG · Mobile-first · Accessibilité"
+    },
+    {
+      "Icon": "⚙️",
+      "Title": "Automatisation & outils métier",
+      "Description": "Des workflows pragmatiques qui réduisent les tâches répétitives. Pas de solutions sur-dimensionnées — juste ce qui marche pour votre activité.",
+      "Detail": "Zapier · n8n · APIs sur mesure"
+    }
+  ],
 
   "Founder.Title": "Derrière BackLab",
   "Founder.Name": "Mathilde Fauveau",
   "Founder.Role": "Fondatrice & Développeuse",
   "Founder.Paragraphs": [
-    "BackLab n'est pas née dans un grand bureau. Elle est née d'une frustration concrète : voir des petites structures bricoler avec des outils pensés pour de grosses équipes, ou renoncer complètement au digital parce que c'est <span class='underline'>trop cher, trop compliqué, trop intimidant</span>.",
-    "Développeuse web de formation, avec une expérience dans le produit digital et une immersion concrète dans le monde des petits commerces, j'ai voulu créer les outils que j'aurais voulu voir exister.",
-    "Mon approche est simple : <span class='underline'>pragmatique, utile, immédiatement</span>. Rien de superflu. Tout ce qui aide vraiment."
+    "BackLab est née d'une frustration concrète : trop de petites structures <span class='underline'>abandonnent le digital</span> parce que les outils disponibles sont pensés pour de grosses entreprises — trop chers, trop complexes, trop intimidants.",
+    "Je suis développeuse, et j'ai travaillé sur des produits digitaux assez longtemps pour comprendre à quel point la <span class='underline'>simplicité est difficile à atteindre</span> — et à quel point elle change tout pour l'utilisateur final.",
+    "Mon pari avec BackLab : construire le logiciel que j'aurais voulu voir exister. <span class='underline'>Pragmatique, utile, immédiatement</span>. Rien de superflu. Tout ce qui aide vraiment à faire tourner une petite structure sans prise de tête."
   ],
 
   "FAQ.Title": "Questions fréquentes",
   "FAQ.Items": [
     {
-      "Question": "Vos outils sont-ils faits pour les micro-entreprises ?",
-      "Answer": "Oui, c'est exactement pour ça qu'ils ont été conçus. Chaque produit BackLab est pensé pour des structures de 1 à 10 personnes qui n'ont ni le temps ni l'envie de s'embêter avec un logiciel complexe."
-    },
-    {
-      "Question": "Dois-je être technique pour utiliser vos produits ?",
-      "Answer": "Absolument pas. Si vous savez utiliser WhatsApp, vous saurez utiliser BackLab. Nos interfaces sont pensées pour être comprises en moins de 5 minutes, sans formation."
+      "Question": "Dois-je être à l'aise avec l'informatique ?",
+      "Answer": "Non. Si vous savez utiliser WhatsApp ou consulter vos e-mails, vous saurez utiliser BackLab. Nos outils sont conçus pour être compris en moins de 5 minutes, sans formation. C'est notre engagement."
     },
     {
       "Question": "Les produits sont-ils déjà disponibles ?",
-      "Answer": "Ils sont actuellement en développement. Inscrivez-vous sur la liste d'attente pour être parmi les premiers à y accéder et bénéficier des tarifs de lancement."
+      "Answer": "Ils sont en construction active. Nous ouvrons l'accès progressivement à des structures sélectionnées pour tester et affiner chaque outil. Rejoignez la liste d'attente pour être parmi les premiers — avec les tarifs de lancement."
     },
     {
-      "Question": "Faites-vous du développement sur mesure ?",
-      "Answer": "Oui, dans certains cas. Si votre besoin est simple, concret et qu'aucun de nos produits ne couvre exactement votre cas, nous pouvons discuter d'une solution adaptée."
+      "Question": "Puis-je rejoindre une liste d'attente ?",
+      "Answer": "Oui, et c'est la meilleure chose à faire maintenant. Contactez-nous par email avec votre activité et votre besoin. Les inscrits sur liste d'attente bénéficient de tarifs préférentiels et d'un accès prioritaire."
     },
     {
-      "Question": "Puis-je vous contacter pour un besoin spécifique ?",
-      "Answer": "Bien sûr. Envoyez-nous un message via le formulaire de contact ou directement par email. Nous répondons dans les 48h."
+      "Question": "Travaillez-vous aussi sur des projets sur mesure ?",
+      "Answer": "Oui, dans certains cas ciblés. Si votre besoin est concret et simple, et qu'aucun de nos produits ne le couvre exactement, nous pouvons discuter d'une solution adaptée à votre activité."
+    },
+    {
+      "Question": "Quels types de structures accompagnez-vous ?",
+      "Answer": "Artisans, indépendants, micro-entrepreneurs, gérants de bar ou restaurant, coiffeurs, garages, petits commerces — toute structure de 1 à 15 personnes qui veut avancer sur le digital sans se battre avec un logiciel compliqué."
+    },
+    {
+      "Question": "Vos prix sont adaptés aux petites structures ?",
+      "Answer": "C'est le coeur de notre modèle. Nos outils sont conçus pour être accessibles à une personne qui travaille seule. Pas d'abonnement gonflé avec des fonctionnalités dont vous n'avez pas besoin."
     }
   ],
 
   "Contact.Pretitle": "Construisons quelque chose de simple.",
-  "Contact.Title": "On construit les outils qu'on aurait aimé voir exister.",
-  "Contact.Content": "Une question sur nos produits ? Un projet spécifique ? Envie de rejoindre la liste d'attente ? Écrivez-nous — nous sommes humains et nous répondons.",
+  "Contact.Title": "On vous répond comme des humains.",
+  "Contact.Content": "Une question sur nos produits ? Un projet concret à discuter ? Envie de rejoindre la liste d'attente ? Écrivez-nous — on répond dans les 48h, sans formulaire kafkaïen ni relance automatique.",
   "Contact.Btn": "Nous écrire"
 }

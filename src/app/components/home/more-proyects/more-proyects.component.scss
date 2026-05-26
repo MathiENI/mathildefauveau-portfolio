@@ -1,5 +1,102 @@
 @use "./../../../../variables" as *;
 
+// ── Expertise Section ──────────────────────────────────
+.expertise-section {
+  padding: 80px 0;
+
+  .section-subtitle {
+    color: $Slate;
+    font-size: 18px;
+    margin-top: 12px;
+    max-width: 560px;
+    line-height: 1.6;
+  }
+
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .expertise-card {
+    background: $LightNavy;
+    border: 1px solid rgba(77, 166, 255, 0.10);
+    border-radius: 14px;
+    padding: 28px 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      border-color: rgba(77, 166, 255, 0.28);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+    }
+  }
+
+  .expertise-icon {
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 2px;
+  }
+
+  .expertise-title {
+    font-family: $MainFont;
+    font-weight: 700;
+    font-size: 18px;
+    color: $LightestSlate;
+    margin: 0;
+  }
+
+  .expertise-desc {
+    font-size: 14px;
+    color: $Slate;
+    line-height: 1.65;
+    margin: 0;
+    flex: 1;
+  }
+
+  .expertise-detail {
+    margin-top: 4px;
+  }
+
+  .detail-tag {
+    font-family: $CodeFont;
+    font-size: 11px;
+    color: $Green;
+    background: rgba(77, 166, 255, 0.08);
+    border: 1px solid rgba(77, 166, 255, 0.18);
+    border-radius: 20px;
+    padding: 3px 12px;
+    letter-spacing: 0.3px;
+    display: inline-block;
+  }
+
+  .expertise-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+  }
+
+  .stack-badge {
+    font-family: $CodeFont;
+    font-size: 11px;
+    color: $LightSlate;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 4px;
+    padding: 2px 8px;
+    letter-spacing: 0.2px;
+  }
+}
+
 // ── Founder Section ────────────────────────────────────
 .founder-section {
   padding: 80px 0;

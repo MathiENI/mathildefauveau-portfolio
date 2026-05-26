@@ -14,10 +14,39 @@
         <div
           *ngFor="let product of 'Products.Items' | translate; let i = index"
           class="product-card"
+          [ngClass]="product.AccentClass"
           data-animate="fadeInUp"
           [attr.data-animate-delay]="200 + (i * 120)"
           data-animate-duration="700">
 
+          <!-- Mockup visuel -->
+          <div class="product-mockup" aria-hidden="true">
+            <div class="mockup-chrome">
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+              <span class="mockup-dot"></span>
+              <span class="mockup-name">{{ product.Name }}</span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-kpi">
+                <div class="kpi-bar kpi-accent"></div>
+                <div class="kpi-bar kpi-dim w-60"></div>
+              </div>
+              <div class="mockup-rows">
+                <div class="mockup-row row-full row-accent"></div>
+                <div class="mockup-row row-med row-dim"></div>
+                <div class="mockup-row row-sm row-dim"></div>
+                <div class="mockup-row row-med row-accent-soft"></div>
+              </div>
+              <div class="mockup-footer-bar">
+                <div class="footer-pill footer-pill-accent"></div>
+                <div class="footer-pill footer-pill-dim"></div>
+                <div class="footer-pill footer-pill-dim"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contenu -->
           <div class="product-header">
             <span class="product-icon">{{ product.Icon }}</span>
             <span class="product-status">{{ product.Status }}</span>
@@ -28,7 +57,9 @@
           <p class="product-desc">{{ product.Description }}</p>
 
           <div class="product-footer">
-            <span class="product-cta">Bientôt disponible →</span>
+            <a class="product-cta" href="mailto:contact@backlab.com">
+              Rejoindre la liste d'attente →
+            </a>
           </div>
         </div>
       </div>

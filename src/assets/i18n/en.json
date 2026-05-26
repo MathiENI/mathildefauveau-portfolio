@@ -7,147 +7,190 @@
   "Header.cvName": "",
   "Loading": "Loading...",
 
-  "Banner.Pretitle": "Welcome to",
+  "Banner.Pretitle": "For craftspeople, shop owners & freelancers",
   "Banner.Title": "BackLab Solutions.",
-  "Banner.Subtitle": "Less software. More business.",
-  "Banner.Description": "We build <span class='underline'>simple, affordable and immediately useful tools</span> for ambitious small businesses. No bloat. No unnecessary features. Just the essentials that work.",
+  "Banner.Subtitle": "Software that doesn't get in your way.",
+  "Banner.Description": "BackLab builds <span class='underline'>simple, clear and accessible tools</span> for freelancers, craftspeople, shops and small businesses. No training. No jargon. No bloat. <br><strong>No need to be a tech expert.</strong>",
   "Banner.ActionBtn": "Discover our products",
   "Banner.ActionBtn2": "Talk about your need",
 
-  "Problem.Title": "Small businesses deserve better.",
-  "Problem.Subtitle": "The market offers them tools designed for large teams. Not for them.",
+  "Problem.Title": "You have a job to do.",
+  "Problem.Subtitle": "Not software to learn. The market offers tools designed for large teams — not for small businesses that keep the real economy running.",
   "Problem.Items": [
     {
       "Icon": "💸",
       "Title": "Too expensive",
-      "Description": "Subscriptions designed for 50-person teams, billed to a single person."
+      "Description": "Subscriptions designed for 50-person teams, billed to someone working alone or in a pair."
     },
     {
       "Icon": "🌀",
       "Title": "Too complex",
-      "Description": "Interfaces with 200 options to do one thing. The learning curve takes weeks."
+      "Description": "Interfaces with 200 options to do one single thing. The learning curve takes weeks. You give up after two days."
     },
     {
       "Icon": "😰",
       "Title": "Too intimidating",
-      "Description": "Dashboards designed for product managers, not for craftspeople or bar owners."
+      "Description": "Dashboards designed for product managers, not for a craftsperson tracking quotes or a bar owner checking stock."
     },
     {
       "Icon": "🗑️",
-      "Title": "Too much bloat",
-      "Description": "90% of features will never be used. But they're there, slowing everything down."
+      "Title": "Full of useless stuff",
+      "Description": "90% of features will never be used. But they're there, cluttering the screen, slowing everything down."
     }
   ],
 
-  "Vision.Title": "Why BackLab exists",
-  "Vision.Manifesto": "We believe the best tools do less, not more.<br><br>We build the <span class='underline'>10% of features that generate 90% of the value</span>. Tools that launch in minutes, not weeks. Interfaces you understand without training. Prices accessible to those running their business alone.<br><br>BackLab is the anti-bloat solution.",
+  "Vision.Title": "What we believe in",
+  "Vision.Manifesto": "The best software is the kind you forget you're using.<br><br>We build the <span class='underline'>10% of features that generate 90% of the value</span>. Tools you understand in 5 minutes, without training. Prices accessible to those running their business alone or in a small team.<br><br>No intimidating interfaces. No features buried in endless menus. Just the essentials — <span class='underline'>available immediately, useful from day one</span>.<br><br>BackLab is calm software. For real people, with real jobs.",
 
   "Products.Title": "Our products",
-  "Products.Subtitle": "A coherent range of simple tools, designed for small businesses.",
+  "Products.Subtitle": "Each BackLab tool solves one precise problem, for one precise kind of business. Nothing more.",
   "Products.Items": [
     {
       "Name": "BackBoost",
-      "Tagline": "Recover forgotten quotes and keep control of your follow-ups.",
-      "Description": "Stop losing revenue on quotes that sit untouched. BackBoost automates your follow-ups and gives you a clear view of your pipeline.",
-      "Status": "In development",
-      "Icon": "⚡"
+      "Tagline": "Recover forgotten quotes. Stop losing revenue.",
+      "Description": "Every quote without a follow-up is money walking out the door. BackBoost automates your follow-ups and gives you a clear view of your sales pipeline — without you having to think about it.",
+      "Status": "Progressive rollout",
+      "StatusNote": "Early access",
+      "Icon": "⚡",
+      "AccentClass": "accent-green"
     },
     {
       "Name": "BackCall",
-      "Tagline": "Never let a missed call become a lost customer again.",
-      "Description": "Every unanswered call is an opportunity that goes to your competitor. BackCall reminds you who called and helps you reach back before it's too late.",
-      "Status": "In development",
-      "Icon": "📞"
+      "Tagline": "A missed call shouldn't become a lost customer.",
+      "Description": "Every unanswered call goes to your competitor. BackCall notifies you who called and helps you reach back quickly — from your phone, in two taps.",
+      "Status": "Progressive rollout",
+      "StatusNote": "Early access",
+      "Icon": "📞",
+      "AccentClass": "accent-orange"
     },
     {
       "Name": "BackReview",
-      "Tagline": "Turn satisfied customers into reviews that matter.",
-      "Description": "Online reviews build your reputation. BackReview simplifies review collection and boosts your visibility effortlessly.",
-      "Status": "In development",
-      "Icon": "⭐"
+      "Tagline": "Satisfied customers should spread the word. Easily.",
+      "Description": "Online reviews build your local reputation. BackReview automatically sends a review invitation to customers right after their visit — without you having to ask.",
+      "Status": "Progressive rollout",
+      "StatusNote": "Early access",
+      "Icon": "⭐",
+      "AccentClass": "accent-purple"
     },
     {
       "Name": "BackFill",
-      "Tagline": "Fill your empty slots before they cost you money.",
-      "Description": "An empty slot is lost revenue. BackFill helps you optimize your schedule and fill your availability intelligently.",
-      "Status": "In development",
-      "Icon": "📅"
+      "Tagline": "An empty slot is lost revenue. Fill it.",
+      "Description": "BackFill identifies your free slots and intelligently offers them to your clients — by SMS or notification. No more gaps in your calendar, no more unpaid downtime.",
+      "Status": "Progressive rollout",
+      "StatusNote": "Early access",
+      "Icon": "📅",
+      "AccentClass": "accent-cyan"
     },
     {
       "Name": "BackBar",
-      "Tagline": "Manage your margins and restocking without an infernal ERP.",
-      "Description": "Built for bars and restaurants, BackBar gives you a simple, clear view of your inventory, margins and restock — without the complexity of an ERP.",
-      "Status": "In development",
-      "Icon": "🍺"
+      "Tagline": "Run your bar without an ERP. Just what you need.",
+      "Description": "Stock, margins, restocking — BackBar gives you the clear view you need to run your business, without the complexity of an 800€/month system.",
+      "Status": "Progressive rollout",
+      "StatusNote": "Early access",
+      "Icon": "🍺",
+      "AccentClass": "accent-amber"
     }
   ],
 
-  "Services.Title": "Need something more specific?",
-  "Services.Subtitle": "BackLab doesn't only build its own products. We also help certain small businesses create simple and effective digital solutions.",
+  "Services.Title": "Need tailored support?",
+  "Services.Subtitle": "BackLab also helps some small businesses build simple and effective digital presences. No agency markup, no five-figure quotes — targeted expertise at the right price.",
   "Services.Items": [
     {
       "Icon": "🌐",
       "Title": "Showcase websites",
-      "Description": "A professional, fast, beautiful website designed to convert — without agency prices."
+      "Description": "A professional, fast website built to convert. Without agency prices and without the compromises of a generic template."
     },
     {
       "Icon": "🎯",
       "Title": "Landing pages",
-      "Description": "Conversion-focused landing pages, with copy that convinces and a structure that guides."
+      "Description": "Conversion-focused landing pages. Copy that convinces, a structure that guides your visitor toward action."
     },
     {
       "Icon": "⚙️",
       "Title": "Simple automations",
-      "Description": "Automate repetitive tasks that waste your time. Without becoming a developer."
+      "Description": "Automate repetitive tasks that waste your time — follow-ups, notifications, exports — without becoming a developer."
     },
     {
       "Icon": "🔧",
       "Title": "Custom mini-tools",
-      "Description": "A price calculator, a quote form, a small custom tool — adapted to your business."
+      "Description": "A price calculator, a smart quote form, a tracking tool tailored to your business. Simple, precise, operational."
     },
     {
       "Icon": "🧭",
-      "Title": "Digital guidance",
-      "Description": "Not sure what you need? Let's talk it through and find the simplest solution."
+      "Title": "Digital consulting",
+      "Description": "Not sure where to start? No problem. We talk it through and find the simplest solution for your situation."
     }
   ],
-  "Services.Cta": "Let's talk about your project",
+  "Services.Cta": "Let's discuss your project",
+
+  "Expertise.Title": "Why trust BackLab?",
+  "Expertise.Subtitle": "Behind simple interfaces, real technical and product expertise.",
+  "Expertise.Items": [
+    {
+      "Icon": "🎓",
+      "Title": "Certified training",
+      "Description": "RNCP Title — Application Designer & Developer. A recognised qualification covering software architecture, product design and full-stack development.",
+      "Detail": "Level 6 · Bac+4 equivalent"
+    },
+    {
+      "Icon": "💻",
+      "Title": "Modern, proven stack",
+      "Description": "BackLab tools are built with the technologies powering the best SaaS products on the market. No patchwork solutions.",
+      "Stack": ["Angular", "React", "TypeScript", "Supabase", "Stripe", "Python", "REST APIs"]
+    },
+    {
+      "Icon": "🎨",
+      "Title": "UX designed for humans",
+      "Description": "Every interface is designed to be understood without training. Accessible design, correct contrast, clear navigation — even on mobile.",
+      "Detail": "WCAG · Mobile-first · Accessibility"
+    },
+    {
+      "Icon": "⚙️",
+      "Title": "Automation & business tools",
+      "Description": "Pragmatic workflows that reduce repetitive tasks. No over-engineered solutions — just what works for your business.",
+      "Detail": "Zapier · n8n · Custom APIs"
+    }
+  ],
 
   "Founder.Title": "Behind BackLab",
   "Founder.Name": "Mathilde Fauveau",
   "Founder.Role": "Founder & Developer",
   "Founder.Paragraphs": [
-    "BackLab wasn't born in a big office. It was born from a concrete frustration: watching small businesses struggle with tools designed for large teams, or giving up on digital entirely because it's <span class='underline'>too expensive, too complex, too intimidating</span>.",
-    "A web developer by training, with experience in digital product and real-world immersion in the world of small businesses, I wanted to create the tools I wished existed.",
-    "My approach is simple: <span class='underline'>pragmatic, useful, immediately</span>. Nothing superfluous. Everything that truly helps."
+    "BackLab was born from a concrete frustration: too many small businesses <span class='underline'>give up on digital</span> because the available tools are built for large companies — too expensive, too complex, too intimidating.",
+    "I'm a developer, and I've worked on digital products long enough to understand how <span class='underline'>difficult simplicity truly is</span> — and how much it changes everything for the end user.",
+    "My bet with BackLab: build the software I wished existed. <span class='underline'>Pragmatic, useful, immediately</span>. Nothing superfluous. Everything that truly helps a small business run without the headache."
   ],
 
   "FAQ.Title": "Frequently asked questions",
   "FAQ.Items": [
     {
-      "Question": "Are your tools designed for micro-businesses?",
-      "Answer": "Yes, that's exactly what they were built for. Every BackLab product is designed for 1-10 person businesses who don't have the time or desire to deal with complex software."
-    },
-    {
-      "Question": "Do I need technical skills to use your products?",
-      "Answer": "Absolutely not. If you can use WhatsApp, you can use BackLab. Our interfaces are designed to be understood in under 5 minutes, with no training required."
+      "Question": "Do I need to be comfortable with technology?",
+      "Answer": "No. If you can use WhatsApp or check your email, you can use BackLab. Our tools are designed to be understood in under 5 minutes, with no training. That's our commitment."
     },
     {
       "Question": "Are the products already available?",
-      "Answer": "They are currently in development. Sign up for the waiting list to be among the first to access them and benefit from launch pricing."
+      "Answer": "They're in active development. We're opening access progressively to selected businesses to test and refine each tool. Join the waiting list to be among the first — with launch pricing."
     },
     {
-      "Question": "Do you do custom development?",
-      "Answer": "Yes, in certain cases. If your need is simple, concrete, and none of our products cover your specific situation, we can discuss a tailored solution."
+      "Question": "Can I join a waiting list?",
+      "Answer": "Yes, and it's the best thing to do right now. Contact us by email with your business type and need. Waiting list members get preferential pricing and priority access."
     },
     {
-      "Question": "Can I contact you for a specific need?",
-      "Answer": "Of course. Send us a message via the contact form or directly by email. We respond within 48 hours."
+      "Question": "Do you work on custom projects?",
+      "Answer": "Yes, in targeted cases. If your need is concrete and simple, and none of our products cover it exactly, we can discuss a solution tailored to your business."
+    },
+    {
+      "Question": "What types of businesses do you work with?",
+      "Answer": "Craftspeople, freelancers, micro-entrepreneurs, bar or restaurant owners, hairdressers, garages, small shops — any business of 1 to 15 people that wants to move forward digitally without fighting complicated software."
+    },
+    {
+      "Question": "Are your prices adapted to small businesses?",
+      "Answer": "That's the core of our model. Our tools are designed to be affordable for a sole trader. No inflated subscription packed with features you'll never need."
     }
   ],
 
   "Contact.Pretitle": "Let's build something simple.",
-  "Contact.Title": "We build the tools we wished existed.",
-  "Contact.Content": "A question about our products? A specific project? Want to join the waiting list? Write to us — we're human and we respond.",
+  "Contact.Title": "We respond like humans.",
+  "Contact.Content": "A question about our products? A concrete project to discuss? Want to join the waiting list? Write to us — we respond within 48h, no Kafkaesque form, no automated follow-up.",
   "Contact.Btn": "Write to us"
 }
