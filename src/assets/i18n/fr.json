@@ -87,35 +87,35 @@
     }
   ],
   "Services.Title": "Besoin d'un accompagnement sur mesure ?",
-  "Services.Subtitle": "BackLab aide aussi certaines petites structures à créer des présences digitales simples et efficaces. Pas d'agence, pas de devis à 5 chiffres — de l'expertise ciblée au bon prix.",
+  "Services.Subtitle": "À côté des produits BackLab, je travaille aussi en direct avec des petites structures. Pas d'agence entre nous — juste moi, du texte à l'écran.",
   "Services.Items": [
     {
       "Icon": "🌐",
       "Title": "Sites vitrines",
-      "Description": "Un site professionnel, rapide et pensé pour convertir. Sans les tarifs d'une agence et sans les compromis d'un template générique."
+      "Description": "Un site professionnel, rapide et pensé pour convertir — sans les tarifs d'une agence et sans les compromis d'un template générique."
     },
     {
       "Icon": "🎯",
       "Title": "Landing pages",
-      "Description": "Des pages d'atterrissage orientées conversion. Des textes qui convainquent, une structure qui guide le visiteur vers l'action."
+      "Description": "Pages orientées conversion : textes qui convainquent, structure qui guide, design qui retient. Du copy à l'intégration."
     },
     {
       "Icon": "⚙️",
       "Title": "Automatisations simples",
-      "Description": "Automatisez les tâches répétitives qui vous font perdre du temps — relances, notifications, exports — sans devenir développeur."
+      "Description": "Relances, notifications, exports… j'automatise les tâches qui vous volent du temps, sans vous imposer de devenir développeur."
     },
     {
       "Icon": "🔧",
       "Title": "Outils métier",
-      "Description": "Un calculateur de prix, un formulaire de devis intelligent, un outil de suivi adapté à votre activité. Simple, précis, opérationnel."
+      "Description": "Calculateur de prix, devis intelligent, outil de suivi — je construis ce qu'il vous faut, et rien de plus. Simple, précis, opérationnel."
     },
     {
       "Icon": "🧭",
       "Title": "Conseil digital",
-      "Description": "Vous ne savez pas par où commencer ? Pas de problème. On en parle ensemble et on trouve la solution la plus simple pour votre situation."
+      "Description": "Vous ne savez pas par où commencer ? On en parle, je vous aide à voir clair et à choisir la solution la plus simple pour votre situation."
     }
   ],
-  "Services.Cta": "Discutons de votre projet",
+  "Services.Cta": "Parlons de votre projet",
   "Expertise.Title": "Pourquoi faire confiance à BackLab ?",
   "Expertise.Subtitle": "Derrière des interfaces simples, une vraie expertise technique et produit.",
   "Expertise.Items": [
@@ -185,13 +185,13 @@
       ]
     }
   ],
-  "Founder.Title": "Derrière BackLab",
+  "Founder.Title": "La personne derrière BackLab",
   "Founder.Name": "Mathilde Fauveau",
-  "Founder.Role": "Fondatrice & Développeuse",
+  "Founder.Role": "Fondatrice · Développeuse · Webdesigner · Rédactrice web",
   "Founder.Paragraphs": [
     "BackLab est née d'une frustration concrète : trop de petites structures <span class='underline'>abandonnent le digital</span> parce que les outils disponibles sont pensés pour de grosses entreprises — trop chers, trop complexes, trop intimidants.",
-    "Je suis développeuse, et j'ai travaillé sur des produits digitaux assez longtemps pour comprendre à quel point la <span class='underline'>simplicité est difficile à atteindre</span> — et à quel point elle change tout pour l'utilisateur final.",
-    "Mon pari avec BackLab : construire le logiciel que j'aurais voulu voir exister. <span class='underline'>Pragmatique et utile, immédiatement</span>. Rien de superflu. Tout ce qui aide vraiment à faire tourner une structure sans prise de tête."
+    "Je combine trois compétences qui vont rarement ensemble : <span class='underline'>je code, je design et j'écris</span>. Ça veut dire que quand je travaille sur votre projet, vous avez un seul interlocuteur — pas trois prestataires qui se coordonnent mal et facturent chacun leur coin.",
+    "Mon pari avec BackLab : créer les outils que j'aurais voulu voir exister. Et quand un outil tout fait ne suffit pas — <span class='underline'>je construis ce qu'il vous faut, sur mesure</span>. Pragmatique, utile, immédiatement."
   ],
   "FAQ.Title": "Questions fréquentes",
   "FAQ.Items": [
@@ -223,5 +223,20 @@
   "Contact.Pretitle": "Construisons quelque chose de simple.",
   "Contact.Title": "On vous répond comme des humains.",
   "Contact.Content": "Une question sur nos produits ? Un projet concret à discuter ? Envie de rejoindre la liste d'attente ? Écrivez-nous — on répond dans les 48h, sans formulaire kafkaïen ni relance automatique.",
-  "Contact.Btn": "Nous écrire"
+  "Contact.Btn": "Nous écrire",
+  "Services.Skills": [
+    {
+      "Icon": "✍️",
+      "Label": "Rédaction web"
+    },
+    {
+      "Icon": "🎨",
+      "Label": "Web design"
+    },
+    {
+      "Icon": "⚙️",
+      "Label": "Développement"
+    }
+  ],
+  "Services.OnePersonNote": "Un seul interlocuteur du brief à la mise en ligne."
 }

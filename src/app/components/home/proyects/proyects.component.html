@@ -10,6 +10,16 @@
         <p class="section-subtitle">{{ "Services.Subtitle" | translate }}</p>
       </div>
 
+      <!-- ── Trio de casquettes ───────────────────────────────── -->
+      <div class="services-skills" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        <div class="skill-chip" *ngFor="let skill of 'Services.Skills' | translate">
+          <span class="skill-chip-icon">{{ skill.Icon }}</span>
+          <span class="skill-chip-label">{{ skill.Label }}</span>
+        </div>
+        <span class="skill-separator">·</span>
+        <span class="skill-one-person">{{ "Services.OnePersonNote" | translate }}</span>
+      </div>
+
       <div class="services-grid">
         <div
           *ngFor="let service of 'Services.Items' | translate; let i = index"

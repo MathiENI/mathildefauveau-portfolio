@@ -201,9 +201,12 @@
 
   .founder-role {
     font-family: $CodeFont;
-    font-size: 13px;
+    font-size: 12px;
     color: $Green;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
+    line-height: 1.7;
+    // Le rôle est maintenant multi-ligne (· séparateurs) — on laisse respirer
+    white-space: pre-wrap;
   }
 
   // Carte visuelle fondatrice

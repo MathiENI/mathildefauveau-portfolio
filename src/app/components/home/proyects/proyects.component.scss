@@ -12,6 +12,58 @@
     margin-bottom: 0;
   }
 
+  // ── Trio de casquettes ────────────────────────────
+  .services-skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 16px;
+    margin-top: 32px;
+  }
+
+  .skill-chip {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 16px;
+    border: 1px solid transparent;
+    background:
+      linear-gradient($Navy, $Navy) padding-box,
+      linear-gradient(135deg, $Green 0%, #846afb 100%) border-box;
+    border-radius: 24px;
+  }
+
+  .skill-chip-icon {
+    font-size: 15px;
+    line-height: 1;
+  }
+
+  .skill-chip-label {
+    font-family: $CodeFont;
+    font-size: 12px;
+    font-weight: 500;
+    color: $LightestSlate;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+  }
+
+  .skill-separator {
+    color: rgba(77, 166, 255, 0.30);
+    font-size: 18px;
+    line-height: 1;
+    display: none;
+
+    @media (min-width: 500px) { display: inline; }
+  }
+
+  .skill-one-person {
+    font-family: $CodeFont;
+    font-size: 12.5px;
+    color: $Slate;
+    font-style: italic;
+    letter-spacing: 0.2px;
+  }
+
   // ── Grille services ───────────────────────────────
   .services-grid {
     display: grid;

@@ -86,36 +86,36 @@
       "AccentClass": "accent-amber"
     }
   ],
-  "Services.Title": "Need tailored support?",
-  "Services.Subtitle": "BackLab also helps some small businesses build simple and effective digital presences. No agency markup, no five-figure quotes — targeted expertise at the right price.",
+  "Services.Title": "Need hands-on support?",
+  "Services.Subtitle": "Alongside BackLab products, I also work directly with small businesses. No agency in between — just me, from words to screen.",
   "Services.Items": [
     {
       "Icon": "🌐",
       "Title": "Showcase websites",
-      "Description": "A professional, fast website built to convert. Without agency prices and without the compromises of a generic template."
+      "Description": "A professional, fast website built to convert — without agency prices and without the compromises of a generic template."
     },
     {
       "Icon": "🎯",
       "Title": "Landing pages",
-      "Description": "Conversion-focused landing pages. Copy that convinces, a structure that guides your visitor toward action."
+      "Description": "Conversion-focused pages: copy that convinces, structure that guides, design that retains. From writing to integration."
     },
     {
       "Icon": "⚙️",
       "Title": "Simple automations",
-      "Description": "Automate repetitive tasks that waste your time — follow-ups, notifications, exports — without becoming a developer."
+      "Description": "Follow-ups, notifications, exports — I automate the tasks that steal your time, without making you become a developer."
     },
     {
       "Icon": "🔧",
       "Title": "Custom mini-tools",
-      "Description": "A price calculator, a smart quote form, a tracking tool tailored to your business. Simple, precise, operational."
+      "Description": "Price calculator, smart quote form, tracking tool — I build exactly what you need and nothing more. Simple, precise, operational."
     },
     {
       "Icon": "🧭",
       "Title": "Digital consulting",
-      "Description": "Not sure where to start? No problem. We talk it through and find the simplest solution for your situation."
+      "Description": "Not sure where to start? Let's talk it through. I help you see clearly and choose the simplest solution for your situation."
     }
   ],
-  "Services.Cta": "Let's discuss your project",
+  "Services.Cta": "Let's talk about your project",
   "Expertise.Title": "Why trust BackLab?",
   "Expertise.Subtitle": "Behind simple interfaces, real technical and product expertise.",
   "Expertise.Items": [
@@ -174,13 +174,13 @@
       "Detail": "Zapier · n8n · Custom APIs"
     }
   ],
-  "Founder.Title": "Behind BackLab",
+  "Founder.Title": "The person behind BackLab",
   "Founder.Name": "Mathilde Fauveau",
-  "Founder.Role": "Founder & Developer",
+  "Founder.Role": "Founder · Developer · Web designer · Web copywriter",
   "Founder.Paragraphs": [
     "BackLab was born from a concrete frustration: too many small businesses <span class='underline'>give up on digital</span> because the available tools are built for large companies — too expensive, too complex, too intimidating.",
-    "I'm a developer, and I've worked on digital products long enough to understand how <span class='underline'>difficult simplicity truly is</span> — and how much it changes everything for the end user.",
-    "My bet with BackLab: build the software I wished existed. <span class='underline'>Pragmatic, useful, immediately</span>. Nothing superfluous. Everything that truly helps a small business run without the headache."
+    "I combine three skills that rarely go together: <span class='underline'>I code, I design, and I write</span>. That means when I work on your project, you have one person — not three freelancers coordinating badly and billing separately.",
+    "My bet with BackLab: build the tools I wished existed. And when an off-the-shelf solution isn't enough — <span class='underline'>I build exactly what you need</span>. Pragmatic, useful, immediately."
   ],
   "FAQ.Title": "Frequently asked questions",
   "FAQ.Items": [
@@ -212,5 +212,20 @@
   "Contact.Pretitle": "Let's build something simple.",
   "Contact.Title": "We respond like humans.",
   "Contact.Content": "A question about our products? A concrete project to discuss? Want to join the waiting list? Write to us — we respond within 48h, no Kafkaesque form, no automated follow-up.",
-  "Contact.Btn": "Write to us"
+  "Contact.Btn": "Write to us",
+  "Services.Skills": [
+    {
+      "Icon": "✍️",
+      "Label": "Web copywriting"
+    },
+    {
+      "Icon": "🎨",
+      "Label": "Web design"
+    },
+    {
+      "Icon": "⚙️",
+      "Label": "Development"
+    }
+  ],
+  "Services.OnePersonNote": "One point of contact, from brief to launch."
 }
