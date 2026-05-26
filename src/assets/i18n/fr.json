@@ -9,32 +9,32 @@
 
   "Banner.Pretitle": "Pour les artisans, commerçants & indépendants",
   "Banner.Title": "BackLab Solutions.",
-  "Banner.Subtitle": "Le logiciel qui ne vous complique pas la vie.",
+  "Banner.Subtitle": "Construisons du digital, simplement.",
   "Banner.Description": "BackLab construit des outils <span class='underline'>simples, clairs et accessibles</span> pour les indépendants, artisans, commerces et petites structures. Pas de formation. Pas de jargon. Pas d'usine à gaz. <br><strong>Pas besoin d'être expert en informatique.</strong>",
   "Banner.ActionBtn": "Découvrir nos produits",
   "Banner.ActionBtn2": "Parler de votre besoin",
 
-  "Problem.Title": "Vous avez un métier à faire.",
-  "Problem.Subtitle": "Pas un logiciel à apprendre. Le marché propose des outils pensés pour de grosses équipes — pas pour les petites structures qui font tourner l'économie réelle.",
+  "Problem.Title": "Vous avez déjà un métier.",
+  "Problem.Subtitle": "Pas forcément le temps d'apprendre un nouveau logiciel. Aujourd'hui, le marché propose des outils en ligne sont pensés pour de grosses équipes — pas pour les petites structures qui font tourner l'économie réelle.",
   "Problem.Items": [
     {
       "Icon": "💸",
-      "Title": "Trop cher",
+      "Title": "Trop chers",
       "Description": "Des abonnements conçus pour des équipes de 50 personnes, facturés à quelqu'un qui travaille seul ou à deux."
     },
     {
       "Icon": "🌀",
-      "Title": "Trop complexe",
+      "Title": "Trop complexes",
       "Description": "Des interfaces avec 200 options pour faire une seule chose. L'apprentissage prend des semaines. Vous abandonner au bout de deux jours."
     },
     {
       "Icon": "😰",
-      "Title": "Trop intimidant",
+      "Title": "Trop intimidants",
       "Description": "Des dashboards pensés pour des product managers, pas pour un artisan qui veut juste suivre ses devis ou un gérant de bar qui veut voir ses stocks."
     },
     {
       "Icon": "🗑️",
-      "Title": "Plein de trucs inutiles",
+      "Title": "Trop de contenus",
       "Description": "90% des fonctionnalités ne seront jamais utilisées. Mais elles sont là, elles surchargent l'écran, et elles ralentissent tout."
     }
   ],
@@ -65,7 +65,7 @@
     },
     {
       "Name": "BackReview",
-      "Tagline": "Vos clients satisfaits doivent le faire savoir. Facilement.",
+      "Tagline": "Vos clients satisfaits doivent le faire savoir, facilement.",
       "Description": "Les avis en ligne font votre réputation locale. BackReview envoie automatiquement une invitation à laisser un avis aux clients qui viennent de passer — sans que vous ayez à demander.",
       "Status": "Ouverture progressive",
       "StatusNote": "Early access",
@@ -128,7 +128,7 @@
   "Expertise.Items": [
     {
       "Icon": "🎓",
-      "Title": "Formation certifiante",
+      "Title": "Formation certifiante et certifiée",
       "Description": "Titre RNCP — Conceptrice Développeuse d'Applications. Une formation reconnue qui couvre architecture logicielle, conception produit et développement full-stack.",
       "Detail": "Niveau 6 · Bac+4"
     },
@@ -136,18 +136,18 @@
       "Icon": "💻",
       "Title": "Stack moderne & éprouvée",
       "Description": "Les outils BackLab sont construits avec les technologies qui font tourner les meilleurs SaaS du marché. Pas de bricolage.",
-      "Stack": ["Angular", "React", "TypeScript", "Supabase", "Stripe", "Python", "APIs REST"]
+      "Stack": ["Angular", "React", "TypeScript", "JavaScript", "TailwindCSS", "Python", "APIs REST", "..."]
     },
     {
       "Icon": "🎨",
-      "Title": "UX pensée pour les humains",
+      "Title": "Design pensé pour les humains",
       "Description": "Chaque interface est conçue pour être comprise sans formation. Design accessible, contrastes corrects, navigation claire — même sur mobile.",
-      "Detail": "WCAG · Mobile-first · Accessibilité"
+      "Detail": "WCAG · Mobile-first · Accessibilité · UX/UI · Web design sensoriel"
     },
     {
       "Icon": "⚙️",
       "Title": "Automatisation & outils métier",
-      "Description": "Des workflows pragmatiques qui réduisent les tâches répétitives. Pas de solutions sur-dimensionnées — juste ce qui marche pour votre activité.",
+      "Description": "Des automatisations pragmatiques qui réduisent les tâches répétitives. Pas de solutions sur-dimensionnées — juste ce qui marche pour votre activité.",
       "Detail": "Zapier · n8n · APIs sur mesure"
     }
   ],
@@ -158,7 +158,7 @@
   "Founder.Paragraphs": [
     "BackLab est née d'une frustration concrète : trop de petites structures <span class='underline'>abandonnent le digital</span> parce que les outils disponibles sont pensés pour de grosses entreprises — trop chers, trop complexes, trop intimidants.",
     "Je suis développeuse, et j'ai travaillé sur des produits digitaux assez longtemps pour comprendre à quel point la <span class='underline'>simplicité est difficile à atteindre</span> — et à quel point elle change tout pour l'utilisateur final.",
-    "Mon pari avec BackLab : construire le logiciel que j'aurais voulu voir exister. <span class='underline'>Pragmatique, utile, immédiatement</span>. Rien de superflu. Tout ce qui aide vraiment à faire tourner une petite structure sans prise de tête."
+    "Mon pari avec BackLab : construire le logiciel que j'aurais voulu voir exister. <span class='underline'>Pragmatique et utile, immédiatement</span>. Rien de superflu. Tout ce qui aide vraiment à faire tourner une structure sans prise de tête."
   ],
 
   "FAQ.Title": "Questions fréquentes",
