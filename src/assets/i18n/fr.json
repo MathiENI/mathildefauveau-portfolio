@@ -7,8 +7,8 @@
   "Loading": "Chargement...",
 
   "Banner.Pretitle": "Pour les artisans, commerçants & indépendants",
-  "Banner.Title": "BackLab Solutions.",
-  "Banner.Subtitle": "Construisons du digital, simplement.",
+  "Banner.Title": "BackLab.",
+  "Banner.Subtitle": "Votre nouvel allié digital",
   "Banner.Description": "BackLab construit des outils <span class='underline'>simples, clairs et accessibles</span> pour les indépendants, artisans, commerces et petites structures. Pas de formation. Pas de jargon. Pas d'usine à gaz. <br><strong>Pas besoin d'être expert en informatique.</strong>",
   "Banner.ActionBtn": "Découvrir nos produits",
   "Banner.ActionBtn2": "Parler de votre besoin",
@@ -127,8 +127,8 @@
   "Expertise.Items": [
     {
       "Icon": "🎓",
-      "Title": "Formation certifiante et certifiée",
-      "Description": "Titre RNCP — Conceptrice Développeuse d'Applications. Une formation reconnue qui couvre architecture logicielle, conception produit et développement full-stack.",
+      "Title": "Formations et titres certifiants",
+      "Description": "Titre RNCP — Conceptrice Développeuse d'Applications. Une formation reconnue qui couvre architecture logicielle, conception produit et développement full-stack.<br><br>Titre Webdesign Sensoriel et Stratégies de Créations en Ligne — Un titre professionnel qui m'a permis l'acquisition des toutes les compétences nécessaires à la création et à la conception de sites webs modernes et designés avec ❤\uFE0F<br><br> Certification OPQUAST — Pour les bonnes pratiques et la mise en conformité de mes prestations<br><br> Titre Sciences du Langage de l'Information et de la Communication — Un parcours universitaire basé sur l'apprentissage d'une communication claire et efficace, notamment au service du digital et des stratégies marketings qui l'accompagne",
       "Stack": ["Niveau 6 · Bac+4"]
     },
     {
@@ -146,7 +146,7 @@
     {
       "Icon": "⚙️",
       "Title": "Automatisation & outils métier",
-      "Description": "Des automatisations pragmatiques qui réduisent les tâches répétitives. Pas de solutions sur-dimensionnées — juste ce qui marche pour votre activité.",
+      "Description": "Des automatisations pragmatiques qui réduisent les tâches répétitives. Pas de solutions sur-dimensionnées ou d'intégration IA sur-caféinée — juste ce qui marche pour votre activité.",
       "Stack": ["Zapier", "n8n", "APIs sur mesure"]
     }
   ],
