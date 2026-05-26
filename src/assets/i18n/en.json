@@ -5,14 +5,12 @@
   "Header.cvBtn": "Get in touch",
   "Header.cvName": "",
   "Loading": "Loading...",
-
   "Banner.Pretitle": "For craftspeople, shop owners & freelancers",
   "Banner.Title": "BackLab Solutions.",
   "Banner.Subtitle": "Software that doesn't get in your way.",
   "Banner.Description": "BackLab builds <span class='underline'>simple, clear and accessible tools</span> for freelancers, craftspeople, shops and small businesses. No training. No jargon. No bloat. <br><strong>No need to be a tech expert.</strong>",
   "Banner.ActionBtn": "Discover our products",
   "Banner.ActionBtn2": "Talk about your need",
-
   "Problem.Title": "You have a job to do.",
   "Problem.Subtitle": "Not software to learn. The market offers tools designed for large teams — not for small businesses that keep the real economy running.",
   "Problem.Items": [
@@ -37,10 +35,8 @@
       "Description": "90% of features will never be used. But they're there, cluttering the screen, slowing everything down."
     }
   ],
-
   "Vision.Title": "What we believe in",
   "Vision.Manifesto": "The best software is the kind you forget you're using.<br><br>We build the <span class='underline'>10% of features that generate 90% of the value</span>. Tools you understand in 5 minutes, without training. Prices accessible to those running their business alone or in a small team.<br><br>No intimidating interfaces. No features buried in endless menus. Just the essentials — <span class='underline'>available immediately, useful from day one</span>.<br><br>BackLab is calm software. For real people, with real jobs.",
-
   "Products.Title": "Our products",
   "Products.Subtitle": "Each BackLab tool solves one precise problem, for one precise kind of business. Nothing more.",
   "Products.Items": [
@@ -90,7 +86,6 @@
       "AccentClass": "accent-amber"
     }
   ],
-
   "Services.Title": "Need tailored support?",
   "Services.Subtitle": "BackLab also helps some small businesses build simple and effective digital presences. No agency markup, no five-figure quotes — targeted expertise at the right price.",
   "Services.Items": [
@@ -121,21 +116,50 @@
     }
   ],
   "Services.Cta": "Let's discuss your project",
-
   "Expertise.Title": "Why trust BackLab?",
   "Expertise.Subtitle": "Behind simple interfaces, real technical and product expertise.",
   "Expertise.Items": [
     {
       "Icon": "🎓",
       "Title": "Certified training",
-      "Description": "RNCP Title — Application Designer & Developer. A recognised qualification covering software architecture, product design and full-stack development.",
-      "Detail": "Level 6 · Bac+4 equivalent"
+      "Certs": [
+        {
+          "Name": "RNCP Title — Application Designer & Developer",
+          "Note": "Level 6 · Bac+4 · Software architecture, product design, full-stack"
+        },
+        {
+          "Name": "Sensory Web Design & Online Creation Strategies",
+          "Note": "Professional title · Modern web design & UX"
+        },
+        {
+          "Name": "OPQUAST Certification",
+          "Note": "Web best practices & quality compliance"
+        },
+        {
+          "Name": "Language, Information & Communication Sciences",
+          "Note": "University of Limoges · Digital communication & marketing strategies"
+        }
+      ],
+      "Stack": [
+        "Level 6",
+        "CDA",
+        "ENI École Informatique",
+        "Université de Limoges"
+      ]
     },
     {
       "Icon": "💻",
       "Title": "Modern, proven stack",
       "Description": "BackLab tools are built with the technologies powering the best SaaS products on the market. No patchwork solutions.",
-      "Stack": ["Angular", "React", "TypeScript", "Supabase", "Stripe", "Python", "REST APIs"]
+      "Stack": [
+        "Angular",
+        "React",
+        "TypeScript",
+        "Supabase",
+        "Stripe",
+        "Python",
+        "REST APIs"
+      ]
     },
     {
       "Icon": "🎨",
@@ -150,7 +174,6 @@
       "Detail": "Zapier · n8n · Custom APIs"
     }
   ],
-
   "Founder.Title": "Behind BackLab",
   "Founder.Name": "Mathilde Fauveau",
   "Founder.Role": "Founder & Developer",
@@ -159,7 +182,6 @@
     "I'm a developer, and I've worked on digital products long enough to understand how <span class='underline'>difficult simplicity truly is</span> — and how much it changes everything for the end user.",
     "My bet with BackLab: build the software I wished existed. <span class='underline'>Pragmatic, useful, immediately</span>. Nothing superfluous. Everything that truly helps a small business run without the headache."
   ],
-
   "FAQ.Title": "Frequently asked questions",
   "FAQ.Items": [
     {
@@ -187,7 +209,6 @@
       "Answer": "That's the core of our model. Our tools are designed to be affordable for a sole trader. No inflated subscription packed with features you'll never need."
     }
   ],
-
   "Contact.Pretitle": "Let's build something simple.",
   "Contact.Title": "We respond like humans.",
   "Contact.Content": "A question about our products? A concrete project to discuss? Want to join the waiting list? Write to us — we respond within 48h, no Kafkaesque form, no automated follow-up.",

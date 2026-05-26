@@ -22,7 +22,17 @@
 
             <div class="expertise-icon">{{ item.Icon }}</div>
             <h4 class="expertise-title">{{ item.Title }}</h4>
-            <p class="expertise-desc">{{ item.Description }}</p>
+
+            <!-- Description HTML classique -->
+            <p class="expertise-desc" *ngIf="item.Description" [innerHTML]="item.Description"></p>
+
+            <!-- Liste de certifications structurée -->
+            <div class="expertise-certs" *ngIf="item.Certs">
+              <div class="cert-item" *ngFor="let cert of item.Certs">
+                <span class="cert-name">{{ cert.Name }}</span>
+                <span class="cert-note">{{ cert.Note }}</span>
+              </div>
+            </div>
 
             <div class="expertise-detail" *ngIf="item.Detail">
               <span class="detail-tag">{{ item.Detail }}</span>

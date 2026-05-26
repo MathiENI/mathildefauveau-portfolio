@@ -78,6 +78,48 @@
     display: inline-block;
   }
 
+  // ── Certifications list ──────────────────────────────────────
+  .expertise-certs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2px;
+    flex: 1;
+  }
+
+  .cert-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 12px;
+    background: rgba(77, 166, 255, 0.04);
+    border-left: 2px solid rgba(77, 166, 255, 0.30);
+    border-radius: 0 6px 6px 0;
+    transition: border-color 0.25s ease, background 0.25s ease;
+
+    &:hover {
+      border-left-color: $Green;
+      background: rgba(77, 166, 255, 0.08);
+    }
+  }
+
+  .cert-name {
+    font-family: $MainFont;
+    font-size: 13px;
+    font-weight: 600;
+    color: $LightestSlate;
+    line-height: 1.4;
+  }
+
+  .cert-note {
+    font-family: $CodeFont;
+    font-size: 11px;
+    color: $Slate;
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+  }
+
+  // ── Stack badges ──────────────────────────────────────────────
   .expertise-stack {
     display: flex;
     flex-wrap: wrap;
@@ -89,11 +131,18 @@
     font-family: $CodeFont;
     font-size: 11px;
     color: $LightSlate;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.10);
+    border: 1px solid transparent;
+    background:
+      linear-gradient($LightNavy, $LightNavy) padding-box,
+      linear-gradient(135deg, $Green 0%, #846afb 100%) border-box;
     border-radius: 4px;
-    padding: 2px 8px;
+    padding: 2px 9px;
     letter-spacing: 0.2px;
+    transition: color 0.25s ease;
+
+    &:hover {
+      color: $LightestSlate;
+    }
   }
 }
 

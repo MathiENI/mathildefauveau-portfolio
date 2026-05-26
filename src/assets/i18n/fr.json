@@ -5,14 +5,12 @@
   "Header.cvBtn": "Nous contacter",
   "Header.cvName": "",
   "Loading": "Chargement...",
-
   "Banner.Pretitle": "Pour les artisans, commerçants & indépendants",
   "Banner.Title": "BackLab.",
   "Banner.Subtitle": "Votre nouvel allié digital",
   "Banner.Description": "BackLab construit des outils <span class='underline'>simples, clairs et accessibles</span> pour les indépendants, artisans, commerces et petites structures. Pas de formation. Pas de jargon. Pas d'usine à gaz. <br><strong>Pas besoin d'être expert en informatique.</strong>",
   "Banner.ActionBtn": "Découvrir nos produits",
   "Banner.ActionBtn2": "Parler de votre besoin",
-
   "Problem.Title": "Vous avez déjà un métier.",
   "Problem.Subtitle": "Pas forcément le temps d'apprendre un nouveau logiciel. Aujourd'hui, le marché propose des outils en ligne sont pensés pour de grosses équipes — pas pour les petites structures qui font tourner l'économie réelle.",
   "Problem.Items": [
@@ -37,10 +35,8 @@
       "Description": "90% des fonctionnalités ne seront jamais utilisées. Mais elles sont là, elles surchargent l'écran, et elles ralentissent tout."
     }
   ],
-
   "Vision.Title": "Ce en quoi nous croyons",
   "Vision.Manifesto": "Le meilleur logiciel est celui qu'on oublie qu'on utilise.<br><br>Nous construisons les <span class='underline'>10% de fonctionnalités qui génèrent 90% de la valeur</span>. Des outils qui se comprennent en 5 minutes, sans formation. Des prix accessibles pour ceux qui font tourner leur activité seuls ou en petite équipe.<br><br>Pas d'interface intimidante. Pas de fonctionnalités cachées derrière des menus à rallonge. Juste l'essentiel — <span class='underline'>disponible immédiatement, utile dès le premier jour</span>.<br><br>BackLab, c'est du logiciel calme. Pour de vraies personnes, avec de vrais métiers.",
-
   "Products.Title": "Nos produits",
   "Products.Subtitle": "Chaque outil BackLab résout un problème précis, pour une structure précise. Pas plus.",
   "Products.Items": [
@@ -90,7 +86,6 @@
       "AccentClass": "accent-amber"
     }
   ],
-
   "Services.Title": "Besoin d'un accompagnement sur mesure ?",
   "Services.Subtitle": "BackLab aide aussi certaines petites structures à créer des présences digitales simples et efficaces. Pas d'agence, pas de devis à 5 chiffres — de l'expertise ciblée au bon prix.",
   "Services.Items": [
@@ -121,36 +116,75 @@
     }
   ],
   "Services.Cta": "Discutons de votre projet",
-
   "Expertise.Title": "Pourquoi faire confiance à BackLab ?",
   "Expertise.Subtitle": "Derrière des interfaces simples, une vraie expertise technique et produit.",
   "Expertise.Items": [
     {
       "Icon": "🎓",
       "Title": "Formations et titres certifiants",
-      "Description": "<span class='underline'>Titre RNCP — Conceptrice Développeuse d'Applications.</span> Une formation reconnue qui couvre architecture logicielle, conception produit et développement full-stack.<br><span class='underline'>Titre Webdesign Sensoriel et Stratégies de Créations en Ligne</span> — Un titre professionnel qui m'a permis l'acquisition des toutes les compétences nécessaires à la création et à la conception de sites webs modernes et designés avec ❤\uFE0F<br><span class='underline'>Certification OPQUAST</span> — Pour les bonnes pratiques et la mise en conformité de mes prestations<br><span class='underline'>Titre Sciences du Langage de l'Information et de la Communication</span> — Un parcours universitaire basé sur l'apprentissage d'une communication claire et efficace, notamment au service du digital et des stratégies marketings qui l'accompagne",
-      "Stack": ["Niveau 6", "CDA", "ENI École Informatique", "Université de Limoges"]
+      "Certs": [
+        {
+          "Name": "Titre RNCP — Conceptrice Développeuse d'Applications",
+          "Note": "Niveau 6 · Bac+4 · Architecture logicielle, conception produit, full-stack"
+        },
+        {
+          "Name": "Webdesign Sensoriel & Stratégies de Créations en Ligne",
+          "Note": "Titre professionnel · Création de sites web modernes & designés"
+        },
+        {
+          "Name": "Certification OPQUAST",
+          "Note": "Bonnes pratiques web & mise en conformité des prestations"
+        },
+        {
+          "Name": "Sciences du Langage, de l'Information et de la Communication",
+          "Note": "Université de Limoges · Communication digitale & stratégies marketing"
+        }
+      ],
+      "Stack": [
+        "Niveau 6",
+        "CDA",
+        "ENI École Informatique",
+        "Université de Limoges"
+      ]
     },
     {
       "Icon": "💻",
       "Title": "Développement web moderne et sécurisé",
       "Description": "Les outils BackLab sont construits avec les meilleures technologies pour vous proposer le meilleur en terme de conception d'architectures logicielles sécurisées. Pas de bricolage.",
-      "Stack": ["Angular", "React", "TypeScript", "JavaScript", "TailwindCSS", "Python", "APIs REST", "..."]
+      "Stack": [
+        "Angular",
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "TailwindCSS",
+        "Python",
+        "APIs REST",
+        "..."
+      ]
     },
     {
       "Icon": "🎨",
       "Title": "Design pensé pour les humains",
       "Description": "Chaque interface est conçue pour être comprise sans formation. Design accessible, contrastes corrects, navigation claire — même sur mobile.",
-      "Stack": ["WCAG", "Mobile-first", "Accessibilité", "UX/UI", "Web design sensoriel"]
+      "Stack": [
+        "WCAG",
+        "Mobile-first",
+        "Accessibilité",
+        "UX/UI",
+        "Web design sensoriel"
+      ]
     },
     {
       "Icon": "⚙️",
       "Title": "Automatisation & outils métier",
       "Description": "Des automatisations pragmatiques qui réduisent les tâches répétitives. Pas de solutions sur-dimensionnées ou d'intégration IA sur-caféinée — juste ce qui marche pour votre activité.",
-      "Stack": ["Zapier", "n8n", "APIs sur mesure"]
+      "Stack": [
+        "Zapier",
+        "n8n",
+        "APIs sur mesure"
+      ]
     }
   ],
-
   "Founder.Title": "Derrière BackLab",
   "Founder.Name": "Mathilde Fauveau",
   "Founder.Role": "Fondatrice & Développeuse",
@@ -159,7 +193,6 @@
     "Je suis développeuse, et j'ai travaillé sur des produits digitaux assez longtemps pour comprendre à quel point la <span class='underline'>simplicité est difficile à atteindre</span> — et à quel point elle change tout pour l'utilisateur final.",
     "Mon pari avec BackLab : construire le logiciel que j'aurais voulu voir exister. <span class='underline'>Pragmatique et utile, immédiatement</span>. Rien de superflu. Tout ce qui aide vraiment à faire tourner une structure sans prise de tête."
   ],
-
   "FAQ.Title": "Questions fréquentes",
   "FAQ.Items": [
     {
@@ -187,7 +220,6 @@
       "Answer": "C'est le coeur de notre modèle. Nos outils sont conçus pour être accessibles à une personne qui travaille seule. Pas d'abonnement gonflé avec des fonctionnalités dont vous n'avez pas besoin."
     }
   ],
-
   "Contact.Pretitle": "Construisons quelque chose de simple.",
   "Contact.Title": "On vous répond comme des humains.",
   "Contact.Content": "Une question sur nos produits ? Un projet concret à discuter ? Envie de rejoindre la liste d'attente ? Écrivez-nous — on répond dans les 48h, sans formulaire kafkaïen ni relance automatique.",
