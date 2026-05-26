@@ -24,10 +24,6 @@
                 <a ngbNavLink (click)='scroll("services")'><span class='nav-number'>03. </span><span class="underline nav-text">{{"Header.Item3" | translate}}</span></a>
                 <ng-template ngbNavContent></ng-template>
             </li>
-            <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_contact", "menu", "click")'>
-                <a ngbNavLink (click)='scroll("contact")'><span class='nav-number'>04. </span><span class="underline nav-text">{{"Header.Item4" | translate}}</span></a>
-                <ng-template ngbNavContent></ng-template>
-            </li>
             <li ngbNavItem class="cv-button">
                 <app-dynamic-button
                   [text]='"Header.cvBtn" | translate'

@@ -2,7 +2,6 @@
   "Header.Item1": "Produits",
   "Header.Item2": "Vision",
   "Header.Item3": "Services",
-  "Header.Item4": "Contact",
   "Header.cvBtn": "Nous contacter",
   "Header.cvName": "",
   "Loading": "Chargement...",
@@ -49,7 +48,7 @@
       "Name": "BackBoost",
       "Tagline": "Récupérez les devis oubliés. Ne perdez plus de chiffre d'affaires.",
       "Description": "Chaque devis sans suite, c'est de l'argent qui part. BackBoost automatise vos relances et vous donne une vue claire de votre pipeline commercial — sans que vous ayez à y penser.",
-      "Status": "Ouverture progressive",
+      "Status": "Bientôt disponible",
       "StatusNote": "Early access",
       "Icon": "⚡",
       "AccentClass": "accent-green"
@@ -58,7 +57,7 @@
       "Name": "BackCall",
       "Tagline": "Un appel manqué ne doit pas devenir un client perdu.",
       "Description": "Chaque appel sans réponse part chez le concurrent. BackCall vous notifie qui a appelé et vous aide à les recontacter rapidement — depuis votre téléphone, en deux clics.",
-      "Status": "Ouverture progressive",
+      "Status": "Bientôt disponible",
       "StatusNote": "Early access",
       "Icon": "📞",
       "AccentClass": "accent-orange"
@@ -67,7 +66,7 @@
       "Name": "BackReview",
       "Tagline": "Vos clients satisfaits doivent le faire savoir, facilement.",
       "Description": "Les avis en ligne font votre réputation locale. BackReview envoie automatiquement une invitation à laisser un avis aux clients qui viennent de passer — sans que vous ayez à demander.",
-      "Status": "Ouverture progressive",
+      "Status": "Bientôt disponible",
       "StatusNote": "Early access",
       "Icon": "⭐",
       "AccentClass": "accent-purple"
@@ -76,7 +75,7 @@
       "Name": "BackFill",
       "Tagline": "Un créneau vide, c'est du revenu perdu. Remplissez-le.",
       "Description": "BackFill identifie vos créneaux libres et les propose intelligemment à vos clients — par SMS ou notification. Plus de trous dans votre agenda, plus de temps mort facturé zéro.",
-      "Status": "Ouverture progressive",
+      "Status": "Bientôt disponible",
       "StatusNote": "Early access",
       "Icon": "📅",
       "AccentClass": "accent-cyan"
@@ -85,7 +84,7 @@
       "Name": "BackBar",
       "Tagline": "Pilotez votre bar sans ERP. Juste ce dont vous avez besoin.",
       "Description": "Stocks, marges, réassorts — BackBar vous donne la vision claire dont vous avez besoin pour piloter votre activité, sans la complexité d'un système à 800€/mois.",
-      "Status": "Ouverture progressive",
+      "Status": "Bientôt disponible",
       "StatusNote": "Early access",
       "Icon": "🍺",
       "AccentClass": "accent-amber"
@@ -112,7 +111,7 @@
     },
     {
       "Icon": "🔧",
-      "Title": "Mini outils métier",
+      "Title": "Outils métier",
       "Description": "Un calculateur de prix, un formulaire de devis intelligent, un outil de suivi adapté à votre activité. Simple, précis, opérationnel."
     },
     {
@@ -130,25 +129,25 @@
       "Icon": "🎓",
       "Title": "Formation certifiante et certifiée",
       "Description": "Titre RNCP — Conceptrice Développeuse d'Applications. Une formation reconnue qui couvre architecture logicielle, conception produit et développement full-stack.",
-      "Detail": "Niveau 6 · Bac+4"
+      "Stack": ["Niveau 6 · Bac+4"]
     },
     {
       "Icon": "💻",
-      "Title": "Stack moderne & éprouvée",
-      "Description": "Les outils BackLab sont construits avec les technologies qui font tourner les meilleurs SaaS du marché. Pas de bricolage.",
+      "Title": "Développement web moderne et sécurisé",
+      "Description": "Les outils BackLab sont construits avec les meilleures technologies pour vous proposer le meilleur en terme de conception d'architectures logicielles sécurisées. Pas de bricolage.",
       "Stack": ["Angular", "React", "TypeScript", "JavaScript", "TailwindCSS", "Python", "APIs REST", "..."]
     },
     {
       "Icon": "🎨",
       "Title": "Design pensé pour les humains",
       "Description": "Chaque interface est conçue pour être comprise sans formation. Design accessible, contrastes corrects, navigation claire — même sur mobile.",
-      "Detail": "WCAG · Mobile-first · Accessibilité · UX/UI · Web design sensoriel"
+      "Stack": ["WCAG", "Mobile-first", "Accessibilité", "UX/UI", "Web design sensoriel"]
     },
     {
       "Icon": "⚙️",
       "Title": "Automatisation & outils métier",
       "Description": "Des automatisations pragmatiques qui réduisent les tâches répétitives. Pas de solutions sur-dimensionnées — juste ce qui marche pour votre activité.",
-      "Detail": "Zapier · n8n · APIs sur mesure"
+      "Stack": ["Zapier", "n8n", "APIs sur mesure"]
     }
   ],
 
