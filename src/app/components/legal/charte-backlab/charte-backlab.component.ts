@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-charte-backlab',
@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['../legal.component.scss'],
   standalone: false
 })
-export class CharteBacklabComponent {}
+export class CharteBacklabComponent implements OnInit {
+  ngOnInit(): void {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }
+}

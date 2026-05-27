@@ -120,37 +120,19 @@
   "Expertise.Subtitle": "Derrière des interfaces simples, une vraie expertise technique et produit.",
   "Expertise.Items": [
     {
-      "Icon": "🎓",
-      "Title": "Formations et titres certifiants",
+      "Icon": "💻",
+      "Title": "Développement web moderne et sécurisé",
+      "Description": "Les outils BackLab sont construits avec les meilleures technologies pour vous proposer le meilleur en terme de conception d'architectures logicielles sécurisées. Pas de bricolage.",
       "Certs": [
         {
           "Name": "Titre RNCP — Conceptrice Développeuse d'Applications",
           "Note": "Niveau 6 · Bac+4 · Architecture logicielle, conception produit, full-stack"
         },
         {
-          "Name": "Webdesign Sensoriel & Stratégies de Créations en Ligne",
-          "Note": "Titre professionnel · Création de sites web modernes & designés"
-        },
-        {
           "Name": "Certification OPQUAST",
-          "Note": "Bonnes pratiques web & mise en conformité des applications"
-        },
-        {
-          "Name": "Sciences du Langage, de l'Information et de la Communication",
-          "Note": "Université de Limoges · Communication digitale & stratégies marketing"
+          "Note": "Bonnes pratiques web & mise en conformité des prestations"
         }
       ],
-      "Stack": [
-        "Niveau 6",
-        "CDA",
-        "ENI École Informatique",
-        "Université de Limoges"
-      ]
-    },
-    {
-      "Icon": "💻",
-      "Title": "Développement web moderne et sécurisé",
-      "Description": "Les outils BackLab sont construits avec les meilleures technologies pour vous proposer le meilleur en terme de conception d'architectures logicielles sécurisées. Pas de bricolage.",
       "Stack": [
         "Angular",
         "React",
@@ -158,20 +140,24 @@
         "JavaScript",
         "TailwindCSS",
         "Python",
-        "APIs REST",
-        "..."
+        "APIs REST"
       ]
     },
     {
       "Icon": "🎨",
       "Title": "Design pensé pour les humains",
       "Description": "Chaque interface est conçue pour être comprise sans formation. Design accessible, contrastes corrects, navigation claire — même sur mobile.",
+      "Certs": [
+        {
+          "Name": "Webdesign Sensoriel & Stratégies de Créations en Ligne",
+          "Note": "Titre professionnel · Création de sites web modernes & designés"
+        }
+      ],
       "Stack": [
         "WCAG",
         "Mobile-first",
         "Accessibilité",
-        "UX/UI",
-        "Web design sensoriel"
+        "UX/UI"
       ]
     },
     {
@@ -182,6 +168,23 @@
         "Zapier",
         "n8n",
         "APIs sur mesure"
+      ]
+    },
+    {
+      "Icon": "✍️",
+      "Title": "Communication et Rédaction de qualité",
+      "Description": "Une communication claire et efficace, c'est aussi une compétence technique. Je rédige des contenus web pensés pour convertir, convaincre et rassurer — avec les mots justes pour votre audience.",
+      "Certs": [
+        {
+          "Name": "Sciences du Langage, de l'Information et de la Communication",
+          "Note": "Université de Limoges · Communication digitale & stratégies marketing"
+        }
+      ],
+      "Stack": [
+        "Copywriting",
+        "SEO éditorial",
+        "UX writing",
+        "Stratégie de contenu"
       ]
     }
   ],

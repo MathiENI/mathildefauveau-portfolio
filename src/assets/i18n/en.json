@@ -120,58 +120,72 @@
   "Expertise.Subtitle": "Behind simple interfaces, real technical and product expertise.",
   "Expertise.Items": [
     {
-      "Icon": "🎓",
-      "Title": "Certified training",
+      "Icon": "💻",
+      "Title": "Modern & Secure Web Development",
+      "Description": "BackLab tools are built with the technologies powering the best SaaS products on the market. No patchwork solutions.",
       "Certs": [
         {
           "Name": "RNCP Title — Application Designer & Developer",
           "Note": "Level 6 · Bac+4 · Software architecture, product design, full-stack"
         },
         {
-          "Name": "Sensory Web Design & Online Creation Strategies",
-          "Note": "Professional title · Modern web design & UX"
-        },
-        {
           "Name": "OPQUAST Certification",
           "Note": "Web best practices & quality compliance"
-        },
-        {
-          "Name": "Language, Information & Communication Sciences",
-          "Note": "University of Limoges · Digital communication & marketing strategies"
         }
       ],
-      "Stack": [
-        "Level 6",
-        "CDA",
-        "ENI École Informatique",
-        "Université de Limoges"
-      ]
-    },
-    {
-      "Icon": "💻",
-      "Title": "Modern, proven stack",
-      "Description": "BackLab tools are built with the technologies powering the best SaaS products on the market. No patchwork solutions.",
       "Stack": [
         "Angular",
         "React",
         "TypeScript",
-        "Supabase",
-        "Stripe",
+        "JavaScript",
+        "TailwindCSS",
         "Python",
         "REST APIs"
       ]
     },
     {
       "Icon": "🎨",
-      "Title": "UX designed for humans",
+      "Title": "UX Designed for Humans",
       "Description": "Every interface is designed to be understood without training. Accessible design, correct contrast, clear navigation — even on mobile.",
-      "Detail": "WCAG · Mobile-first · Accessibility"
+      "Certs": [
+        {
+          "Name": "Sensory Web Design & Online Creation Strategies",
+          "Note": "Professional title · Modern web design & UX"
+        }
+      ],
+      "Stack": [
+        "WCAG",
+        "Mobile-first",
+        "Accessibility",
+        "UX/UI"
+      ]
     },
     {
       "Icon": "⚙️",
-      "Title": "Automation & business tools",
+      "Title": "Automation & Business Tools",
       "Description": "Pragmatic workflows that reduce repetitive tasks. No over-engineered solutions — just what works for your business.",
-      "Detail": "Zapier · n8n · Custom APIs"
+      "Stack": [
+        "Zapier",
+        "n8n",
+        "Custom APIs"
+      ]
+    },
+    {
+      "Icon": "✍️",
+      "Title": "Quality Communication & Copywriting",
+      "Description": "Clear, effective communication is also a technical skill. I write web content designed to convert, convince and reassure — with the right words for your audience.",
+      "Certs": [
+        {
+          "Name": "Language, Information & Communication Sciences",
+          "Note": "University of Limoges · Digital communication & marketing strategies"
+        }
+      ],
+      "Stack": [
+        "Copywriting",
+        "SEO writing",
+        "UX writing",
+        "Content strategy"
+      ]
     }
   ],
   "Founder.Title": "The person behind BackLab",

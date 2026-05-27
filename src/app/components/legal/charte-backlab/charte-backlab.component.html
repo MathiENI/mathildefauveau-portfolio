@@ -3,7 +3,7 @@
 
     <div class="legal-header">
       <a routerLink="/" class="back-link">
-        <i class="fas fa-arrow-left"></i> {{ "Charter.BackLink" | translate }}
+        <i class="fas fa-arrow-left"></i> Retour
       </a>
       <div class="charter-heading">
         <h1 class="legal-title">{{ "Charter.Title" | translate }}</h1>
@@ -12,17 +12,6 @@
     </div>
 
     <p class="charter-intro">{{ "Charter.Intro" | translate }}</p>
-
-    <!-- ── Sommaire rapide ──────────────────────────────────── -->
-    <nav class="charter-toc">
-      <a *ngFor="let s of 'Charter.Sections' | translate"
-         [href]="'#charter-' + s.Num"
-         class="toc-item"
-         [class.toc-manifesto]="s.isManifesto">
-        <span class="toc-num">{{ s.Num }}</span>
-        <span class="toc-label">{{ s.Title }}</span>
-      </a>
-    </nav>
 
     <div class="legal-content">
 
