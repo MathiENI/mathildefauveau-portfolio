@@ -113,6 +113,11 @@
       "Icon": "🧭",
       "Title": "Digital consulting",
       "Description": "Not sure where to start? Let's talk it through. I help you see clearly and choose the simplest solution for your situation."
+    },
+    {
+      "Icon": "🔄",
+      "Title": "Technical or visual redesign",
+      "Description": "Your site already exists but it's slow, outdated or hard to update? I modernise it — design, performance, accessibility — without starting from scratch if it's not needed."
     }
   ],
   "Services.Cta": "Let's talk about your project",

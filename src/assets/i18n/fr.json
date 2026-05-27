@@ -113,6 +113,11 @@
       "Icon": "🧭",
       "Title": "Conseil digital",
       "Description": "Vous ne savez pas par où commencer ? On en parle, je vous aide à voir clair et à choisir la solution la plus simple pour votre situation."
+    },
+    {
+      "Icon": "🔄",
+      "Title": "Refonte technique ou graphique",
+      "Description": "Votre site existe déjà mais il est lent, daté ou difficile à mettre à jour ? Je le modernise — design, performances, accessibilité — sans repartir de zéro si ce n'est pas nécessaire."
     }
   ],
   "Services.Cta": "Parlons de votre projet",
