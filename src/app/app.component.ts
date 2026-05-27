@@ -15,7 +15,7 @@ import { LoadingService } from './services/loading/loading.service';
     standalone: false
 })
 export class AppComponent implements OnInit, OnDestroy{
-  title = 'mathildefauveau-portfolio';
+  title = 'backlab solutions';
   appContentVisible = false;
   private lenis: Lenis;
 
@@ -33,14 +33,13 @@ export class AppComponent implements OnInit, OnDestroy{
 
     this.languageService.initLanguage()
 
-    this.titleService.setTitle( "Mathilde Fauveau | Développeuse D'Applications" );
+    this.titleService.setTitle( "Backlab | Solutions digitales" );
 
     this.metaService.addTags([
-      {name: 'keywords', content: 'Frontend, software, developer'},
-      {name: 'description', content: 'Actuellement en formation de Concepteur Développeur d\'Applications, je suis activement à la recherche d\'un stage pour mettre en oeuvre mes compétences.'},
+      {name: 'keywords', content: 'Developer, software, backend, web, digital, frontend, full-stack'},
+      {name: 'description', content: 'BackLab construit des outils simples, clairs et accessibles pour les indépendants, artisans, commerces et petites structures.'},
     ]);
 
-    // Inicializar partículas globales después de un breve delay
     setTimeout(() => {
       this.particlesService.init();
     }, 100);
@@ -68,19 +67,16 @@ export class AppComponent implements OnInit, OnDestroy{
       this.lenis.destroy();
     }
 
-    // Destruir partículas
     this.particlesService.destroy();
   }
 
   onSplashAnimationCompleted(): void {
     this.appContentVisible = true;
 
-    // Inicializar Lenis después de que el contenido sea visible
     setTimeout(() => {
       this.initLenis();
     }, 100);
 
-    // Iniciar animaciones de los componentes
     this.loadingService.startAnimations();
   }
 

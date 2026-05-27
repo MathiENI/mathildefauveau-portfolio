@@ -80,5 +80,23 @@
         text-underline-offset: 4px;
       }
     }
+
+    .vision-charter-link {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 28px;
+      margin-left: 28px;
+      font-family: $CodeFont;
+      font-size: 13px;
+      color: $Green;
+      text-decoration: none;
+      letter-spacing: 0.3px;
+      transition: gap 0.2s ease, opacity 0.2s ease;
+      gap: 0;
+
+      &:hover {
+        opacity: 0.75;
+      }
+    }
   }
 }

@@ -120,3 +120,175 @@
     padding: 100px 0 60px;
   }
 }
+
+// ── Charter-specific extensions ──────────────────────────────────────────────
+.charter-page {
+
+  .container { max-width: 860px; }
+
+  // En-tête avec version
+  .charter-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .charter-version {
+    font-family: $CodeFont;
+    font-size: 11px;
+    color: $Green;
+    background: rgba(77, 166, 255, 0.08);
+    border: 1px solid rgba(77, 166, 255, 0.20);
+    border-radius: 20px;
+    padding: 3px 12px;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+  }
+
+  // Intro
+  .charter-intro {
+    font-size: 16px;
+    color: $Slate;
+    line-height: 1.75;
+    margin: -24px 0 48px;
+    font-style: italic;
+    border-left: 2px solid rgba(77, 166, 255, 0.20);
+    padding-left: 20px;
+  }
+
+  // ── Table des matières ─────────────────────────────
+  .charter-toc {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 6px;
+    margin-bottom: 56px;
+    padding: 24px;
+    background: rgba(77, 166, 255, 0.03);
+    border: 1px solid rgba(77, 166, 255, 0.10);
+    border-radius: 12px;
+  }
+
+  .toc-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: rgba(77, 166, 255, 0.06);
+      .toc-label { color: $LightestSlate; }
+    }
+
+    &.toc-manifesto .toc-num { color: #846afb; }
+  }
+
+  .toc-num {
+    font-family: $CodeFont;
+    font-size: 11px;
+    font-weight: 700;
+    color: $Green;
+    min-width: 24px;
+    letter-spacing: 0.3px;
+  }
+
+  .toc-label {
+    font-family: $MainFont;
+    font-size: 13px;
+    color: $Slate;
+    transition: color 0.2s ease;
+  }
+
+  // ── Sections ───────────────────────────────────────
+  .charter-section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: $MainFont;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: $LightestSlate !important;
+    margin: 0 0 20px !important;
+  }
+
+  .charter-num {
+    font-family: $CodeFont;
+    font-size: 13px;
+    font-weight: 700;
+    color: $Green;
+    background: rgba(77, 166, 255, 0.08);
+    border: 1px solid rgba(77, 166, 255, 0.18);
+    border-radius: 4px;
+    padding: 2px 8px;
+    flex-shrink: 0;
+    letter-spacing: 0.5px;
+  }
+
+  // ── Articles ───────────────────────────────────────
+  .charter-article {
+    margin-bottom: 20px;
+
+    &:last-child { margin-bottom: 0; }
+
+    &--anonymous { margin-bottom: 0; }
+  }
+
+  .charter-article-title {
+    font-family: $MainFont;
+    font-size: 14px;
+    font-weight: 600;
+    color: $LightSlate;
+    margin: 0 0 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .charter-article-id {
+    font-family: $CodeFont;
+    font-size: 11px;
+    color: $Slate;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+  }
+
+  .charter-p {
+    font-size: 14.5px !important;
+    line-height: 1.75 !important;
+    color: $Slate !important;
+    margin: 0 0 8px !important;
+
+    &:last-child { margin-bottom: 0 !important; }
+  }
+
+  // ── Manifeste ──────────────────────────────────────
+  .charter-manifesto-block {
+    border-left: 2px solid #846afb !important;
+    background: rgba(132, 106, 251, 0.03);
+    border-radius: 0 12px 12px 0;
+    padding: 24px 28px !important;
+
+    .charter-section-title .charter-num {
+      color: #846afb;
+      background: rgba(132, 106, 251, 0.08);
+      border-color: rgba(132, 106, 251, 0.25);
+    }
+  }
+
+  .charter-manifesto-line {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: $LightSlate !important;
+    line-height: 2 !important;
+    margin: 0 !important;
+
+    &:last-child {
+      color: $LightestSlate !important;
+      font-weight: 600 !important;
+      margin-top: 12px !important;
+    }
+  }
+}

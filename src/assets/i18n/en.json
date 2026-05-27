@@ -227,5 +227,345 @@
       "Label": "Development"
     }
   ],
-  "Services.OnePersonNote": "One point of contact, from brief to launch."
+  "Services.OnePersonNote": "One point of contact, from brief to launch.",
+  "Charter.VisionLinkLabel": "Read our full product & brand charter →",
+  "Charter.BackLink": "← Back to home",
+  "Charter.Title": "BackLab Charter",
+  "Charter.Subtitle": "Product & Brand Charter v2.0",
+  "Charter.Intro": "This document defines the foundations, product philosophy and commitments of BackLab. It applies to all our products, communications and ways of working.",
+  "Charter.Sections": [
+    {
+      "Num": "I",
+      "Title": "Foundation",
+      "Articles": [
+        {
+          "Id": "1.1",
+          "Title": "Mission",
+          "P": [
+            "BackLab exists to make professional digital tools genuinely accessible to small businesses.",
+            "Too many independent professionals, artisans, local shops and small teams are forced to choose between overpriced software, platforms built for much larger organizations, intimidating interfaces or tools that require a learning curve just to get started.",
+            "We reject that standard. BackLab builds software that is simple, explicit, immediately useful, financially accessible and designed for real humans.",
+            "We do not build software for SaaS power users. We build software for people who have actual work to do."
+          ]
+        },
+        {
+          "Id": "1.2",
+          "Title": "Vision",
+          "P": [
+            "We believe software should simplify work. Not make it heavier.",
+            "Digital tools should not be reserved for technical users or highly structured organizations. Small businesses deserve software that is just as good as enterprise tools — but built for their reality.",
+            "Our vision: to create an ecosystem of calm, human and accessible business software that helps small businesses work better, save time, recover revenue and operate with less stress."
+          ]
+        },
+        {
+          "Id": "1.3",
+          "Title": "Positioning",
+          "P": [
+            "BackLab is a founder-led software company, a product studio, an accessible business software brand, a calm software philosophy and an alternative to intimidating SaaS tools.",
+            "BackLab is NOT enterprise software, bloated all-in-one platforms, ERP systems, admin-heavy software or products built for software geeks."
+          ]
+        },
+        {
+          "Id": "1.4",
+          "Title": "Differentiation",
+          "P": [
+            "Our true difference: designing software for users with low digital confidence.",
+            "We design for artisans, local business owners, restaurant operators, freelancers, independent professionals and real-world business operators — not for product managers or sysadmins.",
+            "BackLab’s competitors are not only SaaS vendors. The competition is also: paper notebooks, WhatsApp, messy spreadsheets, memory, “I’ll do it later.”"
+          ]
+        }
+      ]
+    },
+    {
+      "Num": "II",
+      "Title": "Audience",
+      "Articles": [
+        {
+          "Id": "2.1",
+          "Title": "Who We Serve",
+          "P": [
+            "BackLab primarily serves artisans, freelancers, solo founders, micro-businesses, small businesses, local shops, bars, restaurants, salons, garages, independent consultants and small teams."
+          ]
+        },
+        {
+          "Id": "2.2",
+          "Title": "User Reality",
+          "P": [
+            "Our users do not want to become software experts. They have limited time, often have limited budgets, work in the real world and have more urgent priorities than configuring dashboards.",
+            "They want something that simply works."
+          ]
+        },
+        {
+          "Id": "2.3",
+          "Title": "BackLab Persona",
+          "P": [
+            "The typical BackLab user is competent in their profession, may not be digitally confident, may feel anxiety around complex software, often works from mobile, hates wasting time and wants immediate value.",
+            "Core question: can this person understand the product without help?"
+          ]
+        }
+      ]
+    },
+    {
+      "Num": "III",
+      "Title": "Product DNA",
+      "Articles": [
+        {
+          "Id": "3.1",
+          "Title": "Calm Software",
+          "P": [
+            "BackLab builds calm software. A BackLab product must reduce anxiety, reassure users, guide clearly, create confidence and feel understandable immediately.",
+            "A BackLab product must never feel aggressive, confusing or intimidating."
+          ]
+        },
+        {
+          "Id": "3.2",
+          "Title": "Anti-Bloat SaaS",
+          "P": [
+            "We reject the idea that “more features = better product.”",
+            "Our philosophy: less, but better. Every feature must justify its existence."
+          ]
+        },
+        {
+          "Id": "3.3",
+          "Title": "The 10/90 Rule",
+          "P": [
+            "We build the 10% of features that create 90% of the value.",
+            "If a feature increases complexity without obvious ROI, remove it."
+          ]
+        },
+        {
+          "Id": "3.4",
+          "Title": "ROI-First",
+          "P": [
+            "Every feature must do at least one of the following: save time, reduce stress, recover revenue, prevent mistakes, simplify workflows or reduce operational friction.",
+            "Otherwise, it does not belong."
+          ]
+        },
+        {
+          "Id": "3.5",
+          "Title": "Human Software",
+          "P": [
+            "BackLab does not build machine-first interfaces. We build human-first experiences.",
+            "Products should feel welcoming, logical, explicit and human. Never cold. Never bureaucratic."
+          ]
+        }
+      ]
+    },
+    {
+      "Num": "IV",
+      "Title": "UX Principles",
+      "Articles": [
+        {
+          "Id": "4.1",
+          "Title": "Radical Clarity",
+          "P": [
+            "Every screen must immediately answer: Where am I? What can I do? What should I do next?",
+            "If not, the design failed."
+          ]
+        },
+        {
+          "Id": "4.2",
+          "Title": "Explicit Interfaces",
+          "P": [
+            "We never assume software literacy.",
+            "“Pipeline” becomes “Clients to follow up.” “Configure webhook” becomes “Connect another tool.”"
+          ]
+        },
+        {
+          "Id": "4.3",
+          "Title": "Guided UX",
+          "P": [
+            "BackLab products guide users. They never abandon users in front of empty or confusing interfaces.",
+            "Expected: onboarding flows, setup wizards, helper text, educational placeholders, next best actions, practical examples."
+          ]
+        },
+        {
+          "Id": "4.4",
+          "Title": "Visual-First UX",
+          "P": [
+            "Our users understand visual systems faster. We prioritize cards, badges, clear colors, iconography, timelines and progress indicators.",
+            "We avoid text walls, overwhelming tables and dense dashboards."
+          ]
+        },
+        {
+          "Id": "4.5",
+          "Title": "Low Cognitive Load",
+          "P": [
+            "Every interface must minimize mental effort. Avoid too many actions, too many choices, overloaded dashboards, endless forms and ambiguity."
+          ]
+        }
+      ]
+    },
+    {
+      "Num": "V",
+      "Title": "Accessibility",
+      "Articles": [
+        {
+          "Id": "5.1",
+          "Title": "Visual Accessibility",
+          "P": [
+            "Strong contrast, readable typography, comfortable spacing, large tap targets, clear hierarchy."
+          ]
+        },
+        {
+          "Id": "5.2",
+          "Title": "Cognitive Accessibility",
+          "P": [
+            "BackLab takes cognitive accessibility seriously: simple concepts, explicit wording, predictable navigation, low ambiguity, reassuring messages."
+          ]
+        },
+        {
+          "Id": "5.3",
+          "Title": "Technical Accessibility",
+          "P": [
+            "Keyboard navigation, visible focus states, aria labels, semantic HTML, accessible forms, explicit labels."
+          ]
+        },
+        {
+          "Id": "5.4",
+          "Title": "Mobile-First Real World Usage",
+          "P": [
+            "Our users work on the move, between appointments, behind counters, between customers.",
+            "Products must be genuinely usable on mobile. Not merely “responsive.”"
+          ]
+        }
+      ]
+    },
+    {
+      "Num": "VI",
+      "Title": "Language Policy",
+      "Articles": [
+        {
+          "Id": "6",
+          "Title": "Avoid Unnecessary Jargon",
+          "P": [
+            "BackLab avoids unnecessary jargon: webhook, endpoint, pipeline, lifecycle, trigger, analytics suite, sync, config engine — unless explicitly targeting technical users.",
+            "Tone must be human, reassuring, clear, direct and calm. Never corporate, vague or buzzword-heavy."
+          ]
+        }
+      ]
+    },
+    {
+      "Num": "VII",
+      "Title": "Error Philosophy",
+      "Articles": [
+        {
+          "Id": "7",
+          "Title": "Errors Should Not Punish",
+          "P": [
+            "BackLab products must be forgiving: destructive confirmations, human error messages, safe defaults, clear validation, undo when relevant.",
+            "Bad: “500 internal server error.” Good: “Unable to send your message right now.”"
+          ]
+        }
+      ]
+    },
+    {
+      "Num": "VIII",
+      "Title": "Local & Responsible Commitment",
+      "Articles": [
+        {
+          "Id": "8.1",
+          "Title": "Local Roots",
+          "P": [
+            "BackLab is an independent company born in Limoges, France. That matters.",
+            "We understand the realities of artisans, local businesses, independent professionals and small real-world operators.",
+            "We build for the real economy. Not hypothetical enterprise scenarios."
+          ]
+        },
+        {
+          "Id": "8.2",
+          "Title": "Digital Sobriety",
+          "P": [
+            "BackLab believes in more responsible software — not as empty marketing, but as product philosophy.",
+            "We reject unnecessary complexity, overloaded dashboards, decorative features and artificial friction.",
+            "Less noise. Less waste. More usefulness."
+          ]
+        },
+        {
+          "Id": "8.3",
+          "Title": "Europe-Friendly Mindset",
+          "P": [
+            "BackLab prioritizes, whenever realistic: GDPR-conscious design, data minimization, privacy-aware architecture, infrastructure compatible with European standards.",
+            "No greenwashing. No compliance theatre."
+          ]
+        }
+      ]
+    },
+    {
+      "Num": "IX",
+      "Title": "Design System",
+      "Articles": [
+        {
+          "Id": "9",
+          "Title": "Cross-Product Consistency",
+          "P": [
+            "All BackLab products share a common UX language: consistent navigation, familiar layouts, unified CTA logic, common forms, shared badges, identical interaction patterns, coherent empty states.",
+            "Product accent colors: BackBoost → green · BackCall → orange · BackReview → purple · BackFill → cyan · BackBar → amber · BackLab core → signature blue.",
+            "Goal: create familiarity and trust. Users should think: “I already know how this works.”"
+          ]
+        }
+      ]
+    },
+    {
+      "Num": "X",
+      "Title": "Product Governance",
+      "Articles": [
+        {
+          "Id": "10",
+          "Title": "Questions Before Any Feature",
+          "P": [
+            "Before shipping any feature: does it reduce stress? does it save time? does it recover money? does it simplify work? is it understandable without documentation?",
+            "If NO: remove it. Ultimate question: does this feature deserve the BackLab name?"
+          ]
+        }
+      ]
+    },
+    {
+      "Num": "XI",
+      "Title": "Engineering Standards",
+      "Articles": [
+        {
+          "Id": "11",
+          "Title": "What We Expect",
+          "P": [
+            "Modularity, maintainability, accessibility by default, clean architecture, cross-product consistency, reasonable security, structural simplicity.",
+            "No spaghetti architecture."
+          ]
+        }
+      ]
+    },
+    {
+      "Num": "XII",
+      "Title": "Ethical Product Principles",
+      "Articles": [
+        {
+          "Id": "12",
+          "Title": "What BackLab Rejects",
+          "P": [
+            "BackLab rejects: dark patterns, fake urgency, opaque pricing, abusive lock-in, manipulative UX, toxic notification systems.",
+            "We prefer: honesty, transparency, simplicity, user respect."
+          ]
+        }
+      ]
+    },
+    {
+      "Num": "XIII",
+      "Title": "Manifesto",
+      "isManifesto": true,
+      "Articles": [
+        {
+          "Id": "",
+          "Title": "",
+          "P": [
+            "We do not build software cathedrals.",
+            "We build tools that help.",
+            "Clear. Human. Useful. Focused.",
+            "No software labyrinths. No jargon. No complexity designed to impress.",
+            "Just software that respects the people using it.",
+            "BackLab builds the tools we wish existed."
+          ]
+        }
+      ]
+    }
+  ]
 }

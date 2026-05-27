@@ -1,0 +1,60 @@
+<section class="legal-page charter-page">
+  <div class="container">
+
+    <div class="legal-header">
+      <a routerLink="/" class="back-link">
+        <i class="fas fa-arrow-left"></i> {{ "Charter.BackLink" | translate }}
+      </a>
+      <div class="charter-heading">
+        <h1 class="legal-title">{{ "Charter.Title" | translate }}</h1>
+        <span class="charter-version">{{ "Charter.Subtitle" | translate }}</span>
+      </div>
+    </div>
+
+    <p class="charter-intro">{{ "Charter.Intro" | translate }}</p>
+
+    <!-- ── Sommaire rapide ──────────────────────────────────── -->
+    <nav class="charter-toc">
+      <a *ngFor="let s of 'Charter.Sections' | translate"
+         [href]="'#charter-' + s.Num"
+         class="toc-item"
+         [class.toc-manifesto]="s.isManifesto">
+        <span class="toc-num">{{ s.Num }}</span>
+        <span class="toc-label">{{ s.Title }}</span>
+      </a>
+    </nav>
+
+    <div class="legal-content">
+
+      <div
+        *ngFor="let section of 'Charter.Sections' | translate"
+        class="legal-block"
+        [class.charter-manifesto-block]="section.isManifesto"
+        [id]="'charter-' + section.Num">
+
+        <h2 class="charter-section-title">
+          <span class="charter-num">{{ section.Num }}</span>
+          {{ section.Title }}
+        </h2>
+
+        <div
+          *ngFor="let article of section.Articles"
+          class="charter-article"
+          [class.charter-article--anonymous]="!article.Title">
+
+          <h3 *ngIf="article.Title" class="charter-article-title">
+            <span *ngIf="article.Id" class="charter-article-id">{{ article.Id }}</span>
+            {{ article.Title }}
+          </h3>
+
+          <p *ngFor="let p of article.P"
+             class="charter-p"
+             [class.charter-manifesto-line]="section.isManifesto">
+            {{ p }}
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

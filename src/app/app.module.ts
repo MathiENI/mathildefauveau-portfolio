@@ -7,6 +7,7 @@ import { HomeModule } from './components/home/home.module';
 import { GeneralModule } from './components/general/general.module';
 import { MentionsLegalesComponent } from './components/legal/mentions-legales/mentions-legales.component';
 import { PolitiqueConfidentialiteComponent } from './components/legal/politique-confidentialite/politique-confidentialite.component';
+import { CharteBacklabComponent } from './components/legal/charte-backlab/charte-backlab.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -29,6 +30,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         AppComponent,
         MentionsLegalesComponent,
         PolitiqueConfidentialiteComponent,
+        CharteBacklabComponent,
         /* ArchiveComponent */
     ],
     bootstrap: [AppComponent], imports: [BrowserAnimationsModule,
