@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build:prod",
+  "buildCommand": "ng build --configuration production --base-href /",
   "outputDirectory": "dist/backlab/browser",
   "framework": null,
   "rewrites": [
